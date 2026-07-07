@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T04:03:51.464Z",
+  "generatedAt": "2026-07-07T04:19:30.621Z",
   "portfolio": [
     {
       "key": "Branding",
@@ -68,74 +68,56 @@
         "kind": "image",
         "src": "/portfolio/Curevie/1.png",
         "title": "Curevie",
-        "fileName": "1.png",
-        "width": 450,
-        "height": 150
+        "fileName": "1.png"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/Curevie/1.png",
           "title": "Curevie",
-          "fileName": "1.png",
-          "width": 450,
-          "height": 150
+          "fileName": "1.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Curevie/curevie.jpeg",
           "title": "Curevie",
-          "fileName": "curevie.jpeg",
-          "width": 1600,
-          "height": 759
+          "fileName": "curevie.jpeg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Curevie/curevie1.jpeg",
           "title": "Curevie1",
-          "fileName": "curevie1.jpeg",
-          "width": 421,
-          "height": 688
+          "fileName": "curevie1.jpeg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Curevie/curevie2.jpeg",
           "title": "Curevie2",
-          "fileName": "curevie2.jpeg",
-          "width": 1600,
-          "height": 763
+          "fileName": "curevie2.jpeg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Curevie/curevie3.jpeg",
           "title": "Curevie3",
-          "fileName": "curevie3.jpeg",
-          "width": 1600,
-          "height": 827
+          "fileName": "curevie3.jpeg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Curevie/curevie4.jpeg",
           "title": "Curevie4",
-          "fileName": "curevie4.jpeg",
-          "width": 466,
-          "height": 753
+          "fileName": "curevie4.jpeg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Curevie/curevie5.jpeg",
           "title": "Curevie5",
-          "fileName": "curevie5.jpeg",
-          "width": 465,
-          "height": 756
+          "fileName": "curevie5.jpeg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Curevie/Curivie%20icon.png",
           "title": "Curivie Icon",
-          "fileName": "Curivie icon.png",
-          "width": 250,
-          "height": 250
+          "fileName": "Curivie icon.png"
         }
       ]
     },
@@ -200,106 +182,80 @@
         "kind": "image",
         "src": "/portfolio/disasev/011.png",
         "title": "disasev",
-        "fileName": "011.png",
-        "width": 1080,
-        "height": 1350
+        "fileName": "011.png"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/disasev/011.png",
           "title": "disasev",
-          "fileName": "011.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "011.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/disasev/1.png",
           "title": "disasev",
-          "fileName": "1.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "1.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/disasev/10.png",
           "title": "disasev",
-          "fileName": "10.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "10.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/disasev/11.png",
           "title": "disasev",
-          "fileName": "11.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "11.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/disasev/2.png",
           "title": "disasev",
-          "fileName": "2.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "2.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/disasev/3.png",
           "title": "disasev",
-          "fileName": "3.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "3.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/disasev/4.png",
           "title": "disasev",
-          "fileName": "4.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "4.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/disasev/5.png",
           "title": "disasev",
-          "fileName": "5.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "5.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/disasev/6.png",
           "title": "disasev",
-          "fileName": "6.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "6.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/disasev/7.png",
           "title": "disasev",
-          "fileName": "7.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "7.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/disasev/8.png",
           "title": "disasev",
-          "fileName": "8.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "8.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/disasev/9.png",
           "title": "disasev",
-          "fileName": "9.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "9.png"
         }
       ]
     },
@@ -313,26 +269,20 @@
         "kind": "image",
         "src": "/portfolio/Dr.%20Ala'a%20Albuqaie/0a42348b-d15e-4e39-80e3-3ec7e2631202.webp",
         "title": "0a42348b D15e 4e39 80e3 3ec7e2631202",
-        "fileName": "0a42348b-d15e-4e39-80e3-3ec7e2631202.webp",
-        "width": 1600,
-        "height": 1066
+        "fileName": "0a42348b-d15e-4e39-80e3-3ec7e2631202.webp"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Ala'a%20Albuqaie/0a42348b-d15e-4e39-80e3-3ec7e2631202.webp",
           "title": "0a42348b D15e 4e39 80e3 3ec7e2631202",
-          "fileName": "0a42348b-d15e-4e39-80e3-3ec7e2631202.webp",
-          "width": 1600,
-          "height": 1066
+          "fileName": "0a42348b-d15e-4e39-80e3-3ec7e2631202.webp"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Ala'a%20Albuqaie/alaa.webp",
           "title": "Alaa",
-          "fileName": "alaa.webp",
-          "width": 1080,
-          "height": 1080
+          "fileName": "alaa.webp"
         }
       ]
     },
@@ -346,154 +296,116 @@
         "kind": "image",
         "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20103460a8-caa1-417d-ab89-519aa11864c6.jpg",
         "title": "Copy of 103460a8 Caa1 417d Ab89 519aa11864c6",
-        "fileName": "Copy of 103460a8-caa1-417d-ab89-519aa11864c6.jpg",
-        "width": 1080,
-        "height": 1080
+        "fileName": "Copy of 103460a8-caa1-417d-ab89-519aa11864c6.jpg"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20103460a8-caa1-417d-ab89-519aa11864c6.jpg",
           "title": "Copy of 103460a8 Caa1 417d Ab89 519aa11864c6",
-          "fileName": "Copy of 103460a8-caa1-417d-ab89-519aa11864c6.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of 103460a8-caa1-417d-ab89-519aa11864c6.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%201e27f592-050d-4048-bf59-651498203e54.jpg",
           "title": "Copy of 1e27f592 050d Bf59 651498203e54",
-          "fileName": "Copy of 1e27f592-050d-4048-bf59-651498203e54.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of 1e27f592-050d-4048-bf59-651498203e54.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20269f563f-3501-453e-9097-e1635357c43a.jpg",
           "title": "Copy of 269f563f 453e E1635357c43a",
-          "fileName": "Copy of 269f563f-3501-453e-9097-e1635357c43a.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of 269f563f-3501-453e-9097-e1635357c43a.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%2027adc65f-8999-4e76-be3c-6b22c247c4aa.jpg",
           "title": "Copy of 27adc65f 4e76 Be3c 6b22c247c4aa",
-          "fileName": "Copy of 27adc65f-8999-4e76-be3c-6b22c247c4aa.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of 27adc65f-8999-4e76-be3c-6b22c247c4aa.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20328bf52c-b207-4a2c-ba56-2a1fcda14845.jpg",
           "title": "Copy of 328bf52c B207 4a2c Ba56 2a1fcda14845",
-          "fileName": "Copy of 328bf52c-b207-4a2c-ba56-2a1fcda14845.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of 328bf52c-b207-4a2c-ba56-2a1fcda14845.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%2033215391-aa03-432f-9442-0b3bbaa32269.jpg",
           "title": "Copy of Aa03 432f 0b3bbaa32269",
-          "fileName": "Copy of 33215391-aa03-432f-9442-0b3bbaa32269.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of 33215391-aa03-432f-9442-0b3bbaa32269.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%204fd0cf23-0c2b-4a9b-af17-0391bdc628a3.jpg",
           "title": "Copy of 4fd0cf23 0c2b 4a9b Af17 0391bdc628a3",
-          "fileName": "Copy of 4fd0cf23-0c2b-4a9b-af17-0391bdc628a3.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of 4fd0cf23-0c2b-4a9b-af17-0391bdc628a3.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20628912dc-95b3-42a0-8d55-5b187d851004.jpg",
           "title": "Copy of 628912dc 95b3 42a0 8d55 5b187d851004",
-          "fileName": "Copy of 628912dc-95b3-42a0-8d55-5b187d851004.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of 628912dc-95b3-42a0-8d55-5b187d851004.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20803df500-f556-4155-b1a0-f16dc0a7b33c.jpg",
           "title": "Copy of 803df500 F556 B1a0 F16dc0a7b33c",
-          "fileName": "Copy of 803df500-f556-4155-b1a0-f16dc0a7b33c.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of 803df500-f556-4155-b1a0-f16dc0a7b33c.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20a3288427-3fb7-403c-9f92-bb6ef988d889.jpg",
           "title": "Copy of A3288427 3fb7 403c 9f92 Bb6ef988d889",
-          "fileName": "Copy of a3288427-3fb7-403c-9f92-bb6ef988d889.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of a3288427-3fb7-403c-9f92-bb6ef988d889.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20a46c9299-f729-472a-b67f-47b715d9606e.jpg",
           "title": "Copy of A46c9299 F729 472a B67f 47b715d9606e",
-          "fileName": "Copy of a46c9299-f729-472a-b67f-47b715d9606e.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of a46c9299-f729-472a-b67f-47b715d9606e.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20b1015982-05bc-496e-9796-b97298f357fd.jpg",
           "title": "Copy of B1015982 05bc 496e B97298f357fd",
-          "fileName": "Copy of b1015982-05bc-496e-9796-b97298f357fd.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of b1015982-05bc-496e-9796-b97298f357fd.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20b2344d86-6933-4ec3-b850-fb167617072e.jpg",
           "title": "Copy of B2344d86 4ec3 B850 Fb167617072e",
-          "fileName": "Copy of b2344d86-6933-4ec3-b850-fb167617072e.jpg",
-          "width": 878,
-          "height": 1148
+          "fileName": "Copy of b2344d86-6933-4ec3-b850-fb167617072e.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20b4600bfb-630a-455c-a963-af3f8d9c7452.jpg",
           "title": "Copy of B4600bfb 630a 455c A963 Af3f8d9c7452",
-          "fileName": "Copy of b4600bfb-630a-455c-a963-af3f8d9c7452.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of b4600bfb-630a-455c-a963-af3f8d9c7452.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20df398825-6a26-407e-aff5-8b4ab1ed962e.jpg",
           "title": "Copy of Df398825 6a26 407e Aff5 8b4ab1ed962e",
-          "fileName": "Copy of df398825-6a26-407e-aff5-8b4ab1ed962e.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of df398825-6a26-407e-aff5-8b4ab1ed962e.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20e39998e4-a8b7-4ea5-9d5a-ec3ed07ebc49.jpg",
           "title": "Copy of E39998e4 A8b7 4ea5 9d5a Ec3ed07ebc49",
-          "fileName": "Copy of e39998e4-a8b7-4ea5-9d5a-ec3ed07ebc49.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of e39998e4-a8b7-4ea5-9d5a-ec3ed07ebc49.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20ed214cd0-a341-4542-891a-b937706427fb.jpg",
           "title": "Copy of Ed214cd0 A341 891a B937706427fb",
-          "fileName": "Copy of ed214cd0-a341-4542-891a-b937706427fb.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of ed214cd0-a341-4542-891a-b937706427fb.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20fdb8176d-6f02-499b-ac4e-34732f2539ae.jpg",
           "title": "Copy of Fdb8176d 6f02 499b Ac4e 34732f2539ae",
-          "fileName": "Copy of fdb8176d-6f02-499b-ac4e-34732f2539ae.jpg",
-          "width": 1080,
-          "height": 1080
+          "fileName": "Copy of fdb8176d-6f02-499b-ac4e-34732f2539ae.jpg"
         },
         {
           "kind": "video",
@@ -519,42 +431,32 @@
         "kind": "image",
         "src": "/portfolio/HAMC/0bdfa648-ea0e-41bc-b422-d05cf2c4a3d8.webp",
         "title": "0bdfa648 Ea0e 41bc B422 D05cf2c4a3d8",
-        "fileName": "0bdfa648-ea0e-41bc-b422-d05cf2c4a3d8.webp",
-        "width": 1080,
-        "height": 1080
+        "fileName": "0bdfa648-ea0e-41bc-b422-d05cf2c4a3d8.webp"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/HAMC/0bdfa648-ea0e-41bc-b422-d05cf2c4a3d8.webp",
           "title": "0bdfa648 Ea0e 41bc B422 D05cf2c4a3d8",
-          "fileName": "0bdfa648-ea0e-41bc-b422-d05cf2c4a3d8.webp",
-          "width": 1080,
-          "height": 1080
+          "fileName": "0bdfa648-ea0e-41bc-b422-d05cf2c4a3d8.webp"
         },
         {
           "kind": "image",
           "src": "/portfolio/HAMC/6b05b24e-ca31-497f-a6bd-606b0f558266.webp",
           "title": "6b05b24e Ca31 497f A6bd 606b0f558266",
-          "fileName": "6b05b24e-ca31-497f-a6bd-606b0f558266.webp",
-          "width": 900,
-          "height": 1600
+          "fileName": "6b05b24e-ca31-497f-a6bd-606b0f558266.webp"
         },
         {
           "kind": "image",
           "src": "/portfolio/HAMC/ed712c11-9fac-4b44-ace1-1aaf220cdaa0.webp",
           "title": "Ed712c11 9fac 4b44 Ace1 1aaf220cdaa0",
-          "fileName": "ed712c11-9fac-4b44-ace1-1aaf220cdaa0.webp",
-          "width": 1080,
-          "height": 1080
+          "fileName": "ed712c11-9fac-4b44-ace1-1aaf220cdaa0.webp"
         },
         {
           "kind": "image",
           "src": "/portfolio/HAMC/logo.webp",
           "title": "Logo",
-          "fileName": "logo.webp",
-          "width": 500,
-          "height": 500
+          "fileName": "logo.webp"
         },
         {
           "kind": "video",
@@ -574,130 +476,98 @@
         "kind": "image",
         "src": "/portfolio/Harmony/social/1.png",
         "title": "Harmony",
-        "fileName": "1.png",
-        "width": 1400,
-        "height": 690
+        "fileName": "1.png"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/Harmony/social/1.png",
           "title": "Harmony",
-          "fileName": "1.png",
-          "width": 1400,
-          "height": 690
+          "fileName": "1.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Harmony/social/12.png",
           "title": "Harmony",
-          "fileName": "12.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "12.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Harmony/social/13.png",
           "title": "Harmony",
-          "fileName": "13.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "13.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Harmony/social/14.png",
           "title": "Harmony",
-          "fileName": "14.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "14.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Harmony/social/15.png",
           "title": "Harmony",
-          "fileName": "15.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "15.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Harmony/social/2.png",
           "title": "Harmony",
-          "fileName": "2.png",
-          "width": 1400,
-          "height": 1349
+          "fileName": "2.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Harmony/social/3.png",
           "title": "Harmony",
-          "fileName": "3.png",
-          "width": 1400,
-          "height": 1349
+          "fileName": "3.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Harmony/social/4%20(1).png",
           "title": "4 (1)",
-          "fileName": "4 (1).png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "4 (1).png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Harmony/social/4.png",
           "title": "Harmony",
-          "fileName": "4.png",
-          "width": 1400,
-          "height": 2948
+          "fileName": "4.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Harmony/social/5%20(1).png",
           "title": "5 (1)",
-          "fileName": "5 (1).png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "5 (1).png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Harmony/social/5.png",
           "title": "Harmony",
-          "fileName": "5.png",
-          "width": 1400,
-          "height": 1349
+          "fileName": "5.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Harmony/social/6.png",
           "title": "Harmony",
-          "fileName": "6.png",
-          "width": 1400,
-          "height": 1951
+          "fileName": "6.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Harmony/social/7.png",
           "title": "Harmony",
-          "fileName": "7.png",
-          "width": 1400,
-          "height": 3611
+          "fileName": "7.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Harmony/social/8.png",
           "title": "Harmony",
-          "fileName": "8.png",
-          "width": 1400,
-          "height": 755
+          "fileName": "8.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Harmony/social/9.png",
           "title": "Harmony",
-          "fileName": "9.png",
-          "width": 1400,
-          "height": 1894
+          "fileName": "9.png"
         },
         {
           "kind": "video",
@@ -717,42 +587,32 @@
         "kind": "image",
         "src": "/portfolio/Horvath/horvath.jpeg",
         "title": "Horvath",
-        "fileName": "horvath.jpeg",
-        "width": 1600,
-        "height": 752
+        "fileName": "horvath.jpeg"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/Horvath/horvath.jpeg",
           "title": "Horvath",
-          "fileName": "horvath.jpeg",
-          "width": 1600,
-          "height": 752
+          "fileName": "horvath.jpeg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Horvath/horvath1.jpeg",
           "title": "Horvath1",
-          "fileName": "horvath1.jpeg",
-          "width": 1600,
-          "height": 769
+          "fileName": "horvath1.jpeg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Horvath/horvath2.jpeg",
           "title": "Horvath2",
-          "fileName": "horvath2.jpeg",
-          "width": 1600,
-          "height": 764
+          "fileName": "horvath2.jpeg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Horvath/horvath3.jpeg",
           "title": "Horvath3",
-          "fileName": "horvath3.jpeg",
-          "width": 1600,
-          "height": 755
+          "fileName": "horvath3.jpeg"
         }
       ]
     },
@@ -766,258 +626,194 @@
         "kind": "image",
         "src": "/portfolio/ibtsm/social/car%201/1.png",
         "title": "ibtsm",
-        "fileName": "1.png",
-        "width": 1080,
-        "height": 1350
+        "fileName": "1.png"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%201/1.png",
           "title": "ibtsm",
-          "fileName": "1.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "1.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%202/1.png",
           "title": "ibtsm",
-          "fileName": "1.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "1.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%203/1.png",
           "title": "ibtsm",
-          "fileName": "1.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "1.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%204/1.png",
           "title": "ibtsm",
-          "fileName": "1.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "1.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/10.png",
           "title": "ibtsm",
-          "fileName": "10.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "10.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%201/2.png",
           "title": "ibtsm",
-          "fileName": "2.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "2.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%202/2.png",
           "title": "ibtsm",
-          "fileName": "2.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "2.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%203/2.png",
           "title": "ibtsm",
-          "fileName": "2.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "2.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%204/2.png",
           "title": "ibtsm",
-          "fileName": "2.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "2.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%201/3.png",
           "title": "ibtsm",
-          "fileName": "3.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "3.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%202/3.png",
           "title": "ibtsm",
-          "fileName": "3.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "3.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%203/3.png",
           "title": "ibtsm",
-          "fileName": "3.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "3.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%204/3.png",
           "title": "ibtsm",
-          "fileName": "3.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "3.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%201/4.png",
           "title": "ibtsm",
-          "fileName": "4.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "4.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%202/4.png",
           "title": "ibtsm",
-          "fileName": "4.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "4.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%203/4.png",
           "title": "ibtsm",
-          "fileName": "4.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "4.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%204/4.png",
           "title": "ibtsm",
-          "fileName": "4.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "4.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/5.png",
           "title": "ibtsm",
-          "fileName": "5.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "5.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%201/5.png",
           "title": "ibtsm",
-          "fileName": "5.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "5.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%202/5.png",
           "title": "ibtsm",
-          "fileName": "5.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "5.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%204/5.png",
           "title": "ibtsm",
-          "fileName": "5.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "5.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/6.png",
           "title": "ibtsm",
-          "fileName": "6.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "6.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/car%202/6.png",
           "title": "ibtsm",
-          "fileName": "6.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "6.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/8.png",
           "title": "ibtsm",
-          "fileName": "8.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "8.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/9.png",
           "title": "ibtsm",
-          "fileName": "9.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "9.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/%D9%83%D9%81%D8%B1-1.png",
           "title": "ibtsm",
-          "fileName": "كفر-1.png",
-          "width": 1080,
-          "height": 1920
+          "fileName": "كفر-1.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/%D9%83%D9%81%D8%B1-2.png",
           "title": "ibtsm",
-          "fileName": "كفر-2.png",
-          "width": 1080,
-          "height": 1920
+          "fileName": "كفر-2.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/%D9%83%D9%81%D8%B1-3.png",
           "title": "ibtsm",
-          "fileName": "كفر-3.png",
-          "width": 1080,
-          "height": 1920
+          "fileName": "كفر-3.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/%D9%83%D9%81%D8%B1-4.png",
           "title": "ibtsm",
-          "fileName": "كفر-4.png",
-          "width": 1080,
-          "height": 1920
+          "fileName": "كفر-4.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/%D9%83%D9%81%D8%B1-5.png",
           "title": "ibtsm",
-          "fileName": "كفر-5.png",
-          "width": 1080,
-          "height": 1920
+          "fileName": "كفر-5.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ibtsm/social/%D9%85%D8%AC%D9%85%D8%B9.png",
           "title": "ibtsm",
-          "fileName": "مجمع.png",
-          "width": 3240,
-          "height": 5400
+          "fileName": "مجمع.png"
         },
         {
           "kind": "video",
@@ -1061,42 +857,32 @@
         "kind": "image",
         "src": "/portfolio/JGC%20Contracting/6366203d-f991-444d-84d5-d5a791c3774e.jpg",
         "title": "6366203d F991 444d 84d5 D5a791c3774e",
-        "fileName": "6366203d-f991-444d-84d5-d5a791c3774e.jpg",
-        "width": 1080,
-        "height": 1440
+        "fileName": "6366203d-f991-444d-84d5-d5a791c3774e.jpg"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/JGC%20Contracting/6366203d-f991-444d-84d5-d5a791c3774e.jpg",
           "title": "6366203d F991 444d 84d5 D5a791c3774e",
-          "fileName": "6366203d-f991-444d-84d5-d5a791c3774e.jpg",
-          "width": 1080,
-          "height": 1440
+          "fileName": "6366203d-f991-444d-84d5-d5a791c3774e.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/JGC%20Contracting/9EF8784F-D764-4668-9B47-6751C7CDD2A4.jpg",
           "title": "9EF8784F D764 9B47 6751C7CDD2A4",
-          "fileName": "9EF8784F-D764-4668-9B47-6751C7CDD2A4.jpg",
-          "width": 1080,
-          "height": 1433
+          "fileName": "9EF8784F-D764-4668-9B47-6751C7CDD2A4.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/JGC%20Contracting/CF315A7C-E047-4853-BC87-F2FC3EA0CF9F.jpg",
           "title": "CF315A7C E047 BC87 F2FC3EA0CF9F",
-          "fileName": "CF315A7C-E047-4853-BC87-F2FC3EA0CF9F.jpg",
-          "width": 1080,
-          "height": 1433
+          "fileName": "CF315A7C-E047-4853-BC87-F2FC3EA0CF9F.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/JGC%20Contracting/Logo.webp",
           "title": "Logo",
-          "fileName": "Logo.webp",
-          "width": 500,
-          "height": 500
+          "fileName": "Logo.webp"
         }
       ]
     },
@@ -1110,82 +896,62 @@
         "kind": "image",
         "src": "/portfolio/kulib/1.png",
         "title": "kulib",
-        "fileName": "1.png",
-        "width": 1080,
-        "height": 1440
+        "fileName": "1.png"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/kulib/1.png",
           "title": "kulib",
-          "fileName": "1.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "1.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/kulib/2.png",
           "title": "kulib",
-          "fileName": "2.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "2.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/kulib/3.png",
           "title": "kulib",
-          "fileName": "3.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "3.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/kulib/4.png",
           "title": "kulib",
-          "fileName": "4.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "4.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/kulib/5.png",
           "title": "kulib",
-          "fileName": "5.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "5.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/kulib/6.png",
           "title": "kulib",
-          "fileName": "6.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "6.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/kulib/7.png",
           "title": "kulib",
-          "fileName": "7.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "7.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/kulib/8.png",
           "title": "kulib",
-          "fileName": "8.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "8.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/kulib/9.png",
           "title": "kulib",
-          "fileName": "9.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "9.png"
         }
       ]
     },
@@ -1199,138 +965,104 @@
         "kind": "image",
         "src": "/portfolio/mada/1.png",
         "title": "mada",
-        "fileName": "1.png",
-        "width": 1080,
-        "height": 1440
+        "fileName": "1.png"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/mada/1.png",
           "title": "mada",
-          "fileName": "1.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "1.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/mada/10.png",
           "title": "mada",
-          "fileName": "10.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "10.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/mada/11.png",
           "title": "mada",
-          "fileName": "11.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "11.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/mada/12.png",
           "title": "mada",
-          "fileName": "12.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "12.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/mada/13.png",
           "title": "mada",
-          "fileName": "13.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "13.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/mada/14.png",
           "title": "mada",
-          "fileName": "14.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "14.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/mada/15.png",
           "title": "mada",
-          "fileName": "15.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "15.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/mada/2.png",
           "title": "mada",
-          "fileName": "2.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "2.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/mada/3.png",
           "title": "mada",
-          "fileName": "3.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "3.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/mada/4.png",
           "title": "mada",
-          "fileName": "4.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "4.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/mada/5.png",
           "title": "mada",
-          "fileName": "5.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "5.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/mada/6.png",
           "title": "mada",
-          "fileName": "6.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "6.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/mada/7.png",
           "title": "mada",
-          "fileName": "7.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "7.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/mada/8.png",
           "title": "mada",
-          "fileName": "8.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "8.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/mada/9.png",
           "title": "mada",
-          "fileName": "9.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "9.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/mada/Untitled-1.png",
           "title": "Untitled 1",
-          "fileName": "Untitled-1.png",
-          "width": 3240,
-          "height": 4320
+          "fileName": "Untitled-1.png"
         }
       ]
     },
@@ -1344,90 +1076,68 @@
         "kind": "image",
         "src": "/portfolio/Manal%20Alhihi/website/Garden%20Art%20Rebranding%20(1).png",
         "title": "Garden Art Rebranding (1)",
-        "fileName": "Garden Art Rebranding (1).png",
-        "width": 1920,
-        "height": 1080
+        "fileName": "Garden Art Rebranding (1).png"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/Manal%20Alhihi/website/Garden%20Art%20Rebranding%20(1).png",
           "title": "Garden Art Rebranding (1)",
-          "fileName": "Garden Art Rebranding (1).png",
-          "width": 1920,
-          "height": 1080
+          "fileName": "Garden Art Rebranding (1).png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Manal%20Alhihi/website/Garden%20Art%20Rebranding.png",
           "title": "Garden Art Rebranding",
-          "fileName": "Garden Art Rebranding.png",
-          "width": 1920,
-          "height": 1080
+          "fileName": "Garden Art Rebranding.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Manal%20Alhihi/Manal_Alhihi_Logo_enhanced_cropped.png",
           "title": "Manal Alhihi Logo Enhanced Cropped",
-          "fileName": "Manal_Alhihi_Logo_enhanced_cropped.png",
-          "width": 1802,
-          "height": 742
+          "fileName": "Manal_Alhihi_Logo_enhanced_cropped.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Manal%20Alhihi/website/Screen%20Shot%202026-05-10%20at%209.37.53%20PM.png",
           "title": "Screen Shot 05 10 at 9.37.53 PM",
-          "fileName": "Screen Shot 2026-05-10 at 9.37.53 PM.png",
-          "width": 1440,
-          "height": 779
+          "fileName": "Screen Shot 2026-05-10 at 9.37.53 PM.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Manal%20Alhihi/website/t%20(1).png",
           "title": "t (1)",
-          "fileName": "t (1).png",
-          "width": 1890,
-          "height": 893
+          "fileName": "t (1).png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Manal%20Alhihi/website/t%20(2).png",
           "title": "t (2)",
-          "fileName": "t (2).png",
-          "width": 1883,
-          "height": 902
+          "fileName": "t (2).png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Manal%20Alhihi/website/t%20(3).png",
           "title": "t (3)",
-          "fileName": "t (3).png",
-          "width": 1889,
-          "height": 839
+          "fileName": "t (3).png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Manal%20Alhihi/website/t%20(4).png",
           "title": "t (4)",
-          "fileName": "t (4).png",
-          "width": 1858,
-          "height": 899
+          "fileName": "t (4).png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Manal%20Alhihi/website/t%20(5).png",
           "title": "t (5)",
-          "fileName": "t (5).png",
-          "width": 730,
-          "height": 880
+          "fileName": "t (5).png"
         },
         {
           "kind": "image",
           "src": "/portfolio/Manal%20Alhihi/website/t.png",
           "title": "t",
-          "fileName": "t.png",
-          "width": 471,
-          "height": 743
+          "fileName": "t.png"
         }
       ]
     },
@@ -1441,130 +1151,98 @@
         "kind": "image",
         "src": "/portfolio/nemo/1.png",
         "title": "nemo",
-        "fileName": "1.png",
-        "width": 1080,
-        "height": 1440
+        "fileName": "1.png"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/nemo/1.png",
           "title": "nemo",
-          "fileName": "1.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "1.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/nemo/10.png",
           "title": "nemo",
-          "fileName": "10.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "10.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/nemo/11.png",
           "title": "nemo",
-          "fileName": "11.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "11.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/nemo/12.png",
           "title": "nemo",
-          "fileName": "12.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "12.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/nemo/13.png",
           "title": "nemo",
-          "fileName": "13.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "13.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/nemo/14.png",
           "title": "nemo",
-          "fileName": "14.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "14.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/nemo/15.png",
           "title": "nemo",
-          "fileName": "15.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "15.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/nemo/2.png",
           "title": "nemo",
-          "fileName": "2.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "2.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/nemo/3.png",
           "title": "nemo",
-          "fileName": "3.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "3.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/nemo/4.png",
           "title": "nemo",
-          "fileName": "4.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "4.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/nemo/5.png",
           "title": "nemo",
-          "fileName": "5.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "5.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/nemo/6.png",
           "title": "nemo",
-          "fileName": "6.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "6.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/nemo/7.png",
           "title": "nemo",
-          "fileName": "7.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "7.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/nemo/8.png",
           "title": "nemo",
-          "fileName": "8.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "8.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/nemo/9.png",
           "title": "nemo",
-          "fileName": "9.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "9.png"
         }
       ]
     },
@@ -1578,58 +1256,44 @@
         "kind": "image",
         "src": "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%203FF13573-5AA7-4A74-A2AE-F803372B1F6A.jpg",
         "title": "Copy of 3FF13573 5AA7 4A74 A2AE F803372B1F6A",
-        "fileName": "Copy of 3FF13573-5AA7-4A74-A2AE-F803372B1F6A.jpg",
-        "width": 640,
-        "height": 1138
+        "fileName": "Copy of 3FF13573-5AA7-4A74-A2AE-F803372B1F6A.jpg"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%203FF13573-5AA7-4A74-A2AE-F803372B1F6A.jpg",
           "title": "Copy of 3FF13573 5AA7 4A74 A2AE F803372B1F6A",
-          "fileName": "Copy of 3FF13573-5AA7-4A74-A2AE-F803372B1F6A.jpg",
-          "width": 640,
-          "height": 1138
+          "fileName": "Copy of 3FF13573-5AA7-4A74-A2AE-F803372B1F6A.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%20copy_782345FE-9417-49AE-9EA1-AB5201D27643.jpg",
           "title": "Copy of Copy 782345FE 49AE 9EA1 AB5201D27643",
-          "fileName": "Copy of copy_782345FE-9417-49AE-9EA1-AB5201D27643.jpg",
-          "width": 720,
-          "height": 1280
+          "fileName": "Copy of copy_782345FE-9417-49AE-9EA1-AB5201D27643.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%20copy_E375AA6A-C91B-4272-B7A7-F4A7D62DDFA0.jpg",
           "title": "Copy of Copy E375AA6A C91B B7A7 F4A7D62DDFA0",
-          "fileName": "Copy of copy_E375AA6A-C91B-4272-B7A7-F4A7D62DDFA0.jpg",
-          "width": 720,
-          "height": 1280
+          "fileName": "Copy of copy_E375AA6A-C91B-4272-B7A7-F4A7D62DDFA0.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%20IMG_6750.jpg",
           "title": "Copy of IMG",
-          "fileName": "Copy of IMG_6750.jpg",
-          "width": 640,
-          "height": 1138
+          "fileName": "Copy of IMG_6750.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%20IMG_7151.jpg",
           "title": "Copy of IMG",
-          "fileName": "Copy of IMG_7151.jpg",
-          "width": 540,
-          "height": 960
+          "fileName": "Copy of IMG_7151.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/Padel%20Me%20Club/Inkspire%20clients%20logo%20(3).webp",
           "title": "Inkspire Clients Logo (3)",
-          "fileName": "Inkspire clients logo (3).webp",
-          "width": 500,
-          "height": 500
+          "fileName": "Inkspire clients logo (3).webp"
         },
         {
           "kind": "video",
@@ -1731,66 +1395,50 @@
         "kind": "image",
         "src": "/portfolio/SKN%20Clinics/14bde98f-8ae5-4a92-ab49-31f08a3dc4c5.jpg",
         "title": "14bde98f 8ae5 4a92 Ab49 31f08a3dc4c5",
-        "fileName": "14bde98f-8ae5-4a92-ab49-31f08a3dc4c5.jpg",
-        "width": 905,
-        "height": 602
+        "fileName": "14bde98f-8ae5-4a92-ab49-31f08a3dc4c5.jpg"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/SKN%20Clinics/14bde98f-8ae5-4a92-ab49-31f08a3dc4c5.jpg",
           "title": "14bde98f 8ae5 4a92 Ab49 31f08a3dc4c5",
-          "fileName": "14bde98f-8ae5-4a92-ab49-31f08a3dc4c5.jpg",
-          "width": 905,
-          "height": 602
+          "fileName": "14bde98f-8ae5-4a92-ab49-31f08a3dc4c5.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/SKN%20Clinics/5d478de9-69f7-4662-a7b1-6564f21fb436.jpg",
           "title": "5d478de9 69f7 A7b1 6564f21fb436",
-          "fileName": "5d478de9-69f7-4662-a7b1-6564f21fb436.jpg",
-          "width": 987,
-          "height": 660
+          "fileName": "5d478de9-69f7-4662-a7b1-6564f21fb436.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/SKN%20Clinics/8.webp",
           "title": "SKN Clinics",
-          "fileName": "8.webp",
-          "width": 500,
-          "height": 500
+          "fileName": "8.webp"
         },
         {
           "kind": "image",
           "src": "/portfolio/SKN%20Clinics/Skn2-%D9%85%D9%88%D8%B1%D9%81%D9%8A%D8%B3.jpg",
           "title": "Skn2",
-          "fileName": "Skn2-مورفيس.jpg",
-          "width": 720,
-          "height": 1280
+          "fileName": "Skn2-مورفيس.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/SKN%20Clinics/Skn3.jpg",
           "title": "Skn3",
-          "fileName": "Skn3.jpg",
-          "width": 720,
-          "height": 1280
+          "fileName": "Skn3.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/SKN%20Clinics/SKN7.jpg",
           "title": "SKN7",
-          "fileName": "SKN7.jpg",
-          "width": 720,
-          "height": 1280
+          "fileName": "SKN7.jpg"
         },
         {
           "kind": "image",
           "src": "/portfolio/SKN%20Clinics/%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9%201skn%20-%20%D8%B9%D8%A7%D9%85%20.jpg",
           "title": "1skn",
-          "fileName": "عيادة 1skn - عام .jpg",
-          "width": 720,
-          "height": 1280
+          "fileName": "عيادة 1skn - عام .jpg"
         },
         {
           "kind": "video",
@@ -1866,74 +1514,56 @@
         "kind": "image",
         "src": "/portfolio/yula/1.png",
         "title": "yula",
-        "fileName": "1.png",
-        "width": 1080,
-        "height": 1440
+        "fileName": "1.png"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/yula/1.png",
           "title": "yula",
-          "fileName": "1.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "1.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/yula/2.png",
           "title": "yula",
-          "fileName": "2.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "2.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/yula/3.png",
           "title": "yula",
-          "fileName": "3.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "3.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/yula/4.png",
           "title": "yula",
-          "fileName": "4.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "4.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/yula/5.png",
           "title": "yula",
-          "fileName": "5.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "5.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/yula/6.png",
           "title": "yula",
-          "fileName": "6.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "6.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/yula/7.png",
           "title": "yula",
-          "fileName": "7.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "7.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/yula/8.png",
           "title": "yula",
-          "fileName": "8.png",
-          "width": 1080,
-          "height": 1440
+          "fileName": "8.png"
         }
       ]
     },
@@ -1947,114 +1577,86 @@
         "kind": "image",
         "src": "/portfolio/ziena/spcial/1.png",
         "title": "ziena",
-        "fileName": "1.png",
-        "width": 1080,
-        "height": 1350
+        "fileName": "1.png"
       },
       "media": [
         {
           "kind": "image",
           "src": "/portfolio/ziena/spcial/1.png",
           "title": "ziena",
-          "fileName": "1.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "1.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ziena/spcial/10.png",
           "title": "ziena",
-          "fileName": "10.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "10.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ziena/spcial/11.png",
           "title": "ziena",
-          "fileName": "11.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "11.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ziena/spcial/12.png",
           "title": "ziena",
-          "fileName": "12.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "12.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ziena/spcial/2.png",
           "title": "ziena",
-          "fileName": "2.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "2.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ziena/spcial/3.png",
           "title": "ziena",
-          "fileName": "3.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "3.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ziena/spcial/4.png",
           "title": "ziena",
-          "fileName": "4.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "4.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ziena/spcial/5.png",
           "title": "ziena",
-          "fileName": "5.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "5.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ziena/spcial/6.png",
           "title": "ziena",
-          "fileName": "6.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "6.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ziena/spcial/7.png",
           "title": "ziena",
-          "fileName": "7.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "7.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ziena/spcial/8.png",
           "title": "ziena",
-          "fileName": "8.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "8.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ziena/spcial/9.png",
           "title": "ziena",
-          "fileName": "9.png",
-          "width": 1080,
-          "height": 1350
+          "fileName": "9.png"
         },
         {
           "kind": "image",
           "src": "/portfolio/ziena/spcial/%D9%85%D8%AC%D9%85%D8%B9.png",
           "title": "ziena",
-          "fileName": "مجمع.png",
-          "width": 3240,
-          "height": 5400
+          "fileName": "مجمع.png"
         }
       ]
     }
@@ -2064,113 +1666,85 @@
       "kind": "image",
       "src": "/works/4.webp",
       "title": "Work",
-      "fileName": "4.webp",
-      "width": 1920,
-      "height": 1080
+      "fileName": "4.webp"
     },
     {
       "kind": "image",
       "src": "/works/5.webp",
       "title": "Work",
-      "fileName": "5.webp",
-      "width": 1920,
-      "height": 1080
+      "fileName": "5.webp"
     },
     {
       "kind": "image",
       "src": "/works/6.webp",
       "title": "Work",
-      "fileName": "6.webp",
-      "width": 1920,
-      "height": 1080
+      "fileName": "6.webp"
     },
     {
       "kind": "image",
       "src": "/works/7.webp",
       "title": "Work",
-      "fileName": "7.webp",
-      "width": 1920,
-      "height": 1080
+      "fileName": "7.webp"
     },
     {
       "kind": "image",
       "src": "/works/8.webp",
       "title": "Work",
-      "fileName": "8.webp",
-      "width": 1920,
-      "height": 1080
+      "fileName": "8.webp"
     },
     {
       "kind": "image",
       "src": "/works/9%20(1).webp",
       "title": "9 (1)",
-      "fileName": "9 (1).webp",
-      "width": 1920,
-      "height": 1080
+      "fileName": "9 (1).webp"
     },
     {
       "kind": "image",
       "src": "/works/10.webp",
       "title": "Work",
-      "fileName": "10.webp",
-      "width": 1920,
-      "height": 1080
+      "fileName": "10.webp"
     },
     {
       "kind": "image",
       "src": "/works/11.webp",
       "title": "Work",
-      "fileName": "11.webp",
-      "width": 1920,
-      "height": 1080
+      "fileName": "11.webp"
     },
     {
       "kind": "image",
       "src": "/works/12.webp",
       "title": "Work",
-      "fileName": "12.webp",
-      "width": 1920,
-      "height": 1080
+      "fileName": "12.webp"
     },
     {
       "kind": "image",
       "src": "/works/14.webp",
       "title": "Work",
-      "fileName": "14.webp",
-      "width": 1920,
-      "height": 1080
+      "fileName": "14.webp"
     },
     {
       "kind": "image",
       "src": "/works/15.webp",
       "title": "Work",
-      "fileName": "15.webp",
-      "width": 1920,
-      "height": 1080
+      "fileName": "15.webp"
     },
     {
       "kind": "image",
       "src": "/works/16.webp",
       "title": "Work",
-      "fileName": "16.webp",
-      "width": 1920,
-      "height": 1080
+      "fileName": "16.webp"
     },
     {
       "kind": "image",
       "src": "/works/17.webp",
       "title": "Work",
-      "fileName": "17.webp",
-      "width": 1920,
-      "height": 1080
+      "fileName": "17.webp"
     },
     {
       "kind": "image",
       "src": "/works/18.webp",
       "title": "Work",
-      "fileName": "18.webp",
-      "width": 1920,
-      "height": 1080
+      "fileName": "18.webp"
     }
   ],
   "reels": [
@@ -2178,81 +1752,61 @@
       "kind": "image",
       "src": "/reels/3.webp",
       "title": "Testimonial",
-      "fileName": "3.webp",
-      "width": 1080,
-      "height": 1920
+      "fileName": "3.webp"
     },
     {
       "kind": "image",
       "src": "/reels/4.webp",
       "title": "Testimonial",
-      "fileName": "4.webp",
-      "width": 1080,
-      "height": 1920
+      "fileName": "4.webp"
     },
     {
       "kind": "image",
       "src": "/reels/5.webp",
       "title": "Testimonial",
-      "fileName": "5.webp",
-      "width": 1080,
-      "height": 1920
+      "fileName": "5.webp"
     },
     {
       "kind": "image",
       "src": "/reels/6.webp",
       "title": "Testimonial",
-      "fileName": "6.webp",
-      "width": 1080,
-      "height": 1920
+      "fileName": "6.webp"
     },
     {
       "kind": "image",
       "src": "/reels/7.webp",
       "title": "Testimonial",
-      "fileName": "7.webp",
-      "width": 1080,
-      "height": 1920
+      "fileName": "7.webp"
     },
     {
       "kind": "image",
       "src": "/reels/8.webp",
       "title": "Testimonial",
-      "fileName": "8.webp",
-      "width": 1080,
-      "height": 1920
+      "fileName": "8.webp"
     },
     {
       "kind": "image",
       "src": "/reels/9.webp",
       "title": "Testimonial",
-      "fileName": "9.webp",
-      "width": 1080,
-      "height": 1920
+      "fileName": "9.webp"
     },
     {
       "kind": "image",
       "src": "/reels/10.webp",
       "title": "Testimonial",
-      "fileName": "10.webp",
-      "width": 1080,
-      "height": 1920
+      "fileName": "10.webp"
     },
     {
       "kind": "image",
       "src": "/reels/11.webp",
       "title": "Testimonial",
-      "fileName": "11.webp",
-      "width": 1080,
-      "height": 1920
+      "fileName": "11.webp"
     },
     {
       "kind": "image",
       "src": "/reels/12.webp",
       "title": "Testimonial",
-      "fileName": "12.webp",
-      "width": 1080,
-      "height": 1920
+      "fileName": "12.webp"
     }
   ],
   "clients": [
@@ -2260,161 +1814,121 @@
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/1.webp",
       "title": "Client",
-      "fileName": "1.webp",
-      "width": 500,
-      "height": 500
+      "fileName": "1.webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/2.webp",
       "title": "Client",
-      "fileName": "2.webp",
-      "width": 500,
-      "height": 500
+      "fileName": "2.webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/3.webp",
       "title": "Client",
-      "fileName": "3.webp",
-      "width": 500,
-      "height": 500
+      "fileName": "3.webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/4%20(1).jpg",
       "title": "4 (1)",
-      "fileName": "4 (1).jpg",
-      "width": 1080,
-      "height": 1080
+      "fileName": "4 (1).jpg"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/4.webp",
       "title": "Client",
-      "fileName": "4.webp",
-      "width": 500,
-      "height": 500
+      "fileName": "4.webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/5.webp",
       "title": "Client",
-      "fileName": "5.webp",
-      "width": 500,
-      "height": 500
+      "fileName": "5.webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/6.webp",
       "title": "Client",
-      "fileName": "6.webp",
-      "width": 500,
-      "height": 500
+      "fileName": "6.webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/7.webp",
       "title": "Client",
-      "fileName": "7.webp",
-      "width": 500,
-      "height": 500
+      "fileName": "7.webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/8.webp",
       "title": "Client",
-      "fileName": "8.webp",
-      "width": 500,
-      "height": 500
+      "fileName": "8.webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/9%20(1).webp",
       "title": "9 (1)",
-      "fileName": "9 (1).webp",
-      "width": 500,
-      "height": 500
+      "fileName": "9 (1).webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/10%20(1).webp",
       "title": "10 (1)",
-      "fileName": "10 (1).webp",
-      "width": 500,
-      "height": 500
+      "fileName": "10 (1).webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/11.webp",
       "title": "Client",
-      "fileName": "11.webp",
-      "width": 500,
-      "height": 500
+      "fileName": "11.webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/12.webp",
       "title": "Client",
-      "fileName": "12.webp",
-      "width": 500,
-      "height": 500
+      "fileName": "12.webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/13.webp",
       "title": "Client",
-      "fileName": "13.webp",
-      "width": 500,
-      "height": 500
+      "fileName": "13.webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/14.webp",
       "title": "Client",
-      "fileName": "14.webp",
-      "width": 500,
-      "height": 500
+      "fileName": "14.webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/15%20(1).webp",
       "title": "15 (1)",
-      "fileName": "15 (1).webp",
-      "width": 500,
-      "height": 500
+      "fileName": "15 (1).webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/16.webp",
       "title": "Client",
-      "fileName": "16.webp",
-      "width": 500,
-      "height": 500
+      "fileName": "16.webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/17%20(2).webp",
       "title": "17 (2)",
-      "fileName": "17 (2).webp",
-      "width": 500,
-      "height": 500
+      "fileName": "17 (2).webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/18%20(2).webp",
       "title": "18 (2)",
-      "fileName": "18 (2).webp",
-      "width": 500,
-      "height": 500
+      "fileName": "18 (2).webp"
     },
     {
       "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/19%20(2).webp",
       "title": "19 (2)",
-      "fileName": "19 (2).webp",
-      "width": 500,
-      "height": 500
+      "fileName": "19 (2).webp"
     }
   ],
   "stats": {

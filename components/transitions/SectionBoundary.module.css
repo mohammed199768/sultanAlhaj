@@ -1,0 +1,86 @@
+.marker {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: 90; /* above header (70), below route overlay (120) */
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.panelA,
+.panelB {
+  position: absolute;
+  inset: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.panelA {
+  background: var(--boundary-edge, var(--champagne));
+}
+
+.panelB {
+  background: var(--boundary-panel, var(--ink));
+}
+
+.strips {
+  position: absolute;
+  inset: 0;
+  display: flex;
+}
+
+.strips[data-orientation="vertical"] {
+  flex-direction: row;
+}
+
+.strips[data-orientation="horizontal"] {
+  flex-direction: column;
+}
+
+.strip {
+  flex: 1;
+  background: var(--boundary-panel, var(--ink));
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Champagne hairline used by the vertical-mask preset. */
+.line {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 50%;
+  height: 2px;
+  background: var(--boundary-edge, var(--champagne));
+  visibility: hidden;
+  opacity: 0;
+}
+
+.wordWrap {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.word {
+  font-family: var(--font-unbounded), sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.4rem, 10vw, 8.5rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--boundary-edge, var(--champagne));
+  visibility: hidden;
+  opacity: 0;
+}

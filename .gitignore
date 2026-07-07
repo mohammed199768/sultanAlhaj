@@ -1,0 +1,53 @@
+# dependencies
+node_modules/
+node_modules_broken/
+
+# Next.js / build output
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+next-env.d.ts
+
+# logs and local tool output
+*.log
+next-dev*.log
+.playwright-mcp/
+
+# local environment
+.env
+.env.*
+!.env.example
+.vercel/
+.turbo/
+
+# OS metadata
+.DS_Store
+._*
+desktop.ini
+Thumbs.db
+__MACOSX/
+
+# reference repos and raw source material
+inspiring repos/
+Unbounded/
+Tinos,Unbounded/
+cv.txt
+brand kit.jpeg
+clients-orbit-desktop.png
+
+# heavy portfolio media; keep locally or upload to external storage
+public/portfolio/**/*.mp4
+public/portfolio/**/*.MP4
+public/portfolio/**/*.mov
+public/portfolio/**/*.MOV
+public/portfolio/**/*.pdf
+public/portfolio/**/*.PDF
+
+# one-off local backups/history
+package-lock.broken.json
+refactor-history.bundle
+PLAN.md
+PROJECT_CONTROL.md
+UPGRADE_NOTES.md

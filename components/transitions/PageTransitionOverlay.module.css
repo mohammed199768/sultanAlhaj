@@ -1,0 +1,111 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  overflow: hidden;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  color: #cdd5db;
+}
+
+.bronze,
+.navy,
+.svgVeil {
+  position: absolute;
+  inset: 0;
+}
+
+.bronze {
+  z-index: 1;
+  background:
+    linear-gradient(120deg, rgba(166, 136, 104, 0.98), rgba(75, 99, 130, 0.92)),
+    #a68868;
+}
+
+.navy {
+  z-index: 2;
+  background:
+    radial-gradient(circle at 78% 22%, rgba(227, 195, 157, 0.16), transparent 28rem),
+    radial-gradient(circle at 20% 78%, rgba(75, 99, 130, 0.26), transparent 26rem),
+    #071739;
+}
+
+.svgVeil {
+  z-index: 3;
+  color: rgba(227, 195, 157, 0.16);
+  transform-origin: center bottom;
+}
+
+.content {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: grid;
+  place-items: center;
+  padding: clamp(1.25rem, 5vw, 6rem);
+  text-align: center;
+}
+
+.word {
+  margin: 0;
+  color: rgba(205, 213, 219, 0.08);
+  font-family: var(--font-unbounded), system-ui, sans-serif;
+  font-size: clamp(3.4rem, 14vw, 13rem);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.caption {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(2rem, 7vh, 5rem);
+  transform: translateX(-50%);
+  color: rgba(227, 195, 157, 0.82);
+  font-family: var(--font-unbounded), system-ui, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.line {
+  position: absolute;
+  left: clamp(1.25rem, 5vw, 6rem);
+  right: clamp(1.25rem, 5vw, 6rem);
+  top: 50%;
+  z-index: 5;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  background: linear-gradient(90deg, transparent, #e3c39d, transparent);
+  box-shadow: 0 0 1.5rem rgba(227, 195, 157, 0.48);
+}
+
+.edge {
+  position: absolute;
+  inset: 0 auto 0 0;
+  z-index: 5;
+  width: 3px;
+  transform: scaleY(0);
+  transform-origin: top center;
+  background: #e3c39d;
+  box-shadow: 0 0 2rem rgba(227, 195, 157, 0.42);
+}
+
+@media (max-width: 767px) {
+  .word {
+    font-size: clamp(3rem, 20vw, 5.8rem);
+    white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .line,
+  .edge {
+    display: none;
+  }
+}

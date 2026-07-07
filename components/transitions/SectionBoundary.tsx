@@ -1,0 +1,116 @@
+"use client";
+
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import { gsap, ScrollTrigger, registerGsap } from "@/lib/motion/gsap";
+import {
+  prefersReducedMotion,
+  COARSE_POINTER_QUERY,
+} from "@/lib/motion/reducedMotion";
+import {
+  buildBoundaryTimeline,
+  tryAcquireBoundaryLock,
+  releaseBoundaryLock,
+  type BoundaryEls,
+} from "@/lib/motion/sectionTransitions";
+import { sectionBoundaries, type BoundaryName } from "@/lib/motion/transitionPresets";
+import styles from "./SectionBoundary.module.css";
+
+/**
+ * Cinematic boundary between two homepage sections.
+ * Renders a 1px scroll marker plus a fixed overlay; crossing the marker
+ * plays a Codrops-style cover→reveal wipe (direction-aware, one at a time).
+ * Reduced motion: fully disabled. Never intercepts pointer events or scroll.
+ */
+export default function SectionBoundary({ name }: { name: BoundaryName }) {
+  const config = sectionBoundaries[name];
+  const markerRef = useRef<HTMLDivElement>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(
+    () => {
+      registerGsap();
+      if (prefersReducedMotion()) return;
+
+      const marker = markerRef.current;
+      const root = rootRef.current;
+      if (!marker || !root) return;
+
+      const els: BoundaryEls = {
+        root,
+        panelA: root.querySelector<HTMLElement>(`.${styles.panelA}`)!,
+        panelB: root.querySelector<HTMLElement>(`.${styles.panelB}`)!,
+        strips: Array.from(root.querySelectorAll<HTMLElement>(`.${styles.strip}`)),
+        line: root.querySelector<HTMLElement>(`.${styles.line}`)!,
+        wordWrap: root.querySelector<HTMLElement>(`.${styles.wordWrap}`),
+        word: root.querySelector<HTMLElement>(`.${styles.word}`),
+      };
+
+      const simplified =
+        window.matchMedia(COARSE_POINTER_QUERY).matches || window.innerWidth < 768;
+
+      let timeline: gsap.core.Timeline | null = null;
+
+      const play = (dir: 1 | -1) => {
+        if (!tryAcquireBoundaryLock()) return;
+        timeline?.kill();
+        // Builder's onComplete hides the overlay and releases the lock.
+        timeline = buildBoundaryTimeline(els, config, dir, simplified);
+        timeline.play(0);
+      };
+
+      // Later start ("top 70%") so the cover begins before child reveals,
+      // not on top of them. Individual boundaries may override (hero-about).
+      const trigger = ScrollTrigger.create({
+        trigger: marker,
+        start: ("start" in config ? config.start : undefined) ?? "top 70%",
+        onEnter: () => play(1),
+        onLeaveBack: () => play(-1),
+      });
+
+      return () => {
+        trigger.kill();
+        if (timeline?.isActive()) releaseBoundaryLock();
+        timeline?.kill();
+      };
+    },
+    { scope: markerRef, dependencies: [name] }
+  );
+
+  return (
+    <div
+      ref={markerRef}
+      className={styles.marker}
+      data-section-boundary={name}
+      aria-hidden="true"
+    >
+      <div
+        ref={rootRef}
+        className={styles.root}
+        style={
+          {
+            "--boundary-panel": config.panel,
+            "--boundary-edge": config.edge,
+          } as React.CSSProperties
+        }
+      >
+        <div className={styles.panelA} />
+        <div className={styles.panelB} />
+        <div
+          className={styles.strips}
+          data-orientation={"orientation" in config ? config.orientation : "vertical"}
+        >
+          {Array.from({ length: 5 }, (_, i) => (
+            <span key={i} className={styles.strip} />
+          ))}
+        </div>
+        <div className={styles.line} />
+        {"word" in config && config.word ? (
+          <div className={styles.wordWrap}>
+            <span className={styles.word}>{config.word}</span>
+          </div>
+        ) : null}
+      </div>
+    </div>
+  );
+}

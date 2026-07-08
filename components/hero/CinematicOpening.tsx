@@ -212,25 +212,21 @@ export default function CinematicOpening({ previews }: { previews: MediaItem[] }
             { yPercent: 0, autoAlpha: 1, stagger: 0.016, duration: 0.16, ease: "power3.out" },
             0.54
           )
-          // Exit beat inside the pad (0.82–1.0): the scene dims and resolves
-          // into flat navy, the chrome recedes, then an editorial aperture
-          // opens from the lower center and the capabilities board edge
-          // emerges from below — the hero opens INTO the next section
-          // instead of fading out and pausing. Text stays above (z-10).
+          // Handoff beat inside the pad (0.82–1.0): the cylinder settles and
+          // dims, the scene collapses into a navy depth layer (.co-exit),
+          // then a soft aperture (.co-mask, lg+) opens from the lower center.
+          // Its transparent center sits over the exit layer's navy-600 floor —
+          // the same color the page.tsx bridge starts from — so the seam into
+          // Capabilities is continuous. The heading's own Reveal completes
+          // the emergence once the section scrolls in. Text stays above.
           .to(".co-exit", { autoAlpha: 1, duration: 0.14, ease: "power1.in" }, 0.82)
           .to(".co-canvas", { opacity: 0.4, duration: 0.14, ease: "power1.in" }, 0.82)
           .to(".co-rail", { autoAlpha: 0, duration: 0.06 }, 0.84)
           .fromTo(
-            ".co-aperture",
-            { autoAlpha: 0, scale: 1.06 },
-            { autoAlpha: 1, scale: 1, duration: 0.14, ease: "power1.inOut" },
+            ".co-mask",
+            { autoAlpha: 0, scale: 0.92 },
+            { autoAlpha: 1, scale: 1, duration: 0.16, ease: "power2.out" },
             0.84
-          )
-          .fromTo(
-            ".co-board-edge",
-            { autoAlpha: 0, yPercent: 60 },
-            { autoAlpha: 1, yPercent: 0, duration: 0.12, ease: "power2.out" },
-            0.88
           )
           // Pad so the timeline spans the full scrub range.
           .to({}, { duration: 0.3 }, 0.7);
@@ -274,8 +270,9 @@ export default function CinematicOpening({ previews }: { previews: MediaItem[] }
         <canvas ref={canvasRef} className="co-canvas absolute inset-0 h-full w-full" />
 
         {/* Scrim + vignette keep panels cinematic and text readable.
-            Mobile gets a heavier scrim: text priority over the 3D layer. */}
-        <div className="pointer-events-none absolute inset-0 bg-navy-900/50 md:bg-navy-900/30" />
+            Below lg the scrim is heavier: text priority over the 3D layer
+            and a simpler, stabler handoff. */}
+        <div className="pointer-events-none absolute inset-0 bg-navy-900/60 lg:bg-navy-900/30" />
         <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-navy-900/70 to-transparent" />
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-navy-900/80 to-transparent" />
 
@@ -284,24 +281,19 @@ export default function CinematicOpening({ previews }: { previews: MediaItem[] }
             the same scrub timeline inside the existing 0.7–1.0 pad. */}
         <div className="co-exit pointer-events-none absolute inset-0 z-[5] bg-gradient-to-b from-navy-600/40 via-navy-600/75 to-navy-600 opacity-0" />
 
-        {/* Board reveal — aperture + capabilities-board edge the chapter
-            resolves into (0.82–1.0). Decorative only; gradients use token
-            values (navy-500 / steel-900 / navy-600). Mobile keeps the plain
-            scrim: the radial aperture is md+ only, the edge is simplified. */}
-        <div aria-hidden className="pointer-events-none absolute inset-0 z-[6]">
-          <div
-            className="co-aperture absolute inset-0 hidden opacity-0 md:block"
-            style={{
-              background:
-                "radial-gradient(120% 90% at 50% 92%, rgba(50, 68, 102, 0.55) 0%, rgba(24, 40, 60, 0.35) 34%, rgba(7, 23, 57, 0) 68%)",
-            }}
-          />
-          <div className="co-board-edge absolute inset-x-[var(--shell-x)] bottom-0 h-[12svh] rounded-t-3xl border border-b-0 border-steel-400/25 bg-steel-900/40 opacity-0 md:h-[18svh]">
-            <p className="mt-5 text-center font-display text-[0.6rem] uppercase tracking-[0.3em] text-bronze-600 md:mt-6">
-              03 — Capabilities
-            </p>
-          </div>
-        </div>
+        {/* Aperture mask (lg+ only) — a soft opening from the lower center
+            that the chapter resolves into (0.84–1.0). Its transparent core
+            reveals the exit layer's navy-600 floor; the dark ring uses
+            navy-900 → navy-600 token values. Below lg the handoff is the
+            plain fade + gradient (exit layer + page bridge) only. */}
+        <div
+          aria-hidden
+          className="co-mask pointer-events-none absolute inset-x-0 bottom-0 z-[6] hidden h-[42svh] origin-bottom opacity-0 lg:block"
+          style={{
+            background:
+              "radial-gradient(70% 90% at 50% 100%, rgba(7, 23, 57, 0) 0%, rgba(7, 23, 57, 0) 38%, rgba(0, 4, 25, 0.85) 72%, #071739 100%)",
+          }}
+        />
 
         {/* Text layer */}
         <div className="pointer-events-none absolute inset-0 z-10">

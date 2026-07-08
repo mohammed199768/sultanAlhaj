@@ -212,12 +212,26 @@ export default function CinematicOpening({ previews }: { previews: MediaItem[] }
             { yPercent: 0, autoAlpha: 1, stagger: 0.016, duration: 0.16, ease: "power3.out" },
             0.54
           )
-          // Exit beat inside the pad: the scene resolves into flat navy and
-          // the chrome (rail) recedes so the next section reads as a
-          // continuation. Text stays fully visible (layered above the exit).
-          .to(".co-exit", { autoAlpha: 1, duration: 0.14, ease: "power1.in" }, 0.84)
-          .to(".co-canvas", { opacity: 0.45, duration: 0.14, ease: "power1.in" }, 0.84)
-          .to(".co-rail", { autoAlpha: 0, duration: 0.08 }, 0.9)
+          // Exit beat inside the pad (0.82–1.0): the scene dims and resolves
+          // into flat navy, the chrome recedes, then an editorial aperture
+          // opens from the lower center and the capabilities board edge
+          // emerges from below — the hero opens INTO the next section
+          // instead of fading out and pausing. Text stays above (z-10).
+          .to(".co-exit", { autoAlpha: 1, duration: 0.14, ease: "power1.in" }, 0.82)
+          .to(".co-canvas", { opacity: 0.4, duration: 0.14, ease: "power1.in" }, 0.82)
+          .to(".co-rail", { autoAlpha: 0, duration: 0.06 }, 0.84)
+          .fromTo(
+            ".co-aperture",
+            { autoAlpha: 0, scale: 1.06 },
+            { autoAlpha: 1, scale: 1, duration: 0.14, ease: "power1.inOut" },
+            0.84
+          )
+          .fromTo(
+            ".co-board-edge",
+            { autoAlpha: 0, yPercent: 60 },
+            { autoAlpha: 1, yPercent: 0, duration: 0.12, ease: "power2.out" },
+            0.88
+          )
           // Pad so the timeline spans the full scrub range.
           .to({}, { duration: 0.3 }, 0.7);
       }, rootEl);
@@ -269,6 +283,25 @@ export default function CinematicOpening({ previews }: { previews: MediaItem[] }
             so the next section reads as a continuation, not a cut. Driven by
             the same scrub timeline inside the existing 0.7–1.0 pad. */}
         <div className="co-exit pointer-events-none absolute inset-0 z-[5] bg-gradient-to-b from-navy-600/40 via-navy-600/75 to-navy-600 opacity-0" />
+
+        {/* Board reveal — aperture + capabilities-board edge the chapter
+            resolves into (0.82–1.0). Decorative only; gradients use token
+            values (navy-500 / steel-900 / navy-600). Mobile keeps the plain
+            scrim: the radial aperture is md+ only, the edge is simplified. */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 z-[6]">
+          <div
+            className="co-aperture absolute inset-0 hidden opacity-0 md:block"
+            style={{
+              background:
+                "radial-gradient(120% 90% at 50% 92%, rgba(50, 68, 102, 0.55) 0%, rgba(24, 40, 60, 0.35) 34%, rgba(7, 23, 57, 0) 68%)",
+            }}
+          />
+          <div className="co-board-edge absolute inset-x-[var(--shell-x)] bottom-0 h-[12svh] rounded-t-3xl border border-b-0 border-steel-400/25 bg-steel-900/40 opacity-0 md:h-[18svh]">
+            <p className="mt-5 text-center font-display text-[0.6rem] uppercase tracking-[0.3em] text-bronze-600 md:mt-6">
+              03 — Capabilities
+            </p>
+          </div>
+        </div>
 
         {/* Text layer */}
         <div className="pointer-events-none absolute inset-0 z-10">

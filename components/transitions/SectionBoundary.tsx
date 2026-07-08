@@ -46,33 +46,43 @@ export default function SectionBoundary({ name }: { name: BoundaryName }) {
         word: root.querySelector<HTMLElement>(`.${styles.word}`),
       };
 
-      const simplified =
-        window.matchMedia(COARSE_POINTER_QUERY).matches || window.innerWidth < 768;
+      // Boundaries are desktop-only (1024px+). Below lg the overlay stays
+      // hidden and no ScrollTrigger/timeline/lock ever exists — the page
+      // scrolls naturally section to section. gsap.matchMedia re-runs this
+      // setup on resize across the threshold, so no reload is needed.
+      const mm = gsap.matchMedia();
 
-      let timeline: gsap.core.Timeline | null = null;
+      mm.add("(min-width: 1024px)", () => {
+        // Coarse-pointer desktops (touch laptops) keep the lighter wipe.
+        const simplified = window.matchMedia(COARSE_POINTER_QUERY).matches;
 
-      const play = (dir: 1 | -1) => {
-        if (!tryAcquireBoundaryLock()) return;
-        timeline?.kill();
-        // Builder's onComplete hides the overlay and releases the lock.
-        timeline = buildBoundaryTimeline(els, config, dir, simplified);
-        timeline.play(0);
-      };
+        let timeline: gsap.core.Timeline | null = null;
 
-      // Later start ("top 70%") so the cover begins before child reveals,
-      // not on top of them. Individual boundaries may override (hero-about).
-      const trigger = ScrollTrigger.create({
-        trigger: marker,
-        start: ("start" in config ? config.start : undefined) ?? "top 70%",
-        onEnter: () => play(1),
-        onLeaveBack: () => play(-1),
+        const play = (dir: 1 | -1) => {
+          if (!tryAcquireBoundaryLock()) return;
+          timeline?.kill();
+          // Builder's onComplete hides the overlay and releases the lock.
+          timeline = buildBoundaryTimeline(els, config, dir, simplified);
+          timeline.play(0);
+        };
+
+        // Later start ("top 70%") so the cover begins before child reveals,
+        // not on top of them. Individual boundaries may override (hero-about).
+        const trigger = ScrollTrigger.create({
+          trigger: marker,
+          start: ("start" in config ? config.start : undefined) ?? "top 70%",
+          onEnter: () => play(1),
+          onLeaveBack: () => play(-1),
+        });
+
+        return () => {
+          trigger.kill();
+          if (timeline?.isActive()) releaseBoundaryLock();
+          timeline?.kill();
+        };
       });
 
-      return () => {
-        trigger.kill();
-        if (timeline?.isActive()) releaseBoundaryLock();
-        timeline?.kill();
-      };
+      return () => mm.revert();
     },
     { scope: markerRef, dependencies: [name] }
   );

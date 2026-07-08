@@ -11,7 +11,10 @@
  * Detail text crossfades separately. Prev/next cycle; cards are buttons.
  *
  * Reduced motion: no Flip, instant active switch.
- * Mobile: horizontal snap cards, no spatial reflow (no md spans).
+ * Mobile (<768): horizontal snap cards, no spatial reflow.
+ * Tablet (768–1023): stable 2-column grid, tap updates the detail panel —
+ * no spans, no dense flow, no Flip.
+ * Desktop (1024+): full board with featured 2×2 slot + Flip.
  */
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -117,11 +120,12 @@ export default function CapabilitiesFlow() {
   const activate = (index: number) => {
     if (index === active || isAnimatingRef.current) return;
     const root = flowRoot.current;
-    // Skip Flip under reduced motion, during heavy transitions, and on mobile:
-    // below md the board is a flex snap-scroller with no spatial reflow, and
-    // Flip's `absolute: true` would yank cards out of flow mid-animation.
+    // Skip Flip under reduced motion, during heavy transitions, and below lg:
+    // <768 the board is a flex snap-scroller and 768–1023 a static 2-column
+    // grid — neither has spatial reflow, and Flip's `absolute: true` would
+    // yank cards out of flow mid-animation.
     const spatial =
-      typeof window !== "undefined" && window.matchMedia("(min-width: 768px)").matches;
+      typeof window !== "undefined" && window.matchMedia("(min-width: 1024px)").matches;
     if (!reduced && spatial && !isHeavyTransitionActive() && root && flipRegistered) {
       flipStateRef.current = Flip.getState(
         root.querySelectorAll("[data-flip-card]"),
@@ -188,7 +192,7 @@ export default function CapabilitiesFlow() {
       {/* Strategy board */}
       <div
         data-slot="main-grid"
-        className="flex snap-x snap-mandatory gap-3 overflow-x-auto pb-4 md:grid md:snap-none md:grid-cols-3 md:auto-rows-[minmax(8.5rem,auto)] md:grid-flow-dense md:overflow-visible md:pb-0 lg:col-span-8"
+        className="flex snap-x snap-mandatory gap-3 overflow-x-auto pb-4 md:grid md:snap-none md:grid-cols-2 md:gap-4 md:overflow-visible md:pb-0 lg:col-span-8 lg:grid-cols-3 lg:auto-rows-[minmax(8.5rem,auto)] lg:grid-flow-dense lg:gap-3"
       >
         {FLOW_CAPS.map((c, i) => {
           const isActive = i === active;
@@ -205,7 +209,8 @@ export default function CapabilitiesFlow() {
                 "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-champagne-600",
                 isActive
                   ? // Light active panel: navy/bronze text only (never champagne on light).
-                    "border-mist-300/60 bg-mist-300 md:col-span-2 md:row-span-2"
+                    // Featured 2×2 slot only on the lg+ board (Flip range).
+                    "border-mist-300/60 bg-mist-300 lg:col-span-2 lg:row-span-2"
                   : "border-steel-400/25 bg-ink transition-colors duration-500 hover:bg-surface-2"
               )}
             >

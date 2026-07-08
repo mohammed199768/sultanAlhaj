@@ -32,7 +32,10 @@ export default function Menu({
     <AnimatePresence>
       {open && (
         <motion.div
-          className="fixed inset-0 z-[65] flex flex-col overflow-y-auto overflow-x-hidden bg-ink"
+          // data-lenis-prevent: Lenis preventDefaults wheel globally; without
+          // this the menu's own scroll never receives wheel input on desktop.
+          data-lenis-prevent
+          className="fixed inset-0 z-[65] flex flex-col overflow-y-auto overflow-x-hidden overscroll-contain bg-ink"
           initial={{ clipPath: "inset(0 0 100% 0)" }}
           animate={{ clipPath: "inset(0 0 0% 0)" }}
           exit={{ clipPath: "inset(0 0 100% 0)" }}
@@ -45,7 +48,10 @@ export default function Menu({
           <div className="pointer-events-none absolute -right-40 top-0 h-[40rem] w-[40rem] rounded-full bg-bronze/10 blur-[120px]" />
           <div className="pointer-events-none absolute -left-40 bottom-0 h-[36rem] w-[36rem] rounded-full bg-steel/10 blur-[120px]" />
 
-          <div className="shell flex min-h-full flex-1 flex-col justify-center py-28">
+          {/* my-auto centers the list when it fits the viewport but lets it
+              scroll naturally from the top when it overflows — justify-center
+              on an overflowing flex column made the top links unreachable. */}
+          <div className="shell my-auto w-full py-24 md:py-28">
             <nav aria-label="Primary">
               <ul className="flex flex-col">
                 {navLinks.map((link, i) => (

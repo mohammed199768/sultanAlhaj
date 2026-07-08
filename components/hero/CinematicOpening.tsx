@@ -64,16 +64,16 @@ function Phase2Content() {
         <br />
         <span className="text-champagne">Brands that convert.</span>
       </h2>
-      <p className="co-fade lede mx-auto mt-6 max-w-2xl">{PHASE_2_BODY}</p>
-      <div className="co-fade mx-auto mt-10 grid max-w-xl grid-cols-3 gap-6 border-t border-steel-400/25 pt-6">
+      <p className="co-fade lede mx-auto mt-5 max-w-2xl md:mt-6">{PHASE_2_BODY}</p>
+      <div className="co-fade mx-auto mt-7 grid max-w-xl grid-cols-3 gap-4 border-t border-steel-400/25 pt-5 md:mt-10 md:gap-6 md:pt-6">
         {stats.map((s) => (
           <div key={s.label}>
-            <p className="font-display text-2xl font-bold text-mist-300 md:text-4xl">{s.value}</p>
-            <p className="mt-2 text-[0.65rem] uppercase tracking-[0.2em] text-haze/60">{s.label}</p>
+            <p className="font-display text-xl font-bold text-mist-300 sm:text-2xl md:text-4xl">{s.value}</p>
+            <p className="mt-2 text-[0.6rem] uppercase tracking-[0.15em] text-haze/60 sm:text-[0.65rem] sm:tracking-[0.2em]">{s.label}</p>
           </div>
         ))}
       </div>
-      <div className="co-fade pointer-events-auto mt-10 flex flex-wrap justify-center gap-4">
+      <div className="co-fade pointer-events-auto mt-7 flex flex-wrap justify-center gap-3 md:mt-10 md:gap-4">
         <TransitionLink href="#work" intent="section" label="WORK" className="btn-primary">
           View Work
         </TransitionLink>
@@ -106,7 +106,7 @@ function StaticOpening({ images }: { images: MediaItem[] }) {
           </div>
         )}
       </div>
-      <div className="shell pb-28 text-center">
+      <div id="about" className="shell scroll-mt-24 pb-28 text-center">
         <Phase2Content />
       </div>
     </section>
@@ -212,6 +212,12 @@ export default function CinematicOpening({ previews }: { previews: MediaItem[] }
             { yPercent: 0, autoAlpha: 1, stagger: 0.016, duration: 0.16, ease: "power3.out" },
             0.54
           )
+          // Exit beat inside the pad: the scene resolves into flat navy and
+          // the chrome (rail) recedes so the next section reads as a
+          // continuation. Text stays fully visible (layered above the exit).
+          .to(".co-exit", { autoAlpha: 1, duration: 0.14, ease: "power1.in" }, 0.84)
+          .to(".co-canvas", { opacity: 0.45, duration: 0.14, ease: "power1.in" }, 0.84)
+          .to(".co-rail", { autoAlpha: 0, duration: 0.08 }, 0.9)
           // Pad so the timeline spans the full scrub range.
           .to({}, { duration: 0.3 }, 0.7);
       }, rootEl);
@@ -241,14 +247,28 @@ export default function CinematicOpening({ previews }: { previews: MediaItem[] }
   if (reduced === true) return <StaticOpening images={images} />;
 
   return (
-    <section id="hero" ref={root} className="relative h-[240svh] bg-navy-600">
+    <section id="hero" ref={root} className="relative h-[200svh] bg-navy-600 md:h-[240svh]">
+      {/* Anchor for the nav's "About" link — lands mid-chapter where phase 2
+          (the about beat) is fully resolved. Positioned in scroll space, not
+          the sticky viewport, so Lenis can target it. */}
+      <div
+        id="about"
+        aria-hidden
+        className="pointer-events-none absolute left-0 top-[31%] h-px w-px md:top-[36%]"
+      />
       <div ref={viewportRef} className="sticky top-0 h-svh overflow-hidden">
-        <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" />
+        <canvas ref={canvasRef} className="co-canvas absolute inset-0 h-full w-full" />
 
-        {/* Scrim + vignette keep panels cinematic and text readable. */}
-        <div className="pointer-events-none absolute inset-0 bg-navy-900/30" />
+        {/* Scrim + vignette keep panels cinematic and text readable.
+            Mobile gets a heavier scrim: text priority over the 3D layer. */}
+        <div className="pointer-events-none absolute inset-0 bg-navy-900/50 md:bg-navy-900/30" />
         <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-navy-900/70 to-transparent" />
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-navy-900/80 to-transparent" />
+
+        {/* Exit layer — resolves the scene into flat navy as the chapter ends
+            so the next section reads as a continuation, not a cut. Driven by
+            the same scrub timeline inside the existing 0.7–1.0 pad. */}
+        <div className="co-exit pointer-events-none absolute inset-0 z-[5] bg-gradient-to-b from-navy-600/40 via-navy-600/75 to-navy-600 opacity-0" />
 
         {/* Text layer */}
         <div className="pointer-events-none absolute inset-0 z-10">
@@ -263,7 +283,7 @@ export default function CinematicOpening({ previews }: { previews: MediaItem[] }
         </div>
 
         {/* Restrained progress rail */}
-        <div className="pointer-events-none absolute bottom-[9svh] left-1/2 z-20 w-[240px] -translate-x-1/2">
+        <div className="co-rail pointer-events-none absolute bottom-[9svh] left-1/2 z-20 w-[min(240px,70vw)] -translate-x-1/2">
           <div className="relative h-px w-full bg-mist/10">
             <div
               ref={barRef}

@@ -137,6 +137,32 @@
     transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Indeterminate sweep for the route-segment loading rail. */
+@keyframes loading-rail {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
+}
+.loading-rail {
+  animation: loading-rail 1.2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+/* Route click-feedback hairline: eases toward 80% and holds until cleared. */
+@keyframes route-rail {
+  from {
+    width: 8%;
+  }
+  to {
+    width: 80%;
+  }
+}
+.route-rail {
+  animation: route-rail 2.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
 @keyframes storybar {
   from {
     width: 0%;

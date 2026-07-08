@@ -19,6 +19,12 @@ export default function HomePage() {
           The phase handoff inside the chapter is the transition between the
           first two content beats; other boundaries below are untouched. */}
       <CinematicOpening previews={previews} />
+      {/* Bridge: the chapter's navy exit dissolves into the capabilities
+          panel instead of hard-cutting. Local element, no scroll logic. */}
+      <div
+        aria-hidden
+        className="pointer-events-none relative z-[5] -mb-20 h-20 bg-gradient-to-b from-navy-600 via-navy-600/70 to-transparent md:-mb-32 md:h-32"
+      />
       <Capabilities />
       <ExperienceTimeline />
       <SectionBoundary name="experience-work" />

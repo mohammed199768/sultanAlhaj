@@ -6,6 +6,8 @@ import Chrome from "@/components/layout/Chrome";
 import Footer from "@/components/layout/Footer";
 import TransitionProvider from "@/components/transitions/TransitionProvider";
 import RouteTransitionLayer from "@/components/transitions/RouteTransitionLayer";
+import SiteBootLoader from "@/components/system/SiteBootLoader";
+import RouteLoadingIndicator from "@/components/system/RouteLoadingIndicator";
 import { profile } from "@/lib/data/profile";
 
 const siteUrl = "https://sultanshadi.com";
@@ -75,8 +77,10 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <SiteBootLoader />
         <SmoothScrollProvider>
           <TransitionProvider>
+            <RouteLoadingIndicator />
             <Chrome />
             <RouteTransitionLayer>
               <main id="main-content">{children}</main>

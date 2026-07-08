@@ -46,7 +46,9 @@ export default function SmoothScrollProvider({
       const el = document.querySelector(id);
       if (el) {
         e.preventDefault();
-        lenis.scrollTo(el as HTMLElement, { offset: -20 });
+        // -96 clears the fixed 80px header (matches sections' scroll-mt-24,
+        // which Lenis does not read).
+        lenis.scrollTo(el as HTMLElement, { offset: -96 });
       }
     };
     document.addEventListener("click", onClick);
@@ -55,7 +57,7 @@ export default function SmoothScrollProvider({
       const target = (e as CustomEvent<{ target?: string }>).detail?.target;
       if (!target) return;
       const el = document.querySelector(target);
-      if (el) lenis.scrollTo(el as HTMLElement, { offset: -20, immediate: true });
+      if (el) lenis.scrollTo(el as HTMLElement, { offset: -96, immediate: true });
     };
     window.addEventListener("sultan:scroll-to", onTransitionScroll);
 

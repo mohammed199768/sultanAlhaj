@@ -32,7 +32,7 @@ export default function Menu({
     <AnimatePresence>
       {open && (
         <motion.div
-          className="fixed inset-0 z-[65] flex flex-col overflow-y-auto bg-ink"
+          className="fixed inset-0 z-[65] flex flex-col overflow-y-auto overflow-x-hidden bg-ink"
           initial={{ clipPath: "inset(0 0 100% 0)" }}
           animate={{ clipPath: "inset(0 0 0% 0)" }}
           exit={{ clipPath: "inset(0 0 100% 0)" }}

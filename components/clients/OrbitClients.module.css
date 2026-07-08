@@ -149,7 +149,8 @@
     background 240ms ease,
     box-shadow 240ms ease;
   touch-action: manipulation;
-  will-change: transform, opacity, filter;
+  /* filter removed from will-change: the loop no longer animates blur. */
+  will-change: transform, opacity;
 }
 
 .card::before {
@@ -296,37 +297,8 @@
   }
 }
 
-@media (max-width: 767px) {
-  .scene {
-    min-height: 31rem;
-    border-radius: 1rem;
-    perspective: 850px;
-  }
-
-  .scene::before {
-    background:
-      linear-gradient(90deg, rgba(7, 23, 57, 0.96), transparent 9%, transparent 91%, rgba(7, 23, 57, 0.96)),
-      linear-gradient(180deg, rgba(7, 23, 57, 0.78), transparent 22%, transparent 72%, rgba(7, 23, 57, 0.9));
-  }
-
-  .watermark {
-    font-size: clamp(3.8rem, 22vw, 6.5rem);
-  }
-
-  .infoPanel {
-    right: 1rem;
-    bottom: 1rem;
-    left: 1rem;
-    width: auto;
-  }
-
-  .card {
-    width: clamp(5rem, 25vw, 6.3rem);
-    height: clamp(3.9rem, 19vw, 4.8rem);
-    border-radius: 0.85rem;
-    padding: 0.75rem;
-  }
-}
+/* The <768px block was removed: OrbitClients now mounts only on lg+ —
+   ClientsShowcase renders ClientsStaticGrid below that breakpoint. */
 
 @media (prefers-reduced-motion: reduce) {
   .dashedCircle {

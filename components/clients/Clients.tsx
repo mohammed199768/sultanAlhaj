@@ -1,9 +1,8 @@
 import Section from "@/components/ui/Section";
 import Reveal from "@/components/ui/Reveal";
-import dynamic from "next/dynamic";
-
-// Below-the-fold heavy client component (RAF orbit scene) — split out of the main chunk.
-const OrbitClients = dynamic(() => import("./OrbitClients"));
+// Breakpoint-aware showcase: static grid below lg / reduced motion,
+// lazily-loaded orbit constellation on desktop.
+import ClientsShowcase from "./ClientsShowcase";
 import { getClientLogos } from "@/lib/manifest/getPortfolio";
 
 export default function Clients() {
@@ -41,7 +40,7 @@ export default function Clients() {
         </div>
 
         <div className="lg:col-span-8">
-          <OrbitClients logos={logos} />
+          <ClientsShowcase logos={logos} />
         </div>
       </div>
     </Section>

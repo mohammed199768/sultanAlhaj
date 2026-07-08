@@ -1,5 +1,13 @@
 "use client";
 
+/**
+ * OrbitClients — desktop (lg+) client constellation. Mounted only via
+ * ClientsShowcase, which serves a static grid below 1024px and under
+ * prefers-reduced-motion, so this file can assume a large, motion-friendly
+ * viewport. One rAF loop writes transform/opacity (plus band-quantized
+ * z-index) imperatively; it pauses offscreen, on hidden tabs, and during
+ * heavy route/section transitions.
+ */
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { gsap } from "gsap";
 import type { MediaItem } from "@/lib/manifest/types";
@@ -39,6 +47,8 @@ type ItemMotion = {
   my: number;
   targetMx: number;
   targetMy: number;
+  /** Last written z-index (quantized) — avoids redundant per-frame style writes. */
+  z: number;
 };
 
 function labelFromLogo(logo: MediaItem, index: number) {
@@ -83,7 +93,6 @@ export default function OrbitClients({ logos }: { logos: MediaItem[] }) {
 
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [activeRing, setActiveRing] = useState<number | null>(null);
-  const [inView, setInView] = useState(false);
   const reducedMotion = usePrefersReducedMotion();
   const coarsePointer = useMediaQuery(COARSE_POINTER_QUERY);
 
@@ -95,6 +104,7 @@ export default function OrbitClients({ logos }: { logos: MediaItem[] }) {
       my: 0,
       targetMx: 0,
       targetMy: 0,
+      z: -1,
     }));
     cardRefs.current = cardRefs.current.slice(0, items.length);
   }, [items]);
@@ -118,23 +128,9 @@ export default function OrbitClients({ logos }: { logos: MediaItem[] }) {
     coarsePointerRef.current = coarsePointer;
   }, [reducedMotion, coarsePointer]);
 
-  useEffect(() => {
-    if (!items.length) return;
-    if (!coarsePointer) return;
-    // Autoplay only once the section is actually visible and never under
-    // reduced motion - it must not run beneath a boundary overlay offscreen.
-    if (!inView || reducedMotion) return;
-
-    setActiveIndex((current) => current ?? 0);
-    const interval = window.setInterval(() => {
-      setActiveIndex((current) => {
-        const next = current === null ? 0 : (current + 1) % items.length;
-        return next;
-      });
-    }, 3200);
-
-    return () => window.clearInterval(interval);
-  }, [items.length, coarsePointer, inView, reducedMotion]);
+  // No autoplay interval: this component only mounts on lg+ (ClientsShowcase
+  // renders the static grid below that and under reduced motion), so hover /
+  // focus drive the active card. Coarse-pointer desktops simply tap.
 
   useEffect(() => {
     const scene = sceneRef.current;
@@ -186,8 +182,10 @@ export default function OrbitClients({ logos }: { logos: MediaItem[] }) {
         const parallaxY = pointerRef.current.y * (10 + item.ring * 5) * (1 - depth * 0.4);
         const hover = motion.hover;
         const scale = 0.66 + depth * 0.4 + hover * 0.5;
-        const opacity = 0.42 + depth * 0.5 + hover * 0.18;
-        const blur = Math.max(0, (0.55 - depth) * 1.7 - hover);
+        // Depth reads through scale + opacity only. The old per-frame
+        // blur() filter writes forced constant repaints of 20 cards and
+        // were the section's main desktop cost — removed.
+        const opacity = 0.46 + depth * 0.48 + hover * 0.18;
         const lift = hover * -18;
         const x = orbitX + parallaxX + motion.mx;
         const y = orbitY + parallaxY + breathe + lift;
@@ -196,8 +194,12 @@ export default function OrbitClients({ logos }: { logos: MediaItem[] }) {
           2
         )}px), 0) scale(${scale.toFixed(3)})`;
         el.style.opacity = String(Math.min(1, opacity));
-        el.style.zIndex = String(20 + Math.round(depth * 80) + Math.round(hover * 120));
-        el.style.filter = blur ? `blur(${blur.toFixed(2)}px)` : "none";
+        // Quantized z-index, written only when its band actually changes.
+        const z = 20 + Math.round(depth * 8) * 10 + (hover > 0.5 ? 200 : 0);
+        if (z !== motion.z) {
+          motion.z = z;
+          el.style.zIndex = String(z);
+        }
       });
 
       rafRef.current = window.requestAnimationFrame(render);
@@ -220,8 +222,7 @@ export default function OrbitClients({ logos }: { logos: MediaItem[] }) {
     const observer = new IntersectionObserver(
       ([entry]) => {
         visibleRef.current = entry.isIntersecting;
-        setInView(entry.isIntersecting);
-        if (entry.isIntersecting && !isHeavyTransitionActive()) startLoop();
+        if (entry.isIntersecting && !isHeavyTransitionActive() && !document.hidden) startLoop();
         else if (!entry.isIntersecting) stopLoop();
       },
       { threshold: 0.08 }
@@ -231,12 +232,20 @@ export default function OrbitClients({ logos }: { logos: MediaItem[] }) {
     // Pause the orbit during heavy transitions; resume once the cover clears.
     const offTransition = onHeavyTransitionChange((active) => {
       if (active) stopLoop();
-      else if (visibleRef.current) startLoop();
+      else if (visibleRef.current && !document.hidden) startLoop();
     });
+
+    // Pause when the tab is hidden (don't rely on browser rAF throttling).
+    const onVisibilityChange = () => {
+      if (document.hidden) stopLoop();
+      else if (visibleRef.current && !isHeavyTransitionActive()) startLoop();
+    };
+    document.addEventListener("visibilitychange", onVisibilityChange);
 
     return () => {
       observer.disconnect();
       offTransition();
+      document.removeEventListener("visibilitychange", onVisibilityChange);
       resizeObserver.disconnect();
       stopLoop();
       gsap.killTweensOf(motionRef.current);
@@ -350,7 +359,7 @@ export default function OrbitClients({ logos }: { logos: MediaItem[] }) {
         <p>
           {activeItem
             ? "Selected partner in Sultan Shadi's client orbit."
-            : "Hover, focus, or tap a logo to pause the orbit and bring it forward."}
+            : "Hover or focus a logo to pause the orbit and bring it forward."}
         </p>
       </aside>
     </div>

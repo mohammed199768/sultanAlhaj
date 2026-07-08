@@ -161,8 +161,9 @@ export default function CinematicOpening({ previews }: { previews: MediaItem[] }
       // RAF runs only while the chapter is on screen and no heavy transition is live.
       let visible = false;
       let heavy = isHeavyTransitionActive();
+      let hidden = document.hidden;
       const syncRun = () => {
-        if (visible && !heavy) scene.start();
+        if (visible && !heavy && !hidden) scene.start();
         else scene.stop();
       };
       const io = new IntersectionObserver(
@@ -177,6 +178,11 @@ export default function CinematicOpening({ previews }: { previews: MediaItem[] }
         heavy = active;
         syncRun();
       });
+      const onVisibilityChange = () => {
+        hidden = document.hidden;
+        syncRun();
+      };
+      document.addEventListener("visibilitychange", onVisibilityChange);
 
       const ro = new ResizeObserver((entries) => {
         const { width, height } = entries[0].contentRect;
@@ -290,6 +296,7 @@ export default function CinematicOpening({ previews }: { previews: MediaItem[] }
         io.disconnect();
         ro.disconnect();
         offHeavy();
+        document.removeEventListener("visibilitychange", onVisibilityChange);
         scene.destroy();
       };
     });

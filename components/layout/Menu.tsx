@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { navLinks } from "@/lib/data/nav";
 import { profile, emailHref, whatsappHref } from "@/lib/data/profile";
 import TransitionLink from "@/components/transitions/TransitionLink";
@@ -28,22 +28,21 @@ export default function Menu({
     };
   }, [open, onClose]);
 
+  if (!open) return null;
+
   return (
-    <AnimatePresence>
-      {open && (
-        <motion.div
-          // data-lenis-prevent: Lenis preventDefaults wheel globally; without
-          // this the menu's own scroll never receives wheel input on desktop.
-          data-lenis-prevent
-          className="fixed inset-0 z-[65] flex flex-col overflow-y-auto overflow-x-hidden overscroll-contain bg-ink"
-          initial={{ clipPath: "inset(0 0 100% 0)" }}
-          animate={{ clipPath: "inset(0 0 0% 0)" }}
-          exit={{ clipPath: "inset(0 0 100% 0)" }}
-          transition={{ duration: 0.8, ease: easeCinema }}
-          role="dialog"
-          aria-modal="true"
-          aria-label="Site navigation"
-        >
+    <motion.div
+      // data-lenis-prevent: Lenis preventDefaults wheel globally; without
+      // this the menu's own scroll never receives wheel input on desktop.
+      data-lenis-prevent
+      className="fixed inset-0 z-[65] flex flex-col overflow-y-auto overflow-x-hidden overscroll-contain bg-ink"
+      initial={{ clipPath: "inset(0 0 100% 0)" }}
+      animate={{ clipPath: "inset(0 0 0% 0)" }}
+      transition={{ duration: 0.8, ease: easeCinema }}
+      role="dialog"
+      aria-modal="true"
+      aria-label="Site navigation"
+    >
           {/* Ambient accent glows */}
           <div className="pointer-events-none absolute -right-40 top-0 h-[40rem] w-[40rem] rounded-full bg-bronze/10 blur-[120px]" />
           <div className="pointer-events-none absolute -left-40 bottom-0 h-[36rem] w-[36rem] rounded-full bg-steel/10 blur-[120px]" />
@@ -101,8 +100,6 @@ export default function Menu({
               <span>{profile.location}</span>
             </motion.div>
           </div>
-        </motion.div>
-      )}
-    </AnimatePresence>
+    </motion.div>
   );
 }

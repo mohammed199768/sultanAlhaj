@@ -8,17 +8,18 @@ import Results from "@/components/results/Results";
 import Reels from "@/components/reels/Reels";
 import Tools from "@/components/tools/Tools";
 import Contact from "@/components/contact/Contact";
-import { getWorks } from "@/lib/manifest/getPortfolio";
+import { getProjectByKey, getWorks } from "@/lib/manifest/getPortfolio";
 import SectionBoundary from "@/components/transitions/SectionBoundary";
 
 export default function HomePage() {
   const previews = getWorks();
+  const mobilePreview = getProjectByKey("Padel Me Club")?.cover ?? null;
   return (
     <>
       {/* Unified cinematic chapter replaces Hero + hero-about boundary + About.
           The phase handoff inside the chapter is the transition between the
           first two content beats; other boundaries below are untouched. */}
-      <CinematicOpening previews={previews} />
+      <CinematicOpening previews={previews} mobilePreview={mobilePreview} />
       {/* Bridge: zero-net-height dissolve from the hero's navy exit (and its
           emerging board edge) into the capabilities panel. No scroll logic. */}
       <div

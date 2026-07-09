@@ -10,7 +10,7 @@ export interface ExperienceRole {
 export const experience: ExperienceRole[] = [
   {
     company: "Quattro Village & Padel Me Club",
-    role: "Senior Marketing Specialist",
+    role: "Marketing Manager",
     location: "Amman, Jordan",
     period: "February 2025 – Present",
     current: true,
@@ -28,7 +28,7 @@ export const experience: ExperienceRole[] = [
   },
   {
     company: "Digital Dragon Marketing Agency",
-    role: "Team Leader | Senior Marketing Specialist",
+    role: "Team Leader | Digital Marketing Manager",
     location: "Riyadh, Saudi Arabia",
     period: "May 2023 – Present",
     current: true,

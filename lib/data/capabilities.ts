@@ -8,7 +8,7 @@ export const capabilities: Capability[] = [
   { title: "Marketing Strategy", blurb: "Positioning, funnels and channel plans built to hit commercial goals." },
   { title: "Branding", blurb: "Identity systems and brand worlds that stay consistent everywhere." },
   { title: "Content Creation", blurb: "Culturally-tuned Arabic/English content across every format." },
-  { title: "Creative Direction", blurb: "Art direction that keeps campaigns cohesive and premium." },
+  { title: "Creative Production", blurb: "Creative production for cohesive campaign assets." },
   { title: "Motion Graphics", blurb: "Animated cuts and graphic systems that stop the scroll." },
   { title: "Video Production", blurb: "From concept and shoot direction to edit and delivery." },
   { title: "Marketing Campaigns", blurb: "Integrated launches engineered around a single objective." },

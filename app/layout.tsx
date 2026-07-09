@@ -12,21 +12,21 @@ import { profile } from "@/lib/data/profile";
 
 const siteUrl = "https://sultanshadi.com";
 const description =
-  "Sultan Shadi — Digital Marketing Manager & Branding Specialist. Marketing strategist building brands, campaigns, and market presence across Jordan and Saudi Arabia.";
+  "Sultan Shadi — Marketing Manager | Digital Strategist | Content Architect. Marketing strategist building brands, campaigns, and market presence across Jordan and Saudi Arabia.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Sultan Shadi — Digital Marketing Manager & Branding Specialist",
+    default: "Sultan Shadi — Marketing Manager | Digital Strategist | Content Architect",
     template: "%s — Sultan Shadi",
   },
   description,
   keywords: [
     "Sultan Shadi",
     "Sultan Alhaj Ahmad",
-    "Digital Marketing Manager",
-    "Branding Specialist",
-    "Marketing Strategist",
+    "Marketing Manager",
+    "Digital Strategist",
+    "Content Architect",
     "Jordan",
     "Saudi Arabia",
     "Social Media Marketing",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   authors: [{ name: profile.formalName }],
   openGraph: {
     type: "website",
-    title: "Sultan Shadi — Marketing Strategist & Branding Specialist",
+    title: "Sultan Shadi — Marketing Manager | Digital Strategist",
     description,
     url: siteUrl,
     siteName: "Sultan Shadi",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sultan Shadi — Marketing Strategist & Branding Specialist",
+    title: "Sultan Shadi — Marketing Manager | Digital Strategist",
     description,
     images: ["/works/4.webp"],
   },
@@ -54,7 +54,7 @@ const jsonLd = {
   "@type": "Person",
   name: profile.formalName,
   alternateName: profile.name,
-  jobTitle: "Digital Marketing Manager | Branding Specialist",
+  jobTitle: "Marketing Manager | Digital Strategist | Content Architect",
   description: profile.positioning,
   email: profile.email,
   telephone: profile.phoneJordan,

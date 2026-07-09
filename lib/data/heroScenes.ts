@@ -26,7 +26,7 @@ export const heroScenes: HeroScene[] = [
   {
     id: "title",
     eyebrow: "The role",
-    title: ["Digital Marketing", "Manager & Brand", "Specialist"],
+    title: ["Marketing Manager", "Digital Strategist", "Content Architect"],
     body: "Marketing strategist building brands, campaigns, and market presence across Jordan and Saudi Arabia.",
     align: "center",
     start: 0.34,

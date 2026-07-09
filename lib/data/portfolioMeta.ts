@@ -27,7 +27,7 @@ export const PORTFOLIO_META: Record<string, FolderMeta> = {
     client: "Padel Me Club",
     category: "Sports",
     summary:
-      "Sports brand and community activation for a premium padel club — tournaments, membership drives and event recap films.",
+      "Sports brand and community activation for a padel club — tournaments, membership drives and event recap films.",
     tags: ["Sports", "Events", "Video", "Branding"],
     featured: true,
   },
@@ -80,7 +80,7 @@ export const PORTFOLIO_META: Record<string, FolderMeta> = {
     category: "Full Branding",
     summary:
       "Brand identity and content direction — a refined visual system and editorial social feed.",
-    tags: ["Branding", "Creative Direction"],
+    tags: ["Branding", "Content Direction"],
   },
   "JGC Contracting": {
     client: "JGC Contracting",

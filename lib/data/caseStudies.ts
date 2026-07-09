@@ -28,7 +28,7 @@ export const caseStudies: CaseStudy[] = [
     category: "Events & Activations",
     sector: "Sports & Lifestyle",
     summary:
-      "Marketing and branding lead for a flagship sports-and-lifestyle village — bank partnerships, Friday activations and tournament build-outs that drove footfall and awareness.",
+      "Marketing and branding lead for a sports-and-lifestyle village — bank partnerships, Friday activations and tournament build-outs targeting footfall and awareness.",
     scope: ["Brand Operations", "Sponsorships", "Events", "Social Content"],
     metrics: [
       { value: "11+", label: "Tournament Sponsors" },
@@ -40,7 +40,7 @@ export const caseStudies: CaseStudy[] = [
     category: "Sports",
     sector: "Sports",
     summary:
-      "Full marketing scope for a premium padel club — tournaments, influencer partnerships, membership promotions and event recap films.",
+      "Full marketing scope for a padel club — tournaments, influencer partnerships, membership promotions and event recap films.",
     scope: ["Tournaments", "Influencers", "Video", "Memberships"],
     folderKey: "Padel Me Club",
     metrics: [{ value: "30,390", label: "Video Views" }],
@@ -69,7 +69,7 @@ export const caseStudies: CaseStudy[] = [
     sector: "Aesthetics",
     summary:
       "Aesthetic clinic campaigns spanning laser, dermatology and plastic surgery service lines.",
-    scope: ["Campaigns", "Creative Direction", "Paid Ads"],
+    scope: ["Campaigns", "Creative Production", "Paid Ads"],
   }),
   cs({
     client: "Dr. Khurram",
@@ -112,7 +112,7 @@ export const caseStudies: CaseStudy[] = [
     sector: "Retail",
     summary:
       "Retail brand identity and content direction with a polished, gallery-led aesthetic.",
-    scope: ["Branding", "Creative Direction"],
+    scope: ["Branding", "Content Direction"],
   }),
   cs({
     client: "Albaituti",

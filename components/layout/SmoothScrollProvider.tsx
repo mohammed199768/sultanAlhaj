@@ -67,12 +67,51 @@ export default function SmoothScrollProvider({
     };
     window.addEventListener("sultan:route-transition-complete", onTransitionComplete);
 
+    const syncLenisToScroll = (scrollY: number) => {
+      lenis.scrollTo(scrollY, { immediate: true, force: true });
+    };
+
+    let modalLockCount = 0;
+    let wasStoppedBeforeModalLock = false;
+    const onModalScrollLock = (e: Event) => {
+      const detail = (e as CustomEvent<{ locked?: boolean; scrollY?: number }>).detail;
+      const locked = detail?.locked;
+      if (typeof locked !== "boolean") return;
+
+      if (locked) {
+        if (modalLockCount === 0) {
+          wasStoppedBeforeModalLock = lenis.isStopped;
+          syncLenisToScroll(window.scrollY);
+          lenis.stop();
+        }
+        modalLockCount += 1;
+        return;
+      }
+
+      modalLockCount = Math.max(0, modalLockCount - 1);
+      if (modalLockCount === 0) {
+        syncLenisToScroll(detail?.scrollY ?? window.scrollY);
+        if (!wasStoppedBeforeModalLock) {
+          lenis.start();
+        }
+      }
+    };
+    window.addEventListener("sultan:modal-scroll-lock", onModalScrollLock);
+
+    const onModalScrollSync = (e: Event) => {
+      const scrollY = (e as CustomEvent<{ scrollY?: number }>).detail?.scrollY;
+      if (typeof scrollY === "number") syncLenisToScroll(scrollY);
+    };
+    window.addEventListener("sultan:modal-scroll-sync", onModalScrollSync);
+
     const refresh = setTimeout(() => ScrollTrigger.refresh(), 300);
 
     return () => {
       document.removeEventListener("click", onClick);
       window.removeEventListener("sultan:scroll-to", onTransitionScroll);
       window.removeEventListener("sultan:route-transition-complete", onTransitionComplete);
+      window.removeEventListener("sultan:modal-scroll-lock", onModalScrollLock);
+      window.removeEventListener("sultan:modal-scroll-sync", onModalScrollSync);
       gsap.ticker.remove(raf);
       lenis.destroy();
       clearTimeout(refresh);

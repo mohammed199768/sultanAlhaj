@@ -27,6 +27,7 @@ export default function WorkCoverflow({
   const [filter, setFilter] = useState("All");
   const [selected, setSelected] = useState<Project | null>(null);
   const [paused, setPaused] = useState(false);
+  const touchPauseTimer = useRef<number | null>(null);
 
   const list = useMemo(
     () => (filter === "All" ? projects : projects.filter((p) => p.category === filter)),
@@ -40,6 +41,28 @@ export default function WorkCoverflow({
     (dir: number) => setActive((a) => (a + dir + count) % Math.max(count, 1)),
     [count]
   );
+
+  const openFocusedProject = useCallback(() => {
+    const project = list[clampActive];
+    if (project) setSelected(project);
+  }, [clampActive, list]);
+
+  const pauseForTouch = useCallback(() => {
+    setPaused(true);
+    if (touchPauseTimer.current) {
+      window.clearTimeout(touchPauseTimer.current);
+    }
+    touchPauseTimer.current = window.setTimeout(() => {
+      touchPauseTimer.current = null;
+      setPaused(false);
+    }, 1800);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (touchPauseTimer.current) window.clearTimeout(touchPauseTimer.current);
+    };
+  }, []);
 
   // Reset when filter changes
   useEffect(() => setActive(0), [filter]);
@@ -132,27 +155,27 @@ export default function WorkCoverflow({
                         item={project.cover}
                         sizes="(max-width: 768px) 84vw, 70vw"
                         priority={isCenter}
-                        className="transition-transform duration-[1200ms] ease-cinema group-hover:scale-105"
+                        className="pointer-events-none select-none transition-transform duration-[1200ms] ease-cinema group-hover:scale-105"
                       />
                     ) : project.cover?.poster ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
                         src={project.cover.poster}
                         alt={project.client}
-                        className="h-full w-full object-cover"
+                        className="pointer-events-none h-full w-full select-none object-cover"
                       />
                     ) : (
-                      <div className="flex h-full items-center justify-center bg-gradient-to-br from-surface-2 to-ink">
+                      <div className="pointer-events-none flex h-full items-center justify-center bg-gradient-to-br from-surface-2 to-ink">
                         <span className="font-display text-xs uppercase tracking-[0.3em] text-haze/50">
                           {project.client}
                         </span>
                       </div>
                     )}
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/25 to-transparent" />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-ink/25 to-transparent" />
 
                     {/* Media chips */}
-                    <div className="absolute right-4 top-4 flex gap-1.5">
+                    <div className="pointer-events-none absolute right-4 top-4 flex gap-1.5">
                       {project.counts.videos > 0 && (
                         <span className="flex items-center gap-1 rounded-full bg-ink/70 px-2 py-1 text-[0.55rem] text-mist backdrop-blur">
                           <Play className="h-2.5 w-2.5" aria-hidden /> {project.counts.videos}
@@ -172,7 +195,7 @@ export default function WorkCoverflow({
 
                     {/* Caption (focused only) */}
                     <div
-                      className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-6 transition-opacity duration-500 md:p-9"
+                      className="pointer-events-none absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-6 transition-opacity duration-500 md:p-9"
                       style={{ opacity: isCenter ? 1 : 0 }}
                     >
                       <div>
@@ -201,10 +224,19 @@ export default function WorkCoverflow({
               drag="x"
               dragConstraints={{ left: 0, right: 0 }}
               dragElastic={0.2}
+              onPointerDown={pauseForTouch}
+              onTap={openFocusedProject}
               onDragEnd={(_, info) => {
                 if (info.offset.x < -60) go(1);
                 else if (info.offset.x > 60) go(-1);
               }}
+              role="button"
+              tabIndex={-1}
+              aria-label={
+                list[clampActive]
+                  ? `Open ${list[clampActive].client} gallery`
+                  : "Open focused project gallery"
+              }
               style={{ touchAction: "pan-y" }}
             />
 

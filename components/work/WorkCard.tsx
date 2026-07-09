@@ -34,27 +34,27 @@ export default function WorkCard({
             <ImageAsset
               item={cover}
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              className="transition-transform duration-700 ease-cinema group-hover:scale-105"
+              className="pointer-events-none select-none transition-transform duration-700 ease-cinema group-hover:scale-105"
             />
           ) : cover && cover.poster ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={cover.poster}
               alt={project.client}
-              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              className="pointer-events-none h-full w-full select-none object-cover transition-transform duration-700 group-hover:scale-105"
             />
           ) : (
-            <div className="flex h-full items-center justify-center bg-gradient-to-br from-surface-2 to-ink">
+            <div className="pointer-events-none flex h-full items-center justify-center bg-gradient-to-br from-surface-2 to-ink">
               <span className="font-display text-xs uppercase tracking-[0.3em] text-haze/50">
                 {project.client}
               </span>
             </div>
           )}
 
-          <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent opacity-80" />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent opacity-80" />
 
           {/* Media type chips */}
-          <div className="absolute right-3 top-3 flex gap-1.5">
+          <div className="pointer-events-none absolute right-3 top-3 flex gap-1.5">
             {counts.videos > 0 && (
               <span className="flex items-center gap-1 rounded-full bg-ink/70 px-2 py-1 text-[0.55rem] text-mist backdrop-blur">
                 <Play className="h-2.5 w-2.5" aria-hidden /> {counts.videos}
@@ -73,7 +73,7 @@ export default function WorkCard({
           </div>
         </div>
 
-        <div className="absolute inset-x-0 bottom-0 p-5">
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 p-5">
           <p className="font-display text-[0.6rem] uppercase tracking-[0.25em] text-champagne/80">
             {project.category}
           </p>

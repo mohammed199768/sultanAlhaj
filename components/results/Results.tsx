@@ -58,14 +58,16 @@ function MetricCard({
 }) {
   const display = useCountUp(value, start);
   return (
-    <div className="group relative overflow-hidden rounded-2xl border border-steel-400/25 bg-ink p-7 transition-colors duration-500 hover:border-champagne/30">
-      <p className="font-display text-3xl font-bold text-mist-300 md:text-4xl">
+    <div className="group relative min-w-0 overflow-hidden rounded-2xl border border-steel-400/25 bg-ink p-5 transition-colors duration-500 hover:border-champagne/30 sm:p-7">
+      <p className="min-w-0 overflow-hidden break-words font-display text-[clamp(1.8rem,11vw,2.75rem)] font-bold leading-none text-mist-300 sm:text-3xl md:text-4xl">
         {display}
       </p>
-      <p className="mt-3 font-display text-[0.7rem] uppercase tracking-[0.2em] text-champagne/80">
+      <p className="mt-3 min-w-0 break-words font-display text-[0.68rem] uppercase leading-relaxed tracking-[0.14em] text-champagne/80 sm:text-[0.7rem] sm:tracking-[0.2em]">
         {label}
       </p>
-      <p className="mt-1 text-[0.68rem] text-haze/50">{context}</p>
+      <p className="mt-1 min-w-0 break-words text-[0.68rem] leading-relaxed text-haze/50">
+        {context}
+      </p>
     </div>
   );
 }
@@ -91,22 +93,23 @@ export default function Results() {
   }, []);
 
   return (
-    <Section id="results">
+    <Section id="results" containerClassName="min-w-0 overflow-x-hidden">
       <SectionHeader
         index="07"
         eyebrow="Results"
         title="Performance, proven"
         intro="Selected campaign snapshots from real accounts. Figures represent individual campaign periods, not lifetime totals."
+        className="min-w-0 max-w-full [&_.lede]:break-words [&_.lede]:[overflow-wrap:anywhere]"
       />
       <div
         ref={ref}
-        className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4"
+        className="grid min-w-0 grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
       >
         {results.map((m) => (
           <MetricCard key={`${m.label}-${m.value}`} {...m} start={start} />
         ))}
       </div>
-      <p className="mt-8 text-[0.68rem] uppercase tracking-[0.2em] text-haze/40">
+      <p className="mt-8 min-w-0 max-w-full break-words text-[0.68rem] uppercase leading-relaxed tracking-[0.12em] text-haze/40 [overflow-wrap:anywhere] sm:tracking-[0.2em]">
         * Selected campaign snapshots — labelled to avoid over-claiming aggregate performance.
       </p>
     </Section>

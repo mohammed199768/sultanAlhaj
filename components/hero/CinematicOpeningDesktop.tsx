@@ -19,7 +19,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import Image from "next/image";
 import { ArrowDown } from "lucide-react";
-import { gsap, registerGsap, prefersReducedMotion } from "@/lib/motion/gsap";
+import { gsap, ScrollTrigger, registerGsap, prefersReducedMotion } from "@/lib/motion/gsap";
 import { onHeavyTransitionChange, isHeavyTransitionActive } from "@/lib/motion/motionState";
 import type { CylinderScene } from "@/lib/motion/cinematicOpening";
 import { profile } from "@/lib/data/profile";
@@ -135,6 +135,13 @@ export default function CinematicOpening({ previews }: { previews: MediaItem[] }
   useEffect(() => {
     setReduced(prefersReducedMotion());
   }, []);
+
+  useEffect(() => {
+    if (reduced !== false) return;
+    registerGsap();
+    const frame = window.requestAnimationFrame(() => ScrollTrigger.refresh());
+    return () => window.cancelAnimationFrame(frame);
+  }, [reduced]);
 
   useEffect(() => {
     if (reduced !== false) return;
@@ -288,8 +295,8 @@ export default function CinematicOpening({ previews }: { previews: MediaItem[] }
 
       const rect = viewport.getBoundingClientRect();
       scene.resize(rect.width, rect.height);
-      // No global ScrollTrigger.refresh() here: SmoothScrollProvider already
-      // refreshes ~300ms after mount; a second full-page measure is waste.
+      // The one-frame refresh above handles the dynamic hero height. Scene
+      // setup does not change document flow, so no extra refresh is needed here.
 
       cleanup = () => {
         ctx.revert();

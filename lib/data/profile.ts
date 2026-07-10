@@ -34,3 +34,6 @@ export const profile = {
 /** WhatsApp deep link (digits only). */
 export const whatsappHref = `https://wa.me/${profile.whatsapp.replace(/[^\d]/g, "")}`;
 export const emailHref = `mailto:${profile.email}`;
+export const cvDownloadHref = "/Sultan%20Shadi%20CV.pdf";
+export const cvDownloadFileName = "Sultan Shadi CV.pdf";
+export const formspreeEndpoint = "https://formspree.io/f/mgojglel";

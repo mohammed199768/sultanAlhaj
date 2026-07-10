@@ -16,6 +16,8 @@ import {
 import { sectionBoundaries, type BoundaryName } from "@/lib/motion/transitionPresets";
 import styles from "./SectionBoundary.module.css";
 
+const DEFAULT_BOUNDARY_START = "top 52%";
+
 /**
  * Cinematic boundary between two homepage sections.
  * Renders a 1px scroll marker plus a fixed overlay; crossing the marker
@@ -66,11 +68,12 @@ export default function SectionBoundary({ name }: { name: BoundaryName }) {
           timeline.play(0);
         };
 
-        // Later start ("top 70%") so the cover begins before child reveals,
-        // not on top of them. Individual boundaries may override (hero-about).
+        // Start only once the next section's boundary is close to the viewport
+        // center. Starting at 70% announced later sections while the previous
+        // section still owned most of the viewport.
         const trigger = ScrollTrigger.create({
           trigger: marker,
-          start: ("start" in config ? config.start : undefined) ?? "top 70%",
+          start: ("start" in config ? config.start : undefined) ?? DEFAULT_BOUNDARY_START,
           onEnter: () => play(1),
           onLeaveBack: () => play(-1),
         });

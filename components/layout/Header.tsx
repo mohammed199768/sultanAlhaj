@@ -30,8 +30,7 @@ export default function Header({
     >
       <div className="shell flex h-20 items-center justify-between">
         <TransitionLink
-          href="#hero"
-          intent="section"
+          href="/"
           className="group flex items-center gap-3"
           aria-label={`${profile.name} home`}
         >
@@ -45,8 +44,7 @@ export default function Header({
 
         <div className="flex items-center gap-6">
           <TransitionLink
-            href="#contact"
-            intent="section"
+            href="/contact"
             className="hidden font-display text-[0.65rem] uppercase tracking-[0.25em] text-mist transition-colors hover:text-champagne md:block"
           >
             Let&rsquo;s talk

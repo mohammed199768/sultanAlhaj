@@ -4,7 +4,7 @@ import CvControlCenter from "./CvControlCenter";
 export const metadata: Metadata = {
   title: "Sultan Shadi CV",
   description:
-    "Professional CV of Sultan Shadi - Marketing Manager, Digital Strategist, and Content Architect.",
+    "Professional CV of Sultan Alhaj Ahmad — Marketing Manager and Brand Positioning Strategist.",
 };
 
 export default function CvPage() {

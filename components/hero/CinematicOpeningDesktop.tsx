@@ -6,7 +6,7 @@
  *
  * This is NOT four page sections. There is one driver (280svh mobile / 380svh
  * desktop) with a sticky 100svh scene. Inside it:
- *   Beat 1 Identity  → Beat 2 Team Leader → Beat 3 Strategic edge → Beat 4 System
+ *   Beat 1 Identity  → Beat 2 Current role → Beat 3 Strategic edge → Beat 4 System
  * An intro image-row layer (lg+) reads as a film contact sheet, then compresses
  * and fades as the OGL orbit rises — the illusion that the portfolio material is
  * becoming a moving system. The existing local Hero→Capabilities handoff
@@ -49,8 +49,8 @@ const BEATS: Beat[] = [
   },
   {
     eyebrow: "Current Role",
-    headline: "Team Leader",
-    subline: "Leading creative, content, and campaign direction with a strategy-first mindset.",
+    headline: "Sales & Marketing Manager",
+    subline: "Garden Art – Landscape & Irrigation · February 2026 – Present",
   },
   {
     eyebrow: "Strategic Edge",
@@ -122,7 +122,13 @@ function StaticOpening({ images }: { images: MediaItem[] }) {
   );
 }
 
-export default function CinematicOpening({ previews }: { previews: MediaItem[] }) {
+export default function CinematicOpening({
+  previews,
+  onLayoutReady,
+}: {
+  previews: MediaItem[];
+  onLayoutReady: () => void;
+}) {
   const root = useRef<HTMLElement>(null);
   const viewportRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -135,6 +141,12 @@ export default function CinematicOpening({ previews }: { previews: MediaItem[] }
   useEffect(() => {
     setReduced(prefersReducedMotion());
   }, []);
+
+  useEffect(() => {
+    if (reduced === null) return;
+    const frame = window.requestAnimationFrame(onLayoutReady);
+    return () => window.cancelAnimationFrame(frame);
+  }, [onLayoutReady, reduced]);
 
   useEffect(() => {
     if (reduced !== false) return;
@@ -259,7 +271,7 @@ export default function CinematicOpening({ previews }: { previews: MediaItem[] }
 
         // Beat 1 (Identity) exits.
         exit("[data-beat='0']", 0.16);
-        // Beat 2 (Team Leader).
+        // Beat 2 (current role).
         tl.set("[data-beat='1']", { autoAlpha: 1 }, 0.21);
         enter("[data-beat='1']", 0.22);
         exit("[data-beat='1']", 0.4);

@@ -4,9 +4,9 @@ import Reveal from "@/components/ui/Reveal";
 import TransitionLink from "@/components/transitions/TransitionLink";
 
 const ctaChips = [
-  "Healthcare marketing",
-  "Brand activations",
-  "Jordan & Saudi markets",
+  "Brand positioning",
+  "Campaign management",
+  "Sales & business development",
 ];
 
 export default function Contact() {
@@ -27,8 +27,8 @@ export default function Contact() {
             </Reveal>
             <Reveal delay={0.16}>
               <p className="lede mt-7 max-w-3xl">
-                Connect with Sultan for strategy, content, healthcare marketing,
-                brand activations, and digital growth across Jordan and Saudi markets.
+                Connect with Sultan for brand positioning, marketing strategy,
+                campaign management, content, and business development support.
               </p>
             </Reveal>
             <Reveal delay={0.22}>

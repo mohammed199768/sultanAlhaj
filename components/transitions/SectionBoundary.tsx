@@ -59,12 +59,16 @@ export default function SectionBoundary({ name }: { name: BoundaryName }) {
         const simplified = window.matchMedia(COARSE_POINTER_QUERY).matches;
 
         let timeline: gsap.core.Timeline | null = null;
+        let ownsBoundaryLock = false;
 
         const play = (dir: 1 | -1) => {
           if (!tryAcquireBoundaryLock()) return;
+          ownsBoundaryLock = true;
           timeline?.kill();
           // Builder's onComplete hides the overlay and releases the lock.
-          timeline = buildBoundaryTimeline(els, config, dir, simplified);
+          timeline = buildBoundaryTimeline(els, config, dir, simplified, () => {
+            ownsBoundaryLock = false;
+          });
           timeline.play(0);
         };
 
@@ -80,7 +84,7 @@ export default function SectionBoundary({ name }: { name: BoundaryName }) {
 
         return () => {
           trigger.kill();
-          if (timeline?.isActive()) releaseBoundaryLock();
+          if (ownsBoundaryLock) releaseBoundaryLock();
           timeline?.kill();
         };
       });

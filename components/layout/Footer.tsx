@@ -20,8 +20,8 @@ export default function Footer() {
           <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="hover:text-champagne">
             WhatsApp
           </a>
-          <a href={`tel:${profile.phoneJordan}`} className="hover:text-champagne">
-            {profile.phoneJordan}
+          <a href={`tel:${profile.phone}`} className="hover:text-champagne">
+            {profile.phone}
           </a>
           {profile.linkedin ? (
             <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-champagne">

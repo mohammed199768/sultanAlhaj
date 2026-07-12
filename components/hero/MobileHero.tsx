@@ -23,7 +23,7 @@ export default function MobileHero({ image }: { image: MediaItem | null }) {
             data-mobile-hero-reveal
             className="font-display text-[0.62rem] uppercase tracking-[0.28em] text-champagne/80"
           >
-            Marketing Manager
+            Sales &amp; Marketing Manager
           </p>
           <h1
             data-mobile-hero-reveal
@@ -44,7 +44,7 @@ export default function MobileHero({ image }: { image: MediaItem | null }) {
             style={{ "--mobile-hero-delay": "220ms" } as CSSProperties}
             className="mt-3 max-w-[18.5rem] text-[0.95rem] leading-relaxed text-mist/82"
           >
-            5+ years across healthcare, retail, F&B, sports, and real estate.
+            Garden Art – Landscape &amp; Irrigation · February 2026 – Present
           </p>
         </div>
 

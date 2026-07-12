@@ -191,7 +191,8 @@ export function buildBoundaryTimeline(
   els: BoundaryEls,
   config: BoundaryConfig,
   dir: Dir,
-  simplified: boolean
+  simplified: boolean,
+  onSettled?: () => void
 ): gsap.core.Timeline {
   const preset: PresetName = simplified ? "edge-wipe" : config.preset;
   // 0.5 global scale + reveal anchored to cover end keeps the entire
@@ -207,6 +208,13 @@ export function buildBoundaryTimeline(
       gsap.set(els.root, { autoAlpha: 0 });
       hideAllLayers(els);
       releaseBoundaryLock();
+      onSettled?.();
+    },
+    onInterrupt: () => {
+      gsap.set(els.root, { autoAlpha: 0 });
+      hideAllLayers(els);
+      releaseBoundaryLock();
+      onSettled?.();
     },
   });
 

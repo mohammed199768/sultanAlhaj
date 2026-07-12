@@ -12,12 +12,12 @@ import { profile } from "@/lib/data/profile";
 
 const siteUrl = "https://sultanshadi.com";
 const description =
-  "Sultan Shadi — Marketing Manager | Digital Strategist | Content Architect. Marketing strategist building brands, campaigns, and market presence across Jordan and Saudi Arabia.";
+  "Sultan Shadi — Marketing Manager and Brand Positioning Strategist based in Riyadh, Saudi Arabia.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Sultan Shadi — Marketing Manager | Digital Strategist | Content Architect",
+    default: "Sultan Shadi — Marketing Manager | Brand Positioning Strategist",
     template: "%s — Sultan Shadi",
   },
   description,
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     "Sultan Shadi",
     "Sultan Alhaj Ahmad",
     "Marketing Manager",
-    "Digital Strategist",
-    "Content Architect",
+    "Brand Positioning Strategist",
+    "Sales & Marketing Manager",
     "Jordan",
     "Saudi Arabia",
     "Social Media Marketing",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   authors: [{ name: profile.formalName }],
   openGraph: {
     type: "website",
-    title: "Sultan Shadi — Marketing Manager | Digital Strategist",
+    title: "Sultan Shadi — Marketing Manager | Brand Positioning Strategist",
     description,
     url: siteUrl,
     siteName: "Sultan Shadi",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sultan Shadi — Marketing Manager | Digital Strategist",
+    title: "Sultan Shadi — Marketing Manager | Brand Positioning Strategist",
     description,
     images: ["/works/4.webp"],
   },
@@ -54,13 +54,13 @@ const jsonLd = {
   "@type": "Person",
   name: profile.formalName,
   alternateName: profile.name,
-  jobTitle: "Marketing Manager | Digital Strategist | Content Architect",
+  jobTitle: "Sales & Marketing Manager",
   description: profile.positioning,
   email: profile.email,
-  telephone: profile.phoneJordan,
+  telephone: profile.phone,
   address: [
-    { "@type": "PostalAddress", addressLocality: "Amman", addressCountry: "JO" },
     { "@type": "PostalAddress", addressLocality: "Riyadh", addressCountry: "SA" },
+    { "@type": "PostalAddress", addressLocality: "Amman", addressCountry: "JO" },
   ],
   knowsLanguage: ["ar", "en"],
 };

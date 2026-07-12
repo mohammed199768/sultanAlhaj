@@ -16,7 +16,7 @@ export interface HeroScene {
 export const heroScenes: HeroScene[] = [
   {
     id: "name",
-    eyebrow: "Amman, Jordan · Riyadh, Saudi Arabia",
+    eyebrow: "Riyadh, Saudi Arabia",
     title: ["Sultan", "Shadi"],
     body: "Sultan Alhaj Ahmad",
     align: "left",
@@ -25,9 +25,9 @@ export const heroScenes: HeroScene[] = [
   },
   {
     id: "title",
-    eyebrow: "The role",
-    title: ["Marketing Manager", "Digital Strategist", "Content Architect"],
-    body: "Marketing strategist building brands, campaigns, and market presence across Jordan and Saudi Arabia.",
+    eyebrow: "Current role",
+    title: ["Sales & Marketing Manager"],
+    body: "Garden Art – Landscape & Irrigation · February 2026 – Present",
     align: "center",
     start: 0.34,
     end: 0.68,

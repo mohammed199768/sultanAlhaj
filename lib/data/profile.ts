@@ -6,17 +6,23 @@ export interface SocialLink {
 export const profile = {
   name: "Sultan Shadi",
   formalName: "Sultan Alhaj Ahmad",
-  primaryTitle: "Marketing Manager | Digital Strategist | Content Architect",
-  extendedTitle: "Marketing Manager | Digital Strategist | Content Architect",
+  primaryTitle: "Marketing Manager | Brand Positioning Strategist",
+  extendedTitle: "Marketing Manager | Brand Positioning Strategist",
   positioning:
-    "Marketing strategist building brands, campaigns, and market presence across Jordan and Saudi Arabia.",
-  location: "Amman, Jordan · Riyadh, Saudi Arabia",
+    "Strategic and creative Marketing Manager with over 5 years of experience developing and executing integrated marketing campaigns across medical, retail, F&B, sports, and real estate sectors.",
+  currentRole: "Sales & Marketing Manager",
+  currentCompany: "Garden Art – Landscape & Irrigation",
+  currentRoleDates: "February 2026 – Present",
+  location: "Riyadh, Saudi Arabia",
+  addresses: [
+    "Saudi Arabia – Riyadh",
+    "The Hashemite Kingdom of Jordan – Amman",
+  ],
   about:
-    "Sultan is a strategic and creative Marketing Manager with over 5 years of experience developing and executing integrated marketing campaigns across medical, retail, F&B, sports, and real estate sectors. He specializes in social media strategy, content development, brand building, and performance optimization. He is known for launching successful community activations, managing high-ROI campaigns, and creating culturally engaging Arabic/English content tailored for Jordanian and Saudi markets. He uses data insights to drive results across platforms like Meta, Google, and Snapchat.",
+    "Strategic and creative Marketing Manager with over 5 years of experience developing and executing integrated marketing campaigns across medical, retail, F&B, sports, and real estate sectors. Specialized in social media strategy, content development, brand building, and performance optimization. Known for launching successful community activations, managing high-ROI campaigns, and creating culturally engaging Arabic content tailored for both Jordanian and Saudi markets. Proficient in using data insights to drive results across platforms like Meta, Google, and Snapchat.",
   email: "sultan.shadi.ss@gmail.com",
-  phoneJordan: "+962782548231",
-  phoneSaudi: "+966561942030",
-  whatsapp: "+962782548231",
+  phone: "+966553478763",
+  whatsapp: "+966553478763",
   // Optional — rendered only if a non-empty URL is present.
   linkedin: "",
   education: {

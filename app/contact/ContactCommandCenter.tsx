@@ -686,7 +686,7 @@ function MobileContactCore() {
       </h2>
       <p className="mt-3 inline-flex items-center gap-2 text-sm text-haze/72">
         <MapPin className="h-3.5 w-3.5 text-champagne" aria-hidden />
-        Amman / Jordan and Saudi markets
+        Riyadh, Saudi Arabia
       </p>
     </div>
   );
@@ -717,7 +717,7 @@ export default function ContactCommandCenter() {
         id: "phone",
         label: "Phone",
         icon: Phone,
-        href: `tel:${profile.phoneJordan}`,
+        href: `tel:${profile.phone}`,
       },
       {
         id: "send",
@@ -768,7 +768,7 @@ export default function ContactCommandCenter() {
         id: "phone",
         label: "Phone",
         icon: Phone,
-        href: `tel:${profile.phoneJordan}`,
+        href: `tel:${profile.phone}`,
         angle: 145,
         radius: inner,
         duration: "52s",
@@ -819,11 +819,11 @@ export default function ContactCommandCenter() {
             </h1>
             <span className="contact-live-line mt-6 block h-px w-48 origin-left bg-gradient-to-r from-champagne via-champagne/35 to-transparent" aria-hidden />
             <p className="contact-lede mt-7 max-w-2xl text-base leading-8 text-mist/82 md:text-lg md:leading-8">
-              Reach Sultan directly for marketing strategy, healthcare campaigns,
-              brand activations, and digital growth across Jordan and Saudi markets.
+              Reach Sultan directly for brand positioning, marketing strategy,
+              campaign management, and sales and business development support.
             </p>
             <p className="contact-meta mt-4 font-display text-[0.62rem] uppercase tracking-[0.18em] text-haze/65">
-              Amman, Jordan / Jordan and Saudi markets
+              Sales &amp; Marketing Manager · Garden Art – Landscape &amp; Irrigation · Riyadh
             </p>
 
             <div className="contact-actions mt-9 flex flex-wrap gap-3">

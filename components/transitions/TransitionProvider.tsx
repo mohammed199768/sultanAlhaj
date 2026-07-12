@@ -34,6 +34,7 @@ interface NavigateOptions {
 
 interface PendingNavigation {
   href: string;
+  path: string;
   intent: TransitionIntent;
   hash: string;
 }
@@ -81,6 +82,7 @@ export default function TransitionProvider({ children }: { children: React.React
   const fallbackTimerRef = useRef<number | null>(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [label, setLabel] = useState("SULTAN");
+  const [historyNavigationId, setHistoryNavigationId] = useState(0);
 
   // Level 1 (route overlay) owns the shared heavy-transition state while it
   // runs: section boundaries can't fire and child reveals wait.
@@ -209,13 +211,30 @@ export default function TransitionProvider({ children }: { children: React.React
     [killTimeline, refsReady]
   );
 
-  const scrollToHash = useCallback((hash: string) => {
+  const scrollToHash = useCallback(async (hash: string) => {
     if (!hash) return;
+
+    if (
+      window.location.pathname === "/" &&
+      document.documentElement.dataset.homeLayoutReady !== "true"
+    ) {
+      await new Promise<void>((resolve) => {
+        window.addEventListener("sultan:home-layout-ready", () => resolve(), {
+          once: true,
+        });
+      });
+    }
+
+    await new Promise<void>((resolve) => {
+      window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => resolve());
+      });
+    });
+
+    ScrollTrigger.refresh();
     window.dispatchEvent(new CustomEvent("sultan:scroll-to", { detail: { target: hash } }));
-    window.setTimeout(() => {
-      const el = document.querySelector(hash);
-      if (el) el.scrollIntoView({ block: "start", behavior: "auto" });
-    }, 20);
+    const el = document.querySelector(hash);
+    if (el) el.scrollIntoView({ block: "start", behavior: "auto" });
   }, []);
 
   const navigate = useCallback(
@@ -224,20 +243,20 @@ export default function TransitionProvider({ children }: { children: React.React
 
       const intent = options.intent ?? intentForHref(href);
       const nextLabel = options.label ?? transitionWords[intent];
-      const { hash } = splitHref(href);
+      const { path, hash } = splitHref(href);
 
       if (isSameRouteHash(href, pathname)) {
         await playCover("section", nextLabel);
         if (hash) {
-          window.history.pushState(null, "", hash);
-          scrollToHash(hash);
+          router.push(href, { scroll: false });
+          await scrollToHash(hash);
         }
-        window.setTimeout(() => ScrollTrigger.refresh(), 80);
+        ScrollTrigger.refresh();
         await playReveal("section");
         return;
       }
 
-      pendingRef.current = { href, intent, hash };
+      pendingRef.current = { href, path: path.split("?")[0], intent, hash };
       await playCover(intent, nextLabel);
 
       if (options.replace) router.replace(href, { scroll: options.scroll ?? false });
@@ -268,25 +287,33 @@ export default function TransitionProvider({ children }: { children: React.React
 
   useEffect(() => {
     const pending = pendingRef.current;
-    if (!pending) return;
+    const restoredHash = pathname === "/" ? window.location.hash : "";
+    if (!pending && !restoredHash) return;
+    if (pending && pending.path !== pathname) return;
 
-    pendingRef.current = null;
-    if (fallbackTimerRef.current) {
+    if (pending) pendingRef.current = null;
+    if (pending && fallbackTimerRef.current) {
       window.clearTimeout(fallbackTimerRef.current);
       fallbackTimerRef.current = null;
     }
 
-    const timer = window.setTimeout(() => {
-      if (pending.hash) scrollToHash(pending.hash);
+    let cancelled = false;
+    const restore = async () => {
+      const hash = pending?.hash || restoredHash;
+      if (hash) await scrollToHash(hash);
       else window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      if (cancelled) return;
 
       ScrollTrigger.refresh();
       window.dispatchEvent(new CustomEvent("sultan:route-transition-complete"));
-      playReveal(pending.intent);
-    }, 90);
+      if (pending) await playReveal(pending.intent);
+    };
+    void restore();
 
-    return () => window.clearTimeout(timer);
-  }, [pathname, playReveal, scrollToHash]);
+    return () => {
+      cancelled = true;
+    };
+  }, [historyNavigationId, pathname, playReveal, scrollToHash]);
 
   useEffect(() => {
     registerGsap();
@@ -317,9 +344,11 @@ export default function TransitionProvider({ children }: { children: React.React
       if (prefersReducedMotion()) return;
       pendingRef.current = {
         href: window.location.href,
+        path: window.location.pathname,
         intent: "back",
         hash: window.location.hash,
       };
+      setHistoryNavigationId((value) => value + 1);
       playCover("back", transitionWords.back);
     };
 

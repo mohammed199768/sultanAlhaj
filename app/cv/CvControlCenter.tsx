@@ -26,6 +26,7 @@ import {
   cvLanguages,
   cvProfile,
   cvSectors,
+  cvSelectedValue,
   cvSkillGroups,
   cvSpecializations,
   cvTools,
@@ -109,15 +110,9 @@ const contacts = [
     icon: Mail,
   },
   {
-    label: "Jordan phone",
-    value: cvProfile.phoneJordan,
-    href: `tel:${cvProfile.phoneJordan}`,
-    icon: Phone,
-  },
-  {
-    label: "KSA phone",
-    value: cvProfile.phoneKsa,
-    href: `tel:${cvProfile.phoneKsa}`,
+    label: "Phone",
+    value: cvProfile.phone,
+    href: `tel:${cvProfile.phone}`,
     icon: Phone,
   },
 ];
@@ -476,6 +471,22 @@ function ProfileDetail() {
           </ul>
         </div>
       </div>
+
+      <div className="rounded-[1rem] border border-steel-400/18 bg-ink/38 p-3">
+        <p className="font-display text-[0.62rem] uppercase tracking-[0.18em] text-champagne/80">
+          Selected Value
+        </p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {cvSelectedValue.map((item) => (
+            <span
+              key={item}
+              className="rounded-full border border-steel-400/18 bg-mist-300/[0.06] px-3 py-1.5 text-xs leading-5 text-mist/82"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
@@ -654,9 +665,14 @@ function ContactDetail() {
           </span>
         </a>
       ))}
-      <div className="rounded-[1.1rem] border border-steel-400/18 bg-ink/38 p-3 md:col-span-3">
-        <InfoTile icon={MapPin} label="Location" value={cvProfile.location} />
-      </div>
+      {cvProfile.addresses.map((address) => (
+        <div
+          key={address}
+          className="rounded-[1.1rem] border border-steel-400/18 bg-ink/38 p-3 md:col-span-3"
+        >
+          <InfoTile icon={MapPin} label="Address" value={address} />
+        </div>
+      ))}
     </div>
   );
 }

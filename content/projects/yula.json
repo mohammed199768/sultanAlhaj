@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "slug": "yula",
+  "status": "published",
+  "featured": false,
+  "order": 18,
+  "assetFolder": "yula",
+  "layout": "gallery",
+  "summary": "F&B brand content — menu-led creative, launch promotions and social storytelling.",
+  "description": "F&B brand content — menu-led creative, launch promotions and social storytelling.",
+  "identity": {
+    "title": "Yula",
+    "shortTitle": "Yula",
+    "client": "Yula",
+    "category": "F&B"
+  },
+  "card": {
+    "eyebrow": "F&B",
+    "imageAlt": "Yula food and beverage campaign cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Yula food and beverage campaign"
+  },
+  "metadata": {
+    "description": "Menu-led creative, launch promotions and social storytelling."
+  },
+  "services": [
+    "F&B",
+    "Social Media"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "F&B brand content — menu-led creative, launch promotions and social storytelling."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

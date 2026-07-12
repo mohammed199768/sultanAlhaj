@@ -5,17 +5,17 @@ import { AnimatePresence, LayoutGroup } from "framer-motion";
 import WorkFilters from "./WorkFilters";
 import WorkCard from "./WorkCard";
 import Lightbox from "./Lightbox";
-import type { Project } from "@/lib/manifest/types";
+import type { ProjectPopupData } from "@/lib/content/types";
 
 export default function WorkGallery({
   projects,
   categories,
 }: {
-  projects: Project[];
+  projects: ProjectPopupData[];
   categories: string[];
 }) {
   const [active, setActive] = useState("All");
-  const [selected, setSelected] = useState<Project | null>(null);
+  const [selected, setSelected] = useState<ProjectPopupData | null>(null);
 
   const filtered = useMemo(
     () =>

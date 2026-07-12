@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Section from "@/components/ui/Section";
 import SectionHeader from "@/components/ui/SectionHeader";
-import { results } from "@/lib/data/results";
+import home from "@/content/home.json";
 import { prefersReducedMotion } from "@/lib/motion/reducedMotion";
 
 /** Animate a numeric value up when it scrolls into view (respects reduced motion). */
@@ -95,22 +95,22 @@ export default function Results() {
   return (
     <Section id="results" containerClassName="min-w-0 overflow-x-hidden">
       <SectionHeader
-        index="07"
-        eyebrow="Results"
-        title="Performance, proven"
-        intro="Selected campaign snapshots from real accounts. Figures represent individual campaign periods, not lifetime totals."
+        index={home.results.index}
+        eyebrow={home.results.eyebrow}
+        title={home.results.title}
+        intro={home.results.intro}
         className="min-w-0 max-w-full [&_.lede]:break-words [&_.lede]:[overflow-wrap:anywhere]"
       />
       <div
         ref={ref}
         className="grid min-w-0 grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
       >
-        {results.map((m) => (
+        {home.results.items.map((m) => (
           <MetricCard key={`${m.label}-${m.value}`} {...m} start={start} />
         ))}
       </div>
       <p className="mt-8 min-w-0 max-w-full break-words text-[0.68rem] uppercase leading-relaxed tracking-[0.12em] text-haze/40 [overflow-wrap:anywhere] sm:tracking-[0.2em]">
-        * Selected campaign snapshots — labelled to avoid over-claiming aggregate performance.
+        {home.results.note}
       </p>
     </Section>
   );

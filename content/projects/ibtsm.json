@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "slug": "ibtsm",
+  "status": "published",
+  "featured": true,
+  "order": 10,
+  "assetFolder": "ibtsm",
+  "layout": "gallery",
+  "summary": "Integrated campaign — creative content, short-form video and multi-platform rollout at scale.",
+  "description": "Integrated campaign — creative content, short-form video and multi-platform rollout at scale.",
+  "identity": {
+    "title": "Ibtsm",
+    "shortTitle": "Ibtsm",
+    "client": "Ibtsm",
+    "category": "Full Marketing Campaigns"
+  },
+  "card": {
+    "eyebrow": "Full Marketing Campaigns",
+    "imageAlt": "Ibtsm campaign cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Ibtsm integrated campaign"
+  },
+  "metadata": {
+    "description": "Creative content, short-form video and multi-platform campaign rollout."
+  },
+  "services": [
+    "Campaigns",
+    "Video",
+    "Social Media"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "Integrated campaign — creative content, short-form video and multi-platform rollout at scale."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

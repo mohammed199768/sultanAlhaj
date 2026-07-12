@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "slug": "smart-gallery",
+  "status": "preview",
+  "featured": false,
+  "order": 106,
+  "layout": "gallery",
+  "summary": "Retail brand identity and content direction with a polished, gallery-led aesthetic.",
+  "description": "Retail brand identity and content direction.",
+  "identity": {
+    "title": "Smart Gallery",
+    "shortTitle": "Smart Gallery",
+    "client": "Smart Gallery",
+    "category": "Full Branding",
+    "sector": "Retail"
+  },
+  "card": {
+    "eyebrow": "Full Branding",
+    "imageAlt": "Smart Gallery project preview"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study",
+    "previewLabel": "Case study coming soon"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Smart Gallery project"
+  },
+  "metadata": {
+    "description": "Retail brand identity and content direction."
+  },
+  "services": [
+    "Branding",
+    "Content Direction"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [],
+  "relatedProjects": []
+}

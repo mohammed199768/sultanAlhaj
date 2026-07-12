@@ -52,15 +52,4 @@ export const CATEGORIES = [
 export type Category = (typeof CATEGORIES)[number];
 
 /** A portfolio project = manifest folder + editorial metadata. */
-export interface Project {
-  key: string;
-  slug: string;
-  client: string;
-  category: Category;
-  summary: string;
-  tags: string[];
-  cover: MediaItem | null;
-  media: MediaItem[];
-  counts: { images: number; videos: number; pdfs: number };
-  featured?: boolean;
-}
+export type { Project } from "@/lib/content/types";

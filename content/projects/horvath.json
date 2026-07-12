@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "slug": "horvath",
+  "status": "published",
+  "featured": false,
+  "order": 9,
+  "assetFolder": "Horvath",
+  "layout": "gallery",
+  "summary": "Brand identity and content direction — a refined visual system and editorial social feed.",
+  "description": "Brand identity and content direction — a refined visual system and editorial social feed.",
+  "identity": {
+    "title": "Horvath",
+    "shortTitle": "Horvath",
+    "client": "Horvath",
+    "category": "Full Branding"
+  },
+  "card": {
+    "eyebrow": "Full Branding",
+    "imageAlt": "Horvath brand identity cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Horvath brand identity"
+  },
+  "metadata": {
+    "description": "Brand identity, content direction and editorial social feed."
+  },
+  "services": [
+    "Branding",
+    "Content Direction"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "Brand identity and content direction — a refined visual system and editorial social feed."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

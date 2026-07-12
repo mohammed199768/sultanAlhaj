@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "slug": "avant-clinic",
+  "status": "preview",
+  "featured": false,
+  "order": 103,
+  "layout": "gallery",
+  "summary": "Aesthetic clinic campaigns spanning laser, dermatology and plastic surgery service lines.",
+  "description": "Aesthetic clinic campaigns spanning multiple service lines.",
+  "identity": {
+    "title": "Avant Clinic",
+    "shortTitle": "Avant",
+    "client": "Avant Clinic",
+    "category": "Healthcare",
+    "sector": "Aesthetics"
+  },
+  "card": {
+    "eyebrow": "Healthcare",
+    "imageAlt": "Avant Clinic project preview"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study",
+    "previewLabel": "Case study coming soon"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Avant Clinic project"
+  },
+  "metadata": {
+    "description": "Aesthetic clinic campaigns spanning laser, dermatology and plastic surgery."
+  },
+  "services": [
+    "Campaigns",
+    "Creative Production",
+    "Paid Ads"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [],
+  "relatedProjects": []
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "hero": {
+    "beats": [
+      { "eyebrow": "Profile", "source": "profileName", "subline": "A marketing mind built for attention, structure, and growth.", "hero": true },
+      { "eyebrow": "Current Role", "source": "profileRole" },
+      { "eyebrow": "Strategic Edge", "headline": "He turns scattered attention into structured demand.", "subline": "From brand positioning to content systems and campaign execution, every move is designed to make the message clearer, sharper, and harder to ignore." },
+      { "eyebrow": "The System Behind the Work", "headline": "Capabilities are not a list. They are the operating system.", "subline": "Strategy, content, media, and execution connect into one flow — built to move brands from visibility to measurable momentum." }
+    ],
+    "mobile": { "sectors": ["Healthcare", "F&B", "Sports", "Saudi / Jordan"], "workEyebrow": "Selected Work", "workLabel": "Campaign Systems", "primaryCta": "View Work", "secondaryCta": "Contact" }
+  },
+  "capabilities": {
+    "index": "03", "eyebrow": "Capabilities", "title": "A full-stack marketing skill set", "intro": "From research and strategy to creative production, paid performance and on-ground activation — everything a brand needs under one roof.",
+    "items": [
+      { "id": "brand-strategy", "label": "Strategy", "title": "Brand Strategy", "value": "Positioning, funnels and channel plans built to hit commercial goals.", "meta": "JO · KSA" },
+      { "id": "content-architecture", "label": "Content", "title": "Content Architecture", "value": "Culturally-tuned Arabic/English content systems across every format.", "meta": "Arabic / English" },
+      { "id": "paid-campaigns", "label": "Performance", "title": "Paid Campaigns", "value": "Meta, Google, Snapchat and TikTok performance buying.", "meta": "Meta · Google · Snapchat · TikTok" },
+      { "id": "social-growth", "label": "Growth", "title": "Social Media Growth", "value": "Always-on channel management and community growth.", "meta": "Always-on" },
+      { "id": "healthcare", "label": "Sector", "title": "Healthcare Marketing", "value": "Integrated campaigns for medical brands and clinics.", "meta": "Medical · Clinics" },
+      { "id": "fnb-retail", "label": "Sector", "title": "F&B / Retail Campaigns", "value": "Launches and always-on content for F&B and retail brands.", "meta": "F&B · Retail" },
+      { "id": "activations", "label": "Activation", "title": "Event & Sponsorship Activations", "value": "On-ground experiences that turn footfall into fans.", "meta": "Events · Sponsorships" },
+      { "id": "reporting", "label": "Insight", "title": "Performance Reporting", "value": "Reporting and insight loops that compound results.", "meta": "Data-driven" }
+    ]
+  },
+  "experience": { "index": "04", "eyebrow": "Experience", "title": "Where strategy met results", "intro": "Five-plus years leading marketing across sports, healthcare, retail and pharma in Jordan and Saudi Arabia.", "currentLabel": "Current", "pastLabel": "Past" },
+  "work": { "index": "05", "eyebrow": "Selected Work", "title": "A living archive of brands & campaigns", "intro": "A curated, filterable archive built dynamically from real client work — images, films and brand documents. Swipe, drag or let it play; tap the focused project to open its gallery." },
+  "clients": { "eyebrow": "Partners", "titleBefore": "Trusted by", "titleAccent": "the brands", "titleAfter": "behind the work", "intro": "A selection of clients and partners across healthcare, sports, F&B, real estate and retail in Jordan and Saudi Arabia.", "countLabel": "brands" },
+  "caseStudies": { "index": "06", "eyebrow": "Case Studies", "title": "Selected client stories", "intro": "Deeper dives into flagship engagements across sports, healthcare, real estate and F&B. Published stories open a dedicated case page; previews are clearly marked.", "projectSlugs": ["quattro-village", "padel-me-club", "skn-clinics", "mcs-clinics", "avant-clinic", "dr-khurram", "tawaq", "dr-alaa-albuqaie", "dr-mohannad-alharbi", "smart-gallery", "albaituti", "passion-clinic", "yalla-mansaf", "jgc-contracting"] },
+  "results": {
+    "index": "07", "eyebrow": "Results", "title": "Performance, proven", "intro": "Selected campaign snapshots from real accounts. Figures represent individual campaign periods, not lifetime totals.", "note": "* Selected campaign snapshots — labelled to avoid over-claiming aggregate performance.",
+    "items": [{"value":"44,796","label":"Accounts Reached","context":"Single-campaign snapshot"},{"value":"36,051","label":"Accounts Reached","context":"Campaign snapshot"},{"value":"19.9K","label":"Accounts Reached","context":"Campaign snapshot"},{"value":"+84.7%","label":"Audience Growth","context":"Period over period"},{"value":"10,080","label":"Profile Activity","context":"Interactions snapshot"},{"value":"9,403","label":"Profile Visits","context":"Campaign snapshot"},{"value":"677","label":"External Link Taps","context":"Campaign snapshot"},{"value":"266,478","label":"Paid Impressions","context":"Paid campaign snapshot"},{"value":"3,255","label":"Clicks","context":"Paid campaign snapshot"},{"value":"1.22%","label":"Click Rate","context":"Paid campaign snapshot"},{"value":"30,390","label":"Video Views","context":"Content snapshot"},{"value":"11+","label":"Tournament Sponsors","context":"Padel activation"}]
+  },
+  "reels": { "index": "08", "eyebrow": "Testimonials", "title": "Words from clients & community", "intro": "Real replies and reactions from the campaigns and communities built along the way. Tap a highlight to watch the story." },
+  "tools": {
+    "index": "09", "eyebrow": "Tools & Platforms", "title": "The command center", "intro": "The advertising, analytics and creative stack behind every campaign.", "groups": ["Advertising", "Analytics", "Creative", "Platform"],
+    "items": [{"name":"Meta Business Suite","group":"Advertising"},{"name":"Snapchat Ads","group":"Advertising"},{"name":"TikTok Ads","group":"Advertising"},{"name":"Google Ads","group":"Advertising"},{"name":"Google Analytics GA4","group":"Analytics"},{"name":"Google My Business","group":"Analytics"},{"name":"WordPress","group":"Platform"},{"name":"Amazon Seller Central","group":"Platform"},{"name":"WhatsApp Business","group":"Platform"},{"name":"Canva","group":"Creative"},{"name":"CapCut","group":"Creative"},{"name":"Photoshop","group":"Creative"}]
+  },
+  "contact": { "eyebrow": "10 - Contact", "title": "Ready to build", "titleAccent": "the next campaign?", "intro": "Connect with Sultan for brand positioning, marketing strategy, campaign management, content, and business development support.", "chips": ["Brand positioning", "Campaign management", "Sales & business development"], "ctaLabel": "Contact Sultan", "note": "Direct email, WhatsApp, phone, and a focused message form are on the contact page." }
+}

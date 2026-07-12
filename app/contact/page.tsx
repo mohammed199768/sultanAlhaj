@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import ContactCommandCenter from "./ContactCommandCenter";
+import contact from "@/content/contact.json";
 
-export const metadata: Metadata = {
-  title: "Contact Sultan Shadi",
-  description:
-    "Contact Sultan Shadi, Sales & Marketing Manager in Riyadh, for marketing strategy, brand positioning, campaigns, and business development support.",
-};
+export const metadata: Metadata = contact.metadata;
 
 export default function ContactPage() {
   return <ContactCommandCenter />;

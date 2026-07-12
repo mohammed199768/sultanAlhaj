@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "slug": "quattro-village",
+  "status": "preview",
+  "featured": false,
+  "order": 101,
+  "layout": "gallery",
+  "summary": "Marketing and branding lead for a sports-and-lifestyle village — bank partnerships, Friday activations and tournament build-outs targeting footfall and awareness.",
+  "description": "Marketing and branding lead for a sports-and-lifestyle village.",
+  "identity": {
+    "title": "Quattro Village",
+    "shortTitle": "Quattro",
+    "client": "Quattro Village",
+    "category": "Events & Activations",
+    "sector": "Sports & Lifestyle"
+  },
+  "card": {
+    "eyebrow": "Events & Activations",
+    "imageAlt": "Quattro Village project preview"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study",
+    "previewLabel": "Case study coming soon"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Quattro Village project"
+  },
+  "metadata": {
+    "description": "Marketing and branding for a sports-and-lifestyle village."
+  },
+  "services": [
+    "Brand Operations",
+    "Sponsorships",
+    "Events",
+    "Social Content"
+  ],
+  "tools": [],
+  "metrics": [
+    {
+      "value": "11+",
+      "label": "Tournament Sponsors"
+    },
+    {
+      "value": "44,796",
+      "label": "Accounts Reached"
+    }
+  ],
+  "sections": [],
+  "relatedProjects": []
+}

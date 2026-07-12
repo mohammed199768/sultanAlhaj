@@ -3,15 +3,16 @@ import Section from "@/components/ui/Section";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Reveal from "@/components/ui/Reveal";
 import { experience } from "@/lib/data/experience";
+import home from "@/content/home.json";
 
 export default function ExperienceTimeline() {
   return (
     <Section id="experience">
       <SectionHeader
-        index="04"
-        eyebrow="Experience"
-        title="Where strategy met results"
-        intro="Five-plus years leading marketing across sports, healthcare, retail and pharma in Jordan and Saudi Arabia."
+        index={home.experience.index}
+        eyebrow={home.experience.eyebrow}
+        title={home.experience.title}
+        intro={home.experience.intro}
       />
 
       <div className="relative">
@@ -31,7 +32,7 @@ export default function ExperienceTimeline() {
                       </span>
                     )}
                     <span className="font-display text-[0.65rem] uppercase tracking-[0.2em] text-champagne">
-                      {role.current ? "Current" : "Past"}
+                      {role.current ? home.experience.currentLabel : home.experience.pastLabel}
                     </span>
                   </div>
                   <p className="mt-2 font-display text-sm text-mist">{role.period}</p>

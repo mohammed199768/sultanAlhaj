@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "slug": "albaituti",
+  "status": "preview",
+  "featured": false,
+  "order": 107,
+  "layout": "gallery",
+  "summary": "Brand-build and social system for a home-and-retail brand.",
+  "description": "Brand-build and social system for a home-and-retail brand.",
+  "identity": {
+    "title": "Albaituti",
+    "shortTitle": "Albaituti",
+    "client": "Albaituti",
+    "category": "Full Branding",
+    "sector": "Home & Retail"
+  },
+  "card": {
+    "eyebrow": "Full Branding",
+    "imageAlt": "Albaituti project preview"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study",
+    "previewLabel": "Case study coming soon"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Albaituti project"
+  },
+  "metadata": {},
+  "services": [
+    "Branding",
+    "Social"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [],
+  "relatedProjects": []
+}

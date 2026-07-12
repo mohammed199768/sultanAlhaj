@@ -7,7 +7,7 @@ import ImageAsset from "@/components/media/ImageAsset";
 import TransitionLink from "@/components/transitions/TransitionLink";
 import WorkFilters from "./WorkFilters";
 import Lightbox from "./Lightbox";
-import type { Project } from "@/lib/manifest/types";
+import type { ProjectPopupData } from "@/lib/content/types";
 import { prefersReducedMotion } from "@/lib/motion/reducedMotion";
 import { isHeavyTransitionActive } from "@/lib/motion/motionState";
 
@@ -20,12 +20,12 @@ export default function WorkCoverflow({
   projects,
   categories,
 }: {
-  projects: Project[];
+  projects: ProjectPopupData[];
   categories: string[];
 }) {
   const [active, setActive] = useState(0);
   const [filter, setFilter] = useState("All");
-  const [selected, setSelected] = useState<Project | null>(null);
+  const [selected, setSelected] = useState<ProjectPopupData | null>(null);
   const [paused, setPaused] = useState(false);
   const touchPauseTimer = useRef<number | null>(null);
 
@@ -147,7 +147,7 @@ export default function WorkCoverflow({
                   <button
                     type="button"
                     onClick={() => (isCenter ? setSelected(project) : setActive(i))}
-                    aria-label={isCenter ? `Open ${project.client}` : `Focus ${project.client}`}
+                    aria-label={isCenter ? `Open ${project.identity.title}` : `Focus ${project.identity.title}`}
                     className="group relative block h-full w-full overflow-hidden rounded-2xl border border-steel-400/25 bg-surface-2 text-left"
                   >
                     {project.cover && project.cover.kind === "image" ? (
@@ -161,13 +161,13 @@ export default function WorkCoverflow({
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
                         src={project.cover.poster}
-                        alt={project.client}
+                        alt={project.identity.title}
                         className="pointer-events-none h-full w-full select-none object-cover"
                       />
                     ) : (
                       <div className="pointer-events-none flex h-full items-center justify-center bg-gradient-to-br from-surface-2 to-ink">
                         <span className="font-display text-xs uppercase tracking-[0.3em] text-haze/50">
-                          {project.client}
+                          {project.identity.title}
                         </span>
                       </div>
                     )}
@@ -203,7 +203,7 @@ export default function WorkCoverflow({
                           {project.category}
                         </p>
                         <h3 className="mt-2 font-display text-2xl font-semibold text-mist-300 md:text-4xl">
-                          {project.client}
+                          {project.identity.title}
                         </h3>
                         <p className="mt-2 hidden max-w-md text-sm text-haze/75 md:block">
                           {project.summary}
@@ -234,7 +234,7 @@ export default function WorkCoverflow({
               tabIndex={-1}
               aria-label={
                 list[clampActive]
-                  ? `Open ${list[clampActive].client} gallery`
+                  ? `Open ${list[clampActive].identity.title} gallery`
                   : "Open focused project gallery"
               }
               style={{ touchAction: "pan-y" }}
@@ -267,7 +267,7 @@ export default function WorkCoverflow({
                   key={p.key}
                   type="button"
                   onClick={() => setActive(i)}
-                  aria-label={`Go to ${p.client}`}
+                  aria-label={`Go to ${p.identity.title}`}
                   className={`h-1.5 rounded-full transition-all duration-500 ${
                     i === clampActive ? "w-8 bg-champagne" : "w-1.5 bg-mist/20 hover:bg-mist/40"
                   }`}
@@ -279,16 +279,18 @@ export default function WorkCoverflow({
                 <span className="text-mist-300">{String(clampActive + 1).padStart(2, "0")}</span> /{" "}
                 {String(count).padStart(2, "0")}
               </span>
-              {list[clampActive]?.slug && (
+              {list[clampActive]?.status === "published" ? (
                 <TransitionLink
                   href={`/work/${list[clampActive].slug}`}
                   intent="work"
                   label="CASE FILE"
                   className="inline-flex items-center gap-2 text-champagne hover:text-mist-300"
                 >
-                  Full case study <ArrowUpRight className="h-3.5 w-3.5" aria-hidden />
+                  {list[clampActive].popup.ctaLabel} <ArrowUpRight className="h-3.5 w-3.5" aria-hidden />
                 </TransitionLink>
-              )}
+              ) : list[clampActive] ? (
+                <span className="text-champagne">{list[clampActive].popup.previewLabel ?? "Case study coming soon"}</span>
+              ) : null}
             </div>
           </div>
         </>

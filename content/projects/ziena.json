@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "slug": "ziena",
+  "status": "published",
+  "featured": false,
+  "order": 19,
+  "assetFolder": "ziena",
+  "layout": "gallery",
+  "summary": "Brand identity and content direction — a warm, considered visual world across social.",
+  "description": "Brand identity and content direction — a warm, considered visual world across social.",
+  "identity": {
+    "title": "Ziena",
+    "shortTitle": "Ziena",
+    "client": "Ziena",
+    "category": "Full Branding"
+  },
+  "card": {
+    "eyebrow": "Full Branding",
+    "imageAlt": "Ziena brand identity cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Ziena brand identity"
+  },
+  "metadata": {
+    "description": "Brand identity and a considered visual world across social."
+  },
+  "services": [
+    "Branding",
+    "Social Media"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "Brand identity and content direction — a warm, considered visual world across social."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

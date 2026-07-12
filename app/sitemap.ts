@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next";
-import { getAllWorkSlugs } from "@/lib/data/resolveWork";
+import { getProjectSlugs } from "@/lib/content/projects";
+import site from "@/content/site.json";
 
-const base = "https://sultanshadi.com";
+const base = site.siteUrl;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const work = getAllWorkSlugs().map((slug) => ({
+  const work = getProjectSlugs().map((slug) => ({
     url: `${base}/work/${slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,

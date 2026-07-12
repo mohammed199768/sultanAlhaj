@@ -4,6 +4,7 @@ import Reveal from "@/components/ui/Reveal";
 // lazily-loaded orbit constellation on desktop.
 import ClientsShowcase from "./ClientsShowcase";
 import { getClientLogos } from "@/lib/manifest/getPortfolio";
+import home from "@/content/home.json";
 
 export default function Clients() {
   const logos = getClientLogos();
@@ -14,26 +15,25 @@ export default function Clients() {
       <div className="shell grid gap-10 lg:grid-cols-12 lg:items-center">
         <div className="lg:col-span-4">
           <Reveal>
-            <span className="eyebrow">Partners</span>
+            <span className="eyebrow">{home.clients.eyebrow}</span>
           </Reveal>
           <Reveal delay={0.08}>
             <h2 className="display-2 mt-5 text-4xl md:text-5xl">
-              Trusted by
+              {home.clients.titleBefore}
               <br />
-              <span className="text-champagne">the brands</span> behind the work
+              <span className="text-champagne">{home.clients.titleAccent}</span> {home.clients.titleAfter}
             </h2>
           </Reveal>
           <Reveal delay={0.16}>
             <p className="lede mt-6 max-w-md">
-              A selection of clients and partners across healthcare, sports, F&amp;B,
-              real estate and retail in Jordan and Saudi Arabia.
+              {home.clients.intro}
             </p>
           </Reveal>
           <Reveal delay={0.22}>
             <p className="mt-8 font-display text-5xl font-bold text-mist-300 md:text-6xl">
               {logos.length}
               <span className="ml-2 align-middle text-sm uppercase tracking-[0.2em] text-haze/50">
-                brands
+                {home.clients.countLabel}
               </span>
             </p>
           </Reveal>

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "slug": "dr-mohannad-alharbi",
+  "legacySlugs": [
+    "dr-muhannad"
+  ],
+  "status": "published",
+  "featured": true,
+  "order": 6,
+  "assetFolder": "Dr. Mohannad Alharbi",
+  "layout": "gallery",
+  "summary": "Doctor personal brand — high-volume social content, patient education and short-form video.",
+  "description": "High-volume social content and short-form video for a doctor's personal brand.",
+  "identity": {
+    "title": "Dr. Mohannad Alharbi",
+    "shortTitle": "Dr. Mohannad",
+    "client": "Dr. Mohannad Alharbi",
+    "category": "Healthcare",
+    "sector": "Personal Medical Brand"
+  },
+  "card": {
+    "eyebrow": "Healthcare",
+    "imageAlt": "Dr. Mohannad personal medical brand cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Dr. Mohannad personal medical brand"
+  },
+  "metadata": {
+    "description": "High-volume social content and short-form video for a doctor personal brand."
+  },
+  "services": [
+    "Personal Brand",
+    "Video",
+    "Social"
+  ],
+  "tools": [],
+  "metrics": [
+    {
+      "value": "+84.7%",
+      "label": "Audience Growth"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "High-volume social content and short-form video for a doctor's personal brand."
+      ]
+    },
+    {
+      "id": "results",
+      "type": "metrics",
+      "title": "Results"
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

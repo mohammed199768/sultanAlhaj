@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "slug": "skn-clinics",
+  "status": "published",
+  "featured": true,
+  "order": 17,
+  "assetFolder": "SKN Clinics",
+  "layout": "gallery",
+  "summary": "Aesthetic and dermatology clinic marketing — offer campaigns, influencer films and always-on social presence.",
+  "description": "Always-on social and paid campaigns for an aesthetics clinic — offer creative, influencer films and consultation-driving funnels.",
+  "identity": {
+    "title": "SKN Clinics",
+    "shortTitle": "SKN",
+    "client": "SKN Clinics",
+    "category": "Healthcare",
+    "sector": "Aesthetics & Dermatology"
+  },
+  "card": {
+    "eyebrow": "Healthcare",
+    "imageAlt": "SKN Clinics marketing cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "SKN Clinics campaign"
+  },
+  "metadata": {
+    "description": "Always-on social and paid campaigns for an aesthetics clinic."
+  },
+  "services": [
+    "Paid Ads",
+    "Influencers",
+    "Video",
+    "Social"
+  ],
+  "tools": [],
+  "metrics": [
+    {
+      "value": "266,478",
+      "label": "Paid Impressions"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "Always-on social and paid campaigns for an aesthetics clinic — offer creative, influencer films and consultation-driving funnels."
+      ]
+    },
+    {
+      "id": "results",
+      "type": "metrics",
+      "title": "Results"
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

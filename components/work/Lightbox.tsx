@@ -7,13 +7,13 @@ import ImageAsset from "@/components/media/ImageAsset";
 import VideoPlayer from "@/components/media/VideoPlayer";
 import PdfCard from "@/components/media/PdfCard";
 import TransitionLink from "@/components/transitions/TransitionLink";
-import type { Project } from "@/lib/manifest/types";
+import type { ProjectPopupData } from "@/lib/content/types";
 
 export default function Lightbox({
   project,
   onClose,
 }: {
-  project: Project | null;
+  project: ProjectPopupData | null;
   onClose: () => void;
 }) {
   const reduceMotion = useReducedMotion();
@@ -89,7 +89,7 @@ export default function Lightbox({
           transition={{ duration: reduceMotion ? 0.16 : 0.62, ease: [0.16, 1, 0.3, 1] }}
           role="dialog"
           aria-modal="true"
-          aria-label={`${project.client} gallery`}
+          aria-label={`${project.identity.title} gallery`}
         >
           <div className="pointer-events-none fixed inset-0 overflow-hidden">
             <motion.div
@@ -120,10 +120,10 @@ export default function Lightbox({
                 <div>
                   <p className="eyebrow">{project.category}</p>
                   <h3 className="display-2 mt-3 text-4xl md:text-5xl">
-                    {project.client}
+                    {project.identity.title}
                   </h3>
                   <p className="lede mt-4 max-w-2xl">{project.summary}</p>
-                  {project.slug && (
+                  {project.status === "published" ? (
                     <TransitionLink
                       href={`/work/${project.slug}`}
                       intent="work"
@@ -131,9 +131,13 @@ export default function Lightbox({
                       onBeforeNavigate={onClose}
                       className="mt-6 inline-flex items-center gap-2 font-display text-[0.65rem] uppercase tracking-[0.25em] text-champagne hover:text-mist-300"
                     >
-                      Open full case study
+                      {project.popup.ctaLabel}
                       <ArrowUpRight className="h-4 w-4" aria-hidden />
                     </TransitionLink>
+                  ) : (
+                    <p className="mt-6 font-display text-[0.65rem] uppercase tracking-[0.25em] text-champagne">
+                      {project.popup.previewLabel ?? "Case study coming soon"}
+                    </p>
                   )}
                 </div>
                 <button

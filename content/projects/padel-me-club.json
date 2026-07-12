@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "slug": "padel-me-club",
+  "status": "published",
+  "featured": true,
+  "order": 16,
+  "assetFolder": "Padel Me Club",
+  "layout": "gallery",
+  "summary": "Sports brand and community activation for a padel club — tournaments, membership drives and event recap films.",
+  "description": "Full marketing scope for a padel club — tournaments, influencer partnerships, membership promotions and event recap films.",
+  "identity": {
+    "title": "Padel Me Club",
+    "shortTitle": "Padel Me",
+    "client": "Padel Me Club",
+    "category": "Sports",
+    "sector": "Sports"
+  },
+  "card": {
+    "eyebrow": "Sports",
+    "imageAlt": "Padel Me Club tournament cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Padel Me Club marketing campaign"
+  },
+  "metadata": {
+    "description": "Tournaments, influencer partnerships, membership promotions and event recap films."
+  },
+  "services": [
+    "Tournaments",
+    "Influencers",
+    "Video",
+    "Memberships"
+  ],
+  "tools": [],
+  "metrics": [
+    {
+      "value": "30,390",
+      "label": "Video Views"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "Full marketing scope for a padel club — tournaments, influencer partnerships, membership promotions and event recap films."
+      ]
+    },
+    {
+      "id": "results",
+      "type": "metrics",
+      "title": "Results"
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

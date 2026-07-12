@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "slug": "jgc-contracting",
+  "status": "published",
+  "featured": true,
+  "order": 11,
+  "assetFolder": "JGC Contracting",
+  "layout": "gallery",
+  "summary": "Contracting and real-estate developer marketing — corporate branding and project showcases.",
+  "description": "Corporate branding and project showcases for a contracting and real-estate developer.",
+  "identity": {
+    "title": "JGC Contracting",
+    "shortTitle": "JGC",
+    "client": "JGC Contracting",
+    "category": "Real Estate",
+    "sector": "Contracting & Real Estate"
+  },
+  "card": {
+    "eyebrow": "Real Estate",
+    "imageAlt": "JGC Contracting project cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "JGC Contracting branding and projects"
+  },
+  "metadata": {
+    "description": "Corporate branding and project showcases for a contracting and real-estate developer."
+  },
+  "services": [
+    "Corporate Branding",
+    "Real Estate",
+    "Content"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "Corporate branding and project showcases for a contracting and real-estate developer."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

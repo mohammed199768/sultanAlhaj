@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "slug": "nemo",
+  "status": "published",
+  "featured": false,
+  "order": 15,
+  "assetFolder": "nemo",
+  "layout": "gallery",
+  "summary": "Brand social content — playful campaign creative and an editorial content calendar.",
+  "description": "Brand social content — playful campaign creative and an editorial content calendar.",
+  "identity": {
+    "title": "Nemo",
+    "shortTitle": "Nemo",
+    "client": "Nemo",
+    "category": "Social Media"
+  },
+  "card": {
+    "eyebrow": "Social Media",
+    "imageAlt": "Nemo social campaign cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Nemo social campaign"
+  },
+  "metadata": {
+    "description": "Playful social campaign creative and editorial content calendar."
+  },
+  "services": [
+    "Social Media",
+    "Content"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "Brand social content — playful campaign creative and an editorial content calendar."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

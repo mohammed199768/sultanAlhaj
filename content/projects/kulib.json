@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "slug": "kulib",
+  "status": "published",
+  "featured": false,
+  "order": 12,
+  "assetFolder": "kulib",
+  "layout": "gallery",
+  "summary": "Food & beverage brand social — appetite-led photography direction and promotional creative.",
+  "description": "Food & beverage brand social — appetite-led photography direction and promotional creative.",
+  "identity": {
+    "title": "Kulib",
+    "shortTitle": "Kulib",
+    "client": "Kulib",
+    "category": "F&B"
+  },
+  "card": {
+    "eyebrow": "F&B",
+    "imageAlt": "Kulib food and beverage campaign cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Kulib food and beverage campaign"
+  },
+  "metadata": {
+    "description": "Food and beverage photography direction and promotional creative."
+  },
+  "services": [
+    "F&B",
+    "Social Media"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "Food & beverage brand social — appetite-led photography direction and promotional creative."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

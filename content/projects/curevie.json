@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "slug": "curevie",
+  "status": "published",
+  "featured": false,
+  "order": 2,
+  "assetFolder": "Curevie",
+  "layout": "gallery",
+  "summary": "Healthcare brand social presence — educational content and treatment-led campaign creative.",
+  "description": "Healthcare brand social presence — educational content and treatment-led campaign creative.",
+  "identity": {
+    "title": "Curevie",
+    "shortTitle": "Curevie",
+    "client": "Curevie",
+    "category": "Healthcare"
+  },
+  "card": {
+    "eyebrow": "Healthcare",
+    "imageAlt": "Curevie healthcare campaign cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Curevie healthcare campaign"
+  },
+  "metadata": {
+    "description": "Healthcare brand social presence and campaign creative."
+  },
+  "services": [
+    "Healthcare",
+    "Social Media"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "Healthcare brand social presence — educational content and treatment-led campaign creative."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

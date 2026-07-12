@@ -16,7 +16,7 @@
  * Reduced motion: no WebGL, no scrub — the four beats render as a static
  * stacked composition.
  */
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { ArrowDown } from "lucide-react";
 import { gsap, ScrollTrigger, registerGsap, prefersReducedMotion } from "@/lib/motion/gsap";
@@ -24,47 +24,28 @@ import { onHeavyTransitionChange, isHeavyTransitionActive } from "@/lib/motion/m
 import type { CylinderScene } from "@/lib/motion/cinematicOpening";
 import { profile } from "@/lib/data/profile";
 import type { MediaItem } from "@/lib/manifest/types";
+import home from "@/content/home.json";
 
 const MAX_PANELS = 12;
 
 interface Beat {
   eyebrow: string;
-  headline: ReactNode;
+  headline: string;
+  accent?: string;
   subline: string;
   hero?: boolean;
 }
 
-// Four internal beats. Copy is fixed premium English — one strong headline and
-// one controlled supporting line each. No invented metrics, awards, or clients.
-const BEATS: Beat[] = [
-  {
-    eyebrow: "Sultan Shadi",
-    headline: (
-      <>
-        Sultan <span className="text-champagne">Shadi</span>
-      </>
-    ),
-    subline: "A marketing mind built for attention, structure, and growth.",
-    hero: true,
-  },
-  {
-    eyebrow: "Current Role",
-    headline: "Sales & Marketing Manager",
-    subline: "Garden Art – Landscape & Irrigation · February 2026 – Present",
-  },
-  {
-    eyebrow: "Strategic Edge",
-    headline: "He turns scattered attention into structured demand.",
-    subline:
-      "From brand positioning to content systems and campaign execution, every move is designed to make the message clearer, sharper, and harder to ignore.",
-  },
-  {
-    eyebrow: "The System Behind the Work",
-    headline: "Capabilities are not a list. They are the operating system.",
-    subline:
-      "Strategy, content, media, and execution connect into one flow — built to move brands from visibility to measurable momentum.",
-  },
-];
+const BEATS: Beat[] = home.hero.beats.map((beat) => {
+  if ("source" in beat && beat.source === "profileName") {
+    const accent = profile.name.split(" ").at(-1) ?? "";
+    return { eyebrow: profile.name, headline: profile.name, accent, subline: "subline" in beat ? beat.subline ?? "" : "", hero: "hero" in beat ? beat.hero : undefined };
+  }
+  if ("source" in beat && beat.source === "profileRole") {
+    return { eyebrow: beat.eyebrow, headline: profile.currentRole, subline: `${profile.currentCompany} · ${profile.currentRoleDates}` };
+  }
+  return { eyebrow: beat.eyebrow, headline: "headline" in beat ? beat.headline ?? "" : "", subline: "subline" in beat ? beat.subline ?? "" : "", hero: "hero" in beat ? beat.hero : undefined };
+});
 
 function selectImages(previews: MediaItem[]): MediaItem[] {
   return previews.filter((p) => p.kind === "image").slice(0, MAX_PANELS);
@@ -84,7 +65,8 @@ function BeatContent({ beat }: { beat: Beat }) {
       <Heading
         className={`co-fade mx-auto max-w-4xl ${beat.hero ? "display-hero" : "display-2"}`}
       >
-        {beat.headline}
+        {beat.accent && beat.headline.endsWith(beat.accent) ? beat.headline.slice(0, -beat.accent.length) : beat.headline}
+        {beat.accent && <span className="text-champagne">{beat.accent}</span>}
       </Heading>
       <p className="co-fade lede mx-auto mt-5 max-w-2xl md:mt-6">{beat.subline}</p>
     </>

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "slug": "yalla-mansaf",
+  "status": "preview",
+  "featured": false,
+  "order": 109,
+  "layout": "gallery",
+  "summary": "Appetite-led F&B brand content and promotional campaigns built for a local audience.",
+  "description": "Appetite-led F&B brand content and promotional campaigns.",
+  "identity": {
+    "title": "Yalla Mansaf",
+    "shortTitle": "Yalla Mansaf",
+    "client": "Yalla Mansaf",
+    "category": "F&B",
+    "sector": "Food & Beverage"
+  },
+  "card": {
+    "eyebrow": "F&B",
+    "imageAlt": "Yalla Mansaf project preview"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study",
+    "previewLabel": "Case study coming soon"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Yalla Mansaf project"
+  },
+  "metadata": {
+    "description": "Appetite-led food and beverage content and promotional campaigns."
+  },
+  "services": [
+    "F&B",
+    "Social",
+    "Creative"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [],
+  "relatedProjects": []
+}

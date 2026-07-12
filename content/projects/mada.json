@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "slug": "mada",
+  "status": "published",
+  "featured": false,
+  "order": 13,
+  "assetFolder": "mada",
+  "layout": "gallery",
+  "summary": "Campaign content system — creative concepts and a consistent multi-post rollout.",
+  "description": "Campaign content system — creative concepts and a consistent multi-post rollout.",
+  "identity": {
+    "title": "Mada",
+    "shortTitle": "Mada",
+    "client": "Mada",
+    "category": "Full Marketing Campaigns"
+  },
+  "card": {
+    "eyebrow": "Full Marketing Campaigns",
+    "imageAlt": "Mada campaign cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Mada campaign"
+  },
+  "metadata": {
+    "description": "Campaign concepts and a consistent multi-post rollout."
+  },
+  "services": [
+    "Campaigns",
+    "Social Media"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "Campaign content system — creative concepts and a consistent multi-post rollout."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

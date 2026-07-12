@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "slug": "digital",
+  "status": "published",
+  "featured": false,
+  "order": 3,
+  "assetFolder": "digital",
+  "layout": "gallery",
+  "summary": "A reel of motion graphics and short-form video edits produced across client campaigns.",
+  "description": "A reel of motion graphics and short-form video edits produced across client campaigns.",
+  "identity": {
+    "title": "Motion Reel",
+    "shortTitle": "Motion Reel",
+    "client": "Motion Reel",
+    "category": "Motion & Video"
+  },
+  "card": {
+    "eyebrow": "Motion & Video",
+    "imageAlt": "Motion reel portfolio cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Motion graphics and video reel"
+  },
+  "metadata": {
+    "description": "Motion graphics and short-form video edits produced across client campaigns."
+  },
+  "services": [
+    "Motion Graphics",
+    "Video"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "A reel of motion graphics and short-form video edits produced across client campaigns."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

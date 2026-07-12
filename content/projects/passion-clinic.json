@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "slug": "passion-clinic",
+  "status": "preview",
+  "featured": false,
+  "order": 108,
+  "layout": "gallery",
+  "summary": "Clinic marketing with offer campaigns and social presence management.",
+  "description": "Clinic marketing with offer campaigns and social presence management.",
+  "identity": {
+    "title": "Passion Clinic",
+    "shortTitle": "Passion",
+    "client": "Passion Clinic",
+    "category": "Healthcare",
+    "sector": "Medical"
+  },
+  "card": {
+    "eyebrow": "Healthcare",
+    "imageAlt": "Passion Clinic project preview"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study",
+    "previewLabel": "Case study coming soon"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Passion Clinic project"
+  },
+  "metadata": {},
+  "services": [
+    "Social",
+    "Campaigns"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [],
+  "relatedProjects": []
+}

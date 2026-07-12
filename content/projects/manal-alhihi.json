@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "slug": "manal-alhihi",
+  "status": "published",
+  "featured": false,
+  "order": 14,
+  "assetFolder": "Manal Alhihi",
+  "layout": "gallery",
+  "summary": "Personal brand social growth — content strategy, carousels and audience-building creative.",
+  "description": "Personal brand social growth — content strategy, carousels and audience-building creative.",
+  "identity": {
+    "title": "Manal Alhihi",
+    "shortTitle": "Manal Alhihi",
+    "client": "Manal Alhihi",
+    "category": "Social Media"
+  },
+  "card": {
+    "eyebrow": "Social Media",
+    "imageAlt": "Manal Alhihi personal brand cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Manal Alhihi personal brand"
+  },
+  "metadata": {
+    "description": "Personal brand content strategy, carousels and audience-building creative."
+  },
+  "services": [
+    "Personal Brand",
+    "Social Media"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "Personal brand social growth — content strategy, carousels and audience-building creative."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

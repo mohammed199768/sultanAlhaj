@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "slug": "harmony",
+  "status": "published",
+  "featured": false,
+  "order": 8,
+  "assetFolder": "Harmony",
+  "layout": "gallery",
+  "summary": "Full brand build and social system — identity, content templates and launch campaign.",
+  "description": "Full brand build and social system — identity, content templates and launch campaign.",
+  "identity": {
+    "title": "Harmony",
+    "shortTitle": "Harmony",
+    "client": "Harmony",
+    "category": "Full Branding"
+  },
+  "card": {
+    "eyebrow": "Full Branding",
+    "imageAlt": "Harmony branding cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Harmony branding"
+  },
+  "metadata": {
+    "description": "Full brand identity, content templates and launch campaign."
+  },
+  "services": [
+    "Branding",
+    "Social Media"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "Full brand build and social system — identity, content templates and launch campaign."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

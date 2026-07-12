@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "slug": "tawaq",
+  "status": "preview",
+  "featured": false,
+  "order": 105,
+  "layout": "gallery",
+  "summary": "Integrated campaign concept and rollout across social and paid channels.",
+  "description": "Integrated campaign concept and rollout.",
+  "identity": {
+    "title": "Tawaq",
+    "shortTitle": "Tawaq",
+    "client": "Tawaq",
+    "category": "Full Marketing Campaigns",
+    "sector": "Consumer"
+  },
+  "card": {
+    "eyebrow": "Full Marketing Campaigns",
+    "imageAlt": "Tawaq project preview"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study",
+    "previewLabel": "Case study coming soon"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Tawaq project"
+  },
+  "metadata": {},
+  "services": [
+    "Campaigns",
+    "Social",
+    "Creative"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [],
+  "relatedProjects": []
+}

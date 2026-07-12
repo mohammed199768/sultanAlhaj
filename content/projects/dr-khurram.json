@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "slug": "dr-khurram",
+  "status": "preview",
+  "featured": false,
+  "order": 104,
+  "layout": "gallery",
+  "summary": "Authority-building personal brand for a specialist — patient education content and consultation funnels.",
+  "description": "Authority-building personal brand for a specialist.",
+  "identity": {
+    "title": "Dr. Khurram",
+    "shortTitle": "Dr. Khurram",
+    "client": "Dr. Khurram",
+    "category": "Healthcare",
+    "sector": "Personal Medical Brand"
+  },
+  "card": {
+    "eyebrow": "Healthcare",
+    "imageAlt": "Dr. Khurram project preview"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study",
+    "previewLabel": "Case study coming soon"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Dr. Khurram project"
+  },
+  "metadata": {
+    "description": "Patient education content and consultation funnels for a specialist."
+  },
+  "services": [
+    "Personal Brand",
+    "Content",
+    "Video"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [],
+  "relatedProjects": []
+}

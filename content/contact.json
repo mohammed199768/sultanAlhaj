@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "metadata": { "title": "Contact Sultan Shadi", "description": "Contact Sultan Shadi, Sales & Marketing Manager in Riyadh, for marketing strategy, brand positioning, campaigns, and business development support." },
+  "hero": { "kicker": "Contact Sultan", "titleLines": ["Let’s build", "the next", "campaign"], "lede": "Reach Sultan directly for brand positioning, marketing strategy, campaign management, and sales and business development support.", "roleLine": "Sales & Marketing Manager · Garden Art – Landscape & Irrigation · Riyadh", "sendLabel": "Send a message", "emailLabel": "Email Sultan" },
+  "labels": { "email": "Email", "phone": "Phone", "whatsapp": "WhatsApp", "linkedin": "LinkedIn", "message": "Message", "location": "Location", "send": "Send brief" },
+  "form": {
+    "steps": [{ "label": "Person name", "shortLabel": "Name", "visual": "name" }, { "label": "Company name", "shortLabel": "Company", "visual": "company" }, { "label": "Message", "shortLabel": "Message", "visual": "message" }],
+    "headings": ["Start with your name", "Where is this going?", "Shape the brief"],
+    "sending": { "eyebrow": "Sending message", "title": "Sending your brief...", "body": "Preparing your message for delivery. Almost there." },
+    "success": { "eyebrow": "Message received", "title": "Message sent.", "body": "Message sent. Sultan will get back to you soon.", "resetLabel": "Send another message" }
+  }
+}

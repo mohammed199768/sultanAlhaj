@@ -12,6 +12,7 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { validateContentFiles } from "../lib/content/validateFiles";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -258,7 +259,7 @@ async function main() {
   ];
 
   const manifest: Manifest = {
-    generatedAt: new Date().toISOString(),
+    generatedAt: "1970-01-01T00:00:00.000Z",
     portfolio,
     works,
     reels,
@@ -272,6 +273,7 @@ async function main() {
     },
   };
 
+  validateContentFiles(new Set(portfolio.map((folder) => folder.key)));
   await fs.mkdir(path.dirname(OUT), { recursive: true });
   await fs.writeFile(OUT, JSON.stringify(manifest, null, 2), "utf8");
 

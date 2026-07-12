@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils/cn";
 import { profile } from "@/lib/data/profile";
 import TransitionLink from "@/components/transitions/TransitionLink";
+import site from "@/content/site.json";
 
 export default function Header({
   open,
@@ -47,7 +48,7 @@ export default function Header({
             href="/contact"
             className="hidden font-display text-[0.65rem] uppercase tracking-[0.25em] text-mist transition-colors hover:text-champagne md:block"
           >
-            Let&rsquo;s talk
+            {site.headerCtaLabel}
           </TransitionLink>
           <button
             type="button"
@@ -57,7 +58,7 @@ export default function Header({
             className="group flex items-center gap-3"
           >
             <span className="font-display text-[0.65rem] uppercase tracking-[0.25em] text-mist-300">
-              {open ? "Close" : "Menu"}
+              {open ? site.menuCloseLabel : site.menuOpenLabel}
             </span>
             <span className="relative flex h-9 w-9 flex-col items-center justify-center gap-[5px] rounded-full border border-steel-400/45 transition-colors group-hover:border-champagne">
               <span

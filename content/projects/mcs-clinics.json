@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "slug": "mcs-clinics",
+  "status": "preview",
+  "featured": false,
+  "order": 102,
+  "layout": "gallery",
+  "summary": "Service-line campaigns and social management for a medical complex, focused on trust-building and lead generation.",
+  "description": "Service-line campaigns and social management for a medical complex.",
+  "identity": {
+    "title": "MCS Clinics",
+    "shortTitle": "MCS",
+    "client": "MCS Clinics",
+    "category": "Healthcare",
+    "sector": "Medical"
+  },
+  "card": {
+    "eyebrow": "Healthcare",
+    "imageAlt": "MCS Clinics project preview"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study",
+    "previewLabel": "Case study coming soon"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "MCS Clinics project"
+  },
+  "metadata": {
+    "description": "Service-line campaigns and social management for a medical complex."
+  },
+  "services": [
+    "Strategy",
+    "Social",
+    "Paid Ads"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [],
+  "relatedProjects": []
+}

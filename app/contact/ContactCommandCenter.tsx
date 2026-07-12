@@ -31,6 +31,7 @@ import {
   profile,
   whatsappHref,
 } from "@/lib/data/profile";
+import contactContent from "@/content/contact.json";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 type VisualVariant = "name" | "company" | "message" | "sending" | "success";
@@ -67,11 +68,7 @@ const emptyMessage: MessageValues = {
   message: "",
 };
 
-const formSteps = [
-  { label: "Person name", shortLabel: "Name", visual: "name" },
-  { label: "Company name", shortLabel: "Company", visual: "company" },
-  { label: "Message", shortLabel: "Message", visual: "message" },
-] as const;
+const formSteps = contactContent.form.steps;
 
 function FieldLabel({
   htmlFor,
@@ -176,12 +173,12 @@ function SendingState() {
           <StepVisual variant="sending" />
         </div>
         <div>
-          <p className="eyebrow">Sending message</p>
+          <p className="eyebrow">{contactContent.form.sending.eyebrow}</p>
           <h2 className="mt-3 text-2xl font-semibold text-mist-300 md:text-3xl">
-            Sending your brief...
+            {contactContent.form.sending.title}
           </h2>
           <p className="mt-3 max-w-xl text-sm leading-6 text-mist/78">
-            Preparing your message for delivery. Almost there.
+            {contactContent.form.sending.body}
           </p>
           <div className="mt-7 h-1.5 overflow-hidden rounded-full bg-steel-400/15">
             <span className="sending-rail block h-full w-1/3 rounded-full bg-champagne" />
@@ -204,19 +201,19 @@ function SuccessState({ onReset }: { onReset: () => void }) {
           <StepVisual variant="success" />
         </div>
         <div>
-          <p className="eyebrow">Message received</p>
+          <p className="eyebrow">{contactContent.form.success.eyebrow}</p>
           <h2 className="mt-3 text-2xl font-semibold text-mist-300 md:text-3xl">
-            Message sent.
+            {contactContent.form.success.title}
           </h2>
           <p className="mt-3 max-w-xl text-sm leading-6 text-mist/82">
-            Message sent. Sultan will get back to you soon.
+            {contactContent.form.success.body}
           </p>
           <button
             type="button"
             onClick={onReset}
             className="btn-primary mt-7 min-h-11"
           >
-            Send another message
+            {contactContent.form.success.resetLabel}
           </button>
         </div>
       </div>
@@ -295,7 +292,7 @@ function MessageForm() {
         <div>
           <p className="eyebrow">Message form</p>
           <h2 className="mt-3 text-2xl font-semibold text-mist-300 md:text-3xl">
-            {step === 0 ? "Start with your name" : step === 1 ? "Where is this going?" : "Shape the brief"}
+            {contactContent.form.headings[step]}
           </h2>
           <p className="mt-2 max-w-lg text-sm leading-6 text-haze/74">
             {step === 0
@@ -702,26 +699,26 @@ export default function ContactCommandCenter() {
     const actions: ContactActionItem[] = [
       {
         id: "email",
-        label: "Email",
+        label: contactContent.labels.email,
         icon: Mail,
         href: emailHref,
       },
       {
         id: "whatsapp",
-        label: "WhatsApp",
+        label: contactContent.labels.whatsapp,
         icon: MessageCircle,
         href: whatsappHref,
         external: true,
       },
       {
         id: "phone",
-        label: "Phone",
+        label: contactContent.labels.phone,
         icon: Phone,
         href: `tel:${profile.phone}`,
       },
       {
         id: "send",
-        label: "Message",
+        label: contactContent.labels.message,
         icon: Send,
         onClick: openForm,
         emphasis: true,
@@ -731,7 +728,7 @@ export default function ContactCommandCenter() {
     if (linkedInHref) {
       actions.push({
         id: "linkedin",
-        label: "LinkedIn",
+        label: contactContent.labels.linkedin,
         icon: Linkedin,
         href: linkedInHref,
         external: true,
@@ -747,7 +744,7 @@ export default function ContactCommandCenter() {
     const actions: OrbitActionItem[] = [
       {
         id: "email",
-        label: "Email",
+        label: contactContent.labels.email,
         icon: Mail,
         href: emailHref,
         angle: 220,
@@ -756,7 +753,7 @@ export default function ContactCommandCenter() {
       },
       {
         id: "whatsapp",
-        label: "WhatsApp",
+        label: contactContent.labels.whatsapp,
         icon: MessageCircle,
         href: whatsappHref,
         external: true,
@@ -766,7 +763,7 @@ export default function ContactCommandCenter() {
       },
       {
         id: "phone",
-        label: "Phone",
+        label: contactContent.labels.phone,
         icon: Phone,
         href: `tel:${profile.phone}`,
         angle: 145,
@@ -778,7 +775,7 @@ export default function ContactCommandCenter() {
     if (linkedInHref) {
       actions.push({
         id: "linkedin",
-        label: "LinkedIn",
+        label: contactContent.labels.linkedin,
         icon: Linkedin,
         href: linkedInHref,
         external: true,
@@ -790,7 +787,7 @@ export default function ContactCommandCenter() {
 
     actions.push({
       id: "send",
-      label: "Message",
+      label: contactContent.labels.message,
       icon: Send,
       onClick: openForm,
       emphasis: true,
@@ -811,19 +808,16 @@ export default function ContactCommandCenter() {
       <section className="shell relative flex min-h-[calc(100dvh-7rem)] items-center pb-20 pt-8">
         <div className="grid w-full items-center gap-10 lg:grid-cols-[minmax(0,0.78fr)_minmax(31rem,1fr)] xl:grid-cols-[minmax(0,0.72fr)_minmax(38rem,1fr)]">
           <div className="contact-copy min-w-0 max-w-3xl">
-            <p className="contact-kicker eyebrow">Contact Sultan</p>
+            <p className="contact-kicker eyebrow">{contactContent.hero.kicker}</p>
             <h1 className="mt-5 max-w-[9.5ch] font-display text-[clamp(2.25rem,12vw,4.25rem)] font-extrabold uppercase leading-[0.95] tracking-normal text-mist-300 lg:text-[clamp(3.5rem,5.6vw,6.25rem)]">
-              <span className="contact-title-line block">Let&rsquo;s build</span>
-              <span className="contact-title-line block">the next</span>
-              <span className="contact-title-line block text-champagne">campaign</span>
+              {contactContent.hero.titleLines.map((line, index) => <span key={line} className={`contact-title-line block ${index === contactContent.hero.titleLines.length - 1 ? "text-champagne" : ""}`}>{line}</span>)}
             </h1>
             <span className="contact-live-line mt-6 block h-px w-48 origin-left bg-gradient-to-r from-champagne via-champagne/35 to-transparent" aria-hidden />
             <p className="contact-lede mt-7 max-w-2xl text-base leading-8 text-mist/82 md:text-lg md:leading-8">
-              Reach Sultan directly for brand positioning, marketing strategy,
-              campaign management, and sales and business development support.
+              {contactContent.hero.lede}
             </p>
             <p className="contact-meta mt-4 font-display text-[0.62rem] uppercase tracking-[0.18em] text-haze/65">
-              Sales &amp; Marketing Manager · Garden Art – Landscape &amp; Irrigation · Riyadh
+              {contactContent.hero.roleLine}
             </p>
 
             <div className="contact-actions mt-9 flex flex-wrap gap-3">
@@ -832,11 +826,11 @@ export default function ContactCommandCenter() {
                 onClick={openForm}
                 className="btn-primary min-h-12 px-7"
               >
-                Send a message
+                {contactContent.hero.sendLabel}
                 <Send className="h-4 w-4" aria-hidden />
               </button>
               <a href={emailHref} className="btn-ghost min-h-12 px-7">
-                Email Sultan
+                {contactContent.hero.emailLabel}
                 <Mail className="h-4 w-4" aria-hidden />
               </a>
             </div>

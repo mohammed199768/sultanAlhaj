@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "validate:content": "tsx scripts/validate-content.ts",
     "generate:manifest": "tsx scripts/generate-manifest.ts",
     "transcode": "tsx scripts/transcode-media.ts",
-    "prebuild": "npm run generate:manifest",
+    "prebuild": "npm run validate:content && npm run generate:manifest",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

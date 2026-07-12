@@ -9,42 +9,33 @@ import RouteTransitionLayer from "@/components/transitions/RouteTransitionLayer"
 import SiteBootLoader from "@/components/system/SiteBootLoader";
 import RouteLoadingIndicator from "@/components/system/RouteLoadingIndicator";
 import { profile } from "@/lib/data/profile";
+import site from "@/content/site.json";
 
-const siteUrl = "https://sultanshadi.com";
-const description =
-  "Sultan Shadi — Marketing Manager and Brand Positioning Strategist based in Riyadh, Saudi Arabia.";
+const siteUrl = site.siteUrl;
+const description = site.defaultSeoDescription;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Sultan Shadi — Marketing Manager | Brand Positioning Strategist",
-    template: "%s — Sultan Shadi",
+    default: site.defaultSeoTitle,
+    template: site.titleTemplate,
   },
   description,
-  keywords: [
-    "Sultan Shadi",
-    "Sultan Alhaj Ahmad",
-    "Marketing Manager",
-    "Brand Positioning Strategist",
-    "Sales & Marketing Manager",
-    "Jordan",
-    "Saudi Arabia",
-    "Social Media Marketing",
-  ],
+  keywords: site.keywords,
   authors: [{ name: profile.formalName }],
   openGraph: {
     type: "website",
-    title: "Sultan Shadi — Marketing Manager | Brand Positioning Strategist",
+    title: site.defaultSeoTitle,
     description,
     url: siteUrl,
-    siteName: "Sultan Shadi",
-    images: [{ url: "/works/4.webp", width: 1200, height: 630, alt: "Sultan Shadi portfolio" }],
+    siteName: site.brandDisplayName,
+    images: [{ url: site.socialImage, width: 1200, height: 630, alt: site.socialImageAlt }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sultan Shadi — Marketing Manager | Brand Positioning Strategist",
+    title: site.defaultSeoTitle,
     description,
-    images: ["/works/4.webp"],
+    images: [site.socialImage],
   },
   robots: { index: true, follow: true },
 };
@@ -54,7 +45,7 @@ const jsonLd = {
   "@type": "Person",
   name: profile.formalName,
   alternateName: profile.name,
-  jobTitle: "Sales & Marketing Manager",
+  jobTitle: profile.currentRole,
   description: profile.positioning,
   email: profile.email,
   telephone: profile.phone,

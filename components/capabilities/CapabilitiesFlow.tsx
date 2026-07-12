@@ -21,6 +21,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { isHeavyTransitionActive } from "@/lib/motion/motionState";
 import { useMediaQuery, usePrefersReducedMotion } from "@/lib/motion/reducedMotion";
 import { cn } from "@/lib/utils/cn";
+import home from "@/content/home.json";
 
 interface FlowCapability {
   id: string;
@@ -30,65 +31,7 @@ interface FlowCapability {
   meta: string;
 }
 
-/** Verified positioning only — value lines reuse existing capability copy. */
-const FLOW_CAPS: FlowCapability[] = [
-  {
-    id: "brand-strategy",
-    label: "Strategy",
-    title: "Brand Strategy",
-    value: "Positioning, funnels and channel plans built to hit commercial goals.",
-    meta: "JO · KSA",
-  },
-  {
-    id: "content-architecture",
-    label: "Content",
-    title: "Content Architecture",
-    value: "Culturally-tuned Arabic/English content systems across every format.",
-    meta: "Arabic / English",
-  },
-  {
-    id: "paid-campaigns",
-    label: "Performance",
-    title: "Paid Campaigns",
-    value: "Meta, Google, Snapchat and TikTok performance buying.",
-    meta: "Meta · Google · Snapchat · TikTok",
-  },
-  {
-    id: "social-growth",
-    label: "Growth",
-    title: "Social Media Growth",
-    value: "Always-on channel management and community growth.",
-    meta: "Always-on",
-  },
-  {
-    id: "healthcare",
-    label: "Sector",
-    title: "Healthcare Marketing",
-    value: "Integrated campaigns for medical brands and clinics.",
-    meta: "Medical · Clinics",
-  },
-  {
-    id: "fnb-retail",
-    label: "Sector",
-    title: "F&B / Retail Campaigns",
-    value: "Launches and always-on content for F&B and retail brands.",
-    meta: "F&B · Retail",
-  },
-  {
-    id: "activations",
-    label: "Activation",
-    title: "Event & Sponsorship Activations",
-    value: "On-ground experiences that turn footfall into fans.",
-    meta: "Events · Sponsorships",
-  },
-  {
-    id: "reporting",
-    label: "Insight",
-    title: "Performance Reporting",
-    value: "Reporting and insight loops that compound results.",
-    meta: "Data-driven",
-  },
-];
+const FLOW_CAPS: FlowCapability[] = home.capabilities.items;
 
 const DESKTOP_QUERY = "(min-width: 1024px)";
 

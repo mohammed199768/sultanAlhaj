@@ -27,6 +27,7 @@ import {
   cvProfile,
   cvSectors,
   cvSelectedValue,
+  cvSectionLabels,
   cvSkillGroups,
   cvSpecializations,
   cvTools,
@@ -50,57 +51,20 @@ interface CvSection {
   icon: LucideIcon;
 }
 
-const sections: CvSection[] = [
-  {
-    id: "profile",
-    label: "Profile",
-    shortLabel: "Profile",
-    hint: "Positioning",
-    icon: UserRound,
-  },
-  {
-    id: "experience",
-    label: "Experience",
-    shortLabel: "Work",
-    hint: "Career record",
-    icon: BriefcaseBusiness,
-  },
-  {
-    id: "skills",
-    label: "Skills",
-    shortLabel: "Skills",
-    hint: "Skill set",
-    icon: Target,
-  },
-  {
-    id: "tools",
-    label: "Tools",
-    shortLabel: "Tools",
-    hint: "Platforms",
-    icon: Wrench,
-  },
-  {
-    id: "education",
-    label: "Education",
-    shortLabel: "Edu",
-    hint: "University",
-    icon: GraduationCap,
-  },
-  {
-    id: "languages",
-    label: "Languages",
-    shortLabel: "Lang",
-    hint: "Arabic / English",
-    icon: Languages,
-  },
-  {
-    id: "contact",
-    label: "Contact",
-    shortLabel: "Contact",
-    hint: "Direct channels",
-    icon: Mail,
-  },
-];
+const sectionIcons: Record<SectionId, LucideIcon> = {
+  profile: UserRound,
+  experience: BriefcaseBusiness,
+  skills: Target,
+  tools: Wrench,
+  education: GraduationCap,
+  languages: Languages,
+  contact: Mail,
+};
+
+const sections: CvSection[] = cvSectionLabels.map((section) => {
+  const id = section.id as SectionId;
+  return { ...section, id, icon: sectionIcons[id] };
+});
 
 const contacts = [
   {

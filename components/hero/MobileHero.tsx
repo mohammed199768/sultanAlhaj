@@ -3,8 +3,9 @@ import { ArrowDownRight } from "lucide-react";
 import type { CSSProperties } from "react";
 import { profile } from "@/lib/data/profile";
 import type { MediaItem } from "@/lib/manifest/types";
+import home from "@/content/home.json";
 
-const proofChips = ["Healthcare", "F&B", "Sports", "Saudi / Jordan"];
+const proofChips = home.hero.mobile.sectors;
 
 export default function MobileHero({ image }: { image: MediaItem | null }) {
   return (
@@ -23,14 +24,14 @@ export default function MobileHero({ image }: { image: MediaItem | null }) {
             data-mobile-hero-reveal
             className="font-display text-[0.62rem] uppercase tracking-[0.28em] text-champagne/80"
           >
-            Sales &amp; Marketing Manager
+            {profile.currentRole}
           </p>
           <h1
             data-mobile-hero-reveal
             style={{ "--mobile-hero-delay": "80ms" } as CSSProperties}
             className="mt-3 max-w-[11ch] font-display text-[2.5rem] font-extrabold uppercase leading-[0.95] tracking-normal text-mist-300"
           >
-            Sultan Alhaj Ahmad
+            {profile.formalName}
           </h1>
           <p
             data-mobile-hero-reveal
@@ -44,7 +45,7 @@ export default function MobileHero({ image }: { image: MediaItem | null }) {
             style={{ "--mobile-hero-delay": "220ms" } as CSSProperties}
             className="mt-3 max-w-[18.5rem] text-[0.95rem] leading-relaxed text-mist/82"
           >
-            Garden Art – Landscape &amp; Irrigation · February 2026 – Present
+            {profile.currentCompany} · {profile.currentRoleDates}
           </p>
         </div>
 
@@ -82,10 +83,10 @@ export default function MobileHero({ image }: { image: MediaItem | null }) {
             <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-4">
               <div>
                 <p className="font-display text-[0.56rem] uppercase tracking-[0.22em] text-champagne-300/85">
-                  Selected Work
+                  {home.hero.mobile.workEyebrow}
                 </p>
                 <p className="mt-1 font-display text-sm font-semibold uppercase text-mist-300">
-                  Campaign Systems
+                  {home.hero.mobile.workLabel}
                 </p>
               </div>
               <ArrowDownRight className="h-5 w-5 flex-none text-champagne-300" aria-hidden />
@@ -99,10 +100,10 @@ export default function MobileHero({ image }: { image: MediaItem | null }) {
           className="flex flex-wrap gap-3 pt-1"
         >
           <a href="#work" className="btn-primary min-h-11 px-5 text-[0.66rem]">
-            View Work
+            {home.hero.mobile.primaryCta}
           </a>
           <a href="#contact" className="btn-ghost min-h-11 px-5 text-[0.66rem]">
-            Contact
+            {home.hero.mobile.secondaryCta}
           </a>
         </div>
       </div>

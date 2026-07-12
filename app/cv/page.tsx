@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import CvControlCenter from "./CvControlCenter";
+import cv from "@/content/cv.json";
 
-export const metadata: Metadata = {
-  title: "Sultan Shadi CV",
-  description:
-    "Professional CV of Sultan Alhaj Ahmad — Marketing Manager and Brand Positioning Strategist.",
-};
+export const metadata: Metadata = cv.metadata;
 
 export default function CvPage() {
   return (

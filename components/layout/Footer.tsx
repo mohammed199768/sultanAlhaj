@@ -1,4 +1,5 @@
 import { profile, emailHref, whatsappHref } from "@/lib/data/profile";
+import site from "@/content/site.json";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -32,9 +33,9 @@ export default function Footer() {
       </div>
       <div className="shell mt-10 flex flex-col gap-2 text-[0.65rem] text-haze/40 md:flex-row md:justify-between">
         <span>
-          © {year} {profile.formalName}. All rights reserved.
+          © {year} {profile.formalName}. {site.copyrightSuffix}
         </span>
-        <span>Built as a cinematic marketing dossier.</span>
+        <span>{site.footerCopy}</span>
       </div>
     </footer>
   );

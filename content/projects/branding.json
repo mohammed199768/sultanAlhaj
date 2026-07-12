@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "slug": "branding",
+  "status": "published",
+  "featured": true,
+  "order": 1,
+  "assetFolder": "Branding",
+  "layout": "gallery",
+  "summary": "Company profiles, catalogues and brand collateral designed as print-ready PDF systems.",
+  "description": "Company profiles, catalogues and brand collateral designed as print-ready PDF systems.",
+  "identity": {
+    "title": "Brand Profiles & Catalogues",
+    "shortTitle": "Brand Profiles",
+    "client": "Brand Profiles & Catalogues",
+    "category": "Full Branding"
+  },
+  "card": {
+    "eyebrow": "Full Branding",
+    "imageAlt": "Brand profiles and catalogues portfolio cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Brand profiles and catalogues portfolio"
+  },
+  "metadata": {},
+  "services": [
+    "Branding",
+    "Print",
+    "Collateral"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "eyebrow": "Overview",
+      "title": "Brand systems built for print",
+      "body": [
+        "Company profiles, catalogues and brand collateral designed as print-ready PDF systems."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

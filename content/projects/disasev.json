@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "slug": "disasev",
+  "status": "published",
+  "featured": false,
+  "order": 4,
+  "assetFolder": "disasev",
+  "layout": "gallery",
+  "summary": "Social-first brand content — campaign creative and a cohesive grid system.",
+  "description": "Social-first brand content — campaign creative and a cohesive grid system.",
+  "identity": {
+    "title": "Disasev",
+    "shortTitle": "Disasev",
+    "client": "Disasev",
+    "category": "Social Media"
+  },
+  "card": {
+    "eyebrow": "Social Media",
+    "imageAlt": "Disasev social campaign cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Disasev social campaign"
+  },
+  "metadata": {
+    "description": "Social-first campaign creative and a cohesive grid system."
+  },
+  "services": [
+    "Social Media",
+    "Content"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "Social-first brand content — campaign creative and a cohesive grid system."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

@@ -3,14 +3,14 @@
 import { motion } from "framer-motion";
 import { Play, FileText, Images } from "lucide-react";
 import ImageAsset from "@/components/media/ImageAsset";
-import type { Project } from "@/lib/manifest/types";
+import type { ProjectPopupData } from "@/lib/content/types";
 
 export default function WorkCard({
   project,
   onOpen,
 }: {
-  project: Project;
-  onOpen: (p: Project) => void;
+  project: ProjectPopupData;
+  onOpen: (p: ProjectPopupData) => void;
 }) {
   const { cover, counts } = project;
 
@@ -26,7 +26,7 @@ export default function WorkCard({
       <button
         type="button"
         onClick={() => onOpen(project)}
-        aria-label={`Open ${project.client} gallery`}
+        aria-label={`Open ${project.identity.title} gallery`}
         className="relative block w-full overflow-hidden rounded-2xl border border-steel-400/25 text-left"
       >
         <div className="relative aspect-[4/5] overflow-hidden bg-surface-2">
@@ -40,13 +40,13 @@ export default function WorkCard({
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={cover.poster}
-              alt={project.client}
+              alt={project.identity.title}
               className="pointer-events-none h-full w-full select-none object-cover transition-transform duration-700 group-hover:scale-105"
             />
           ) : (
             <div className="pointer-events-none flex h-full items-center justify-center bg-gradient-to-br from-surface-2 to-ink">
               <span className="font-display text-xs uppercase tracking-[0.3em] text-haze/50">
-                {project.client}
+                {project.identity.title}
               </span>
             </div>
           )}
@@ -78,7 +78,7 @@ export default function WorkCard({
             {project.category}
           </p>
           <h3 className="mt-1 font-display text-lg font-semibold text-mist-300">
-            {project.client}
+            {project.identity.title}
           </h3>
         </div>
       </button>

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "slug": "hamc",
+  "status": "published",
+  "featured": false,
+  "order": 7,
+  "assetFolder": "HAMC",
+  "layout": "gallery",
+  "summary": "Medical complex marketing — service-line campaigns, promotional films and social management.",
+  "description": "Medical complex marketing — service-line campaigns, promotional films and social management.",
+  "identity": {
+    "title": "HAMC",
+    "shortTitle": "HAMC",
+    "client": "HAMC",
+    "category": "Healthcare"
+  },
+  "card": {
+    "eyebrow": "Healthcare",
+    "imageAlt": "HAMC medical marketing cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "HAMC medical marketing"
+  },
+  "metadata": {
+    "description": "Medical complex campaigns, promotional films and social management."
+  },
+  "services": [
+    "Healthcare",
+    "Campaigns",
+    "Video"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "Medical complex marketing — service-line campaigns, promotional films and social management."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

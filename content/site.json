@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "siteName": "Sultan Shadi Portfolio",
+  "brandDisplayName": "Sultan Shadi",
+  "siteUrl": "https://sultanshadi.com",
+  "defaultSeoTitle": "Sultan Shadi — Marketing Manager | Brand Positioning Strategist",
+  "titleTemplate": "%s — Sultan Shadi",
+  "defaultSeoDescription": "Sultan Shadi — Marketing Manager and Brand Positioning Strategist based in Riyadh, Saudi Arabia.",
+  "socialImage": "/works/4.webp",
+  "socialImageAlt": "Sultan Shadi portfolio",
+  "keywords": ["Sultan Shadi", "Sultan Alhaj Ahmad", "Marketing Manager", "Brand Positioning Strategist", "Sales & Marketing Manager", "Jordan", "Saudi Arabia", "Social Media Marketing"],
+  "headerCtaLabel": "Let’s talk",
+  "menuOpenLabel": "Menu",
+  "menuCloseLabel": "Close",
+  "footerCopy": "Built as a cinematic marketing dossier.",
+  "copyrightSuffix": "All rights reserved."
+}

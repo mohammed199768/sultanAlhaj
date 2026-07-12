@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "slug": "dr-alaa-albuqaie",
+  "legacySlugs": [
+    "dr-alaa-alboukai"
+  ],
+  "status": "published",
+  "featured": false,
+  "order": 5,
+  "assetFolder": "Dr. Ala'a Albuqaie",
+  "layout": "gallery",
+  "summary": "Personal medical brand for a specialist doctor — authority-building content and consultation funnels.",
+  "description": "Personal medical brand content system — authority content and audience growth.",
+  "identity": {
+    "title": "Dr. Ala'a Albuqaie",
+    "shortTitle": "Dr. Alaa",
+    "client": "Dr. Ala'a Albuqaie",
+    "category": "Healthcare",
+    "sector": "Personal Medical Brand"
+  },
+  "card": {
+    "eyebrow": "Healthcare",
+    "imageAlt": "Dr. Alaa personal medical brand cover"
+  },
+  "popup": {
+    "ctaLabel": "Open full case study"
+  },
+  "hero": {
+    "eyebrow": "Case Study",
+    "imageAlt": "Dr. Alaa personal medical brand"
+  },
+  "metadata": {
+    "description": "Personal medical brand content and consultation funnels."
+  },
+  "services": [
+    "Personal Brand",
+    "Content"
+  ],
+  "tools": [],
+  "metrics": [],
+  "sections": [
+    {
+      "id": "overview",
+      "type": "text",
+      "title": "Overview",
+      "body": [
+        "Personal medical brand content system — authority content and audience growth."
+      ]
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "title": "Selected work"
+    }
+  ],
+  "relatedProjects": []
+}

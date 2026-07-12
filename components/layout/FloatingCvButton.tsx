@@ -1,6 +1,7 @@
 "use client";
 
 import { Mail, MessageCircle } from "lucide-react";
+import { usePathname } from "next/navigation";
 import {
   cvDownloadFileName,
   cvDownloadHref,
@@ -9,8 +10,13 @@ import {
 } from "@/lib/data/profile";
 
 export default function FloatingCvButton() {
+  const pathname = usePathname();
+  const isMobileCv = pathname === "/cv";
+
   return (
-    <div className="fixed left-4 bottom-24 z-[50] flex flex-col gap-2 md:left-5 md:top-1/2 md:bottom-auto md:-translate-y-1/2">
+    <div
+      className={`${isMobileCv ? "hidden md:flex" : "flex"} fixed bottom-[calc(6rem+env(safe-area-inset-bottom))] left-4 z-[50] flex-col gap-2 md:bottom-auto md:left-5 md:top-1/2 md:-translate-y-1/2`}
+    >
       <a
         href={cvDownloadHref}
         download={cvDownloadFileName}

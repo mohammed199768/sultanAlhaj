@@ -1,6 +1,14 @@
 "use client";
 
-import { useEffect, useState, type ReactNode } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+  type KeyboardEvent as ReactKeyboardEvent,
+  type MutableRefObject,
+  type ReactNode,
+  type Ref,
+} from "react";
 import Image from "next/image";
 import type { LucideIcon } from "lucide-react";
 import {
@@ -14,6 +22,7 @@ import {
   Languages,
   Mail,
   MapPin,
+  MessageCircle,
   Phone,
   Target,
   UserRound,
@@ -32,7 +41,11 @@ import {
   cvSpecializations,
   cvTools,
 } from "./cvData";
-import { cvDownloadFileName, cvDownloadHref } from "@/lib/data/profile";
+import {
+  cvDownloadFileName,
+  cvDownloadHref,
+  whatsappHref,
+} from "@/lib/data/profile";
 
 type SectionId =
   | "profile"
@@ -95,35 +108,6 @@ function initials(value: string) {
     .toUpperCase();
 }
 
-function useCvViewportLock() {
-  useEffect(() => {
-    const html = document.documentElement;
-    const body = document.body;
-    const footer = document.querySelector("body > footer") as HTMLElement | null;
-    const previous = {
-      htmlHeight: html.style.height,
-      htmlOverflow: html.style.overflow,
-      bodyHeight: body.style.height,
-      bodyOverflow: body.style.overflow,
-      footerDisplay: footer?.style.display,
-    };
-
-    html.style.height = "100%";
-    html.style.overflow = "hidden";
-    body.style.height = "100%";
-    body.style.overflow = "hidden";
-    if (footer) footer.style.display = "none";
-
-    return () => {
-      html.style.height = previous.htmlHeight;
-      html.style.overflow = previous.htmlOverflow;
-      body.style.height = previous.bodyHeight;
-      body.style.overflow = previous.bodyOverflow;
-      if (footer) footer.style.display = previous.footerDisplay ?? "";
-    };
-  }, []);
-}
-
 function GlassCard({
   children,
   className,
@@ -160,7 +144,7 @@ function IconFrame({ icon: Icon, active = false }: { icon: LucideIcon; active?: 
 
 function TopBar() {
   return (
-    <GlassCard className="flex min-h-0 items-center justify-between gap-3 px-3 py-2.5 sm:px-4">
+    <GlassCard className="hidden min-h-0 items-center justify-between gap-3 px-3 py-2.5 sm:px-4 md:flex">
       <div className="flex min-w-0 items-center gap-3">
         <span className="flex h-10 w-10 flex-none items-center justify-center rounded-2xl border border-champagne/35 bg-champagne font-display text-xs font-bold text-ink">
           SS
@@ -207,27 +191,27 @@ function TopBar() {
 
 function ProfileCard() {
   return (
-    <GlassCard className="flex h-full min-h-0 items-center gap-3 p-3 md:flex-col md:items-stretch">
-      <div className="relative h-16 w-16 flex-none overflow-hidden rounded-[1rem] border border-steel-400/20 md:h-40 md:w-full xl:flex-1">
+    <GlassCard className="relative flex h-full min-h-0 items-center gap-3 p-2.5 md:flex-col md:items-stretch md:p-3">
+      <div className="relative h-[3.75rem] w-[3.75rem] flex-none overflow-hidden rounded-[1rem] border border-steel-400/20 md:h-40 md:w-full xl:flex-1">
         <Image
           src="/sultan.jpeg"
           alt="Sultan Alhaj Ahmad portrait"
           fill
           priority
-          sizes="(max-width: 767px) 64px, (max-width: 1279px) 17rem, 24vw"
+          sizes="(max-width: 767px) 60px, (max-width: 1279px) 17rem, 24vw"
           className="object-cover transition-transform duration-300 hover:scale-[1.025]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-900/55 via-transparent to-transparent" />
       </div>
 
-      <div className="min-w-0 flex-1 md:flex-none">
-        <p className="truncate font-display text-base font-semibold uppercase leading-tight text-mist-300 md:text-xl xl:text-2xl">
+      <div className="min-w-0 flex-1 pr-12 md:flex-none md:pr-0">
+        <p className="font-display text-[0.9rem] font-semibold uppercase leading-snug text-mist-300 md:truncate md:text-xl md:leading-tight xl:text-2xl">
           {cvProfile.formalName}
         </p>
-        <p className="mt-1 line-clamp-2 text-xs leading-5 text-haze/76 md:text-sm">
+        <p className="mt-1 line-clamp-2 text-xs leading-[1.15rem] text-haze/76 md:text-sm md:leading-5">
           {cvProfile.title}
         </p>
-        <div className="mt-2 flex flex-wrap gap-1.5 md:mt-4">
+        <div className="mt-1.5 flex flex-wrap gap-1.5 md:mt-4">
           <span className="rounded-full border border-champagne/25 bg-champagne/10 px-2.5 py-1 text-[0.68rem] font-medium text-champagne-300">
             {cvProfile.location.split(",")[0]}
           </span>
@@ -236,6 +220,15 @@ function ProfileCard() {
           </span>
         </div>
       </div>
+
+      <a
+        href={cvDownloadHref}
+        download={cvDownloadFileName}
+        aria-label="Download CV PDF"
+        className="absolute right-2.5 top-2.5 inline-flex h-11 w-11 items-center justify-center rounded-full border border-champagne/40 bg-champagne text-ink shadow-lg shadow-navy-900/35 transition-colors duration-200 hover:bg-champagne-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-champagne md:hidden"
+      >
+        <Download className="h-4 w-4" aria-hidden />
+      </a>
     </GlassCard>
   );
 }
@@ -267,29 +260,39 @@ function SectionButton({
   section,
   active,
   onSelect,
+  onKeyDown,
+  buttonRef,
 }: {
   section: CvSection;
   active: boolean;
   onSelect: (id: SectionId) => void;
+  onKeyDown: (event: ReactKeyboardEvent<HTMLButtonElement>, id: SectionId) => void;
+  buttonRef: Ref<HTMLButtonElement>;
 }) {
   return (
     <button
+      ref={buttonRef}
+      id={`cv-tab-${section.id}`}
       type="button"
-      aria-pressed={active}
+      role="tab"
+      aria-selected={active}
+      aria-controls="cv-active-panel"
+      tabIndex={active ? 0 : -1}
       onClick={() => onSelect(section.id)}
+      onKeyDown={(event) => onKeyDown(event, section.id)}
       className={cn(
-        "group min-w-0 rounded-[1rem] border p-2 transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-champagne sm:p-3",
+        "group flex min-h-16 w-[clamp(4.5rem,23vw,5.25rem)] flex-none snap-center items-center justify-center rounded-[1rem] border p-2 transition-[background-color,border-color,transform] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-champagne active:scale-[0.98] md:block md:min-h-0 md:w-auto md:snap-none md:p-3 md:active:scale-100",
         active
-          ? "border-champagne/60 bg-champagne/15"
+          ? "border-champagne/65 bg-champagne/15 shadow-[0_10px_28px_rgba(0,4,25,0.3)] md:shadow-none"
           : "border-steel-400/18 bg-ink/38 hover:border-champagne/35 hover:bg-mist-300/[0.07]"
       )}
     >
-      <div className="flex min-w-0 flex-col items-center justify-center gap-1 text-center sm:flex-row sm:justify-start sm:gap-3 sm:text-left">
+      <div className="flex min-w-0 flex-col items-center justify-center gap-1 text-center md:flex-row md:justify-start md:gap-3 md:text-left">
         <IconFrame icon={section.icon} active={active} />
         <span className="min-w-0">
-          <span className="block truncate font-display text-[0.64rem] uppercase tracking-[0.14em] text-mist-300 sm:text-[0.7rem]">
-            <span className="sm:hidden">{section.shortLabel}</span>
-            <span className="hidden sm:inline">{section.label}</span>
+          <span className="block truncate font-display text-[0.64rem] uppercase tracking-[0.14em] text-mist-300 md:text-[0.7rem]">
+            <span className="md:hidden">{section.shortLabel}</span>
+            <span className="hidden md:inline">{section.label}</span>
           </span>
           <span className="mt-1 hidden truncate text-xs text-haze/68 md:block">
             {section.hint}
@@ -303,13 +306,19 @@ function SectionButton({
 function CommandCard({
   selected,
   onSelect,
+  railRef,
+  buttonRefs,
+  onKeyDown,
 }: {
   selected: SectionId;
   onSelect: (id: SectionId) => void;
+  railRef: Ref<HTMLDivElement>;
+  buttonRefs: MutableRefObject<Partial<Record<SectionId, HTMLButtonElement>>>;
+  onKeyDown: (event: ReactKeyboardEvent<HTMLButtonElement>, id: SectionId) => void;
 }) {
   return (
-    <GlassCard className="flex h-full min-h-0 flex-col p-3">
-      <div className="mb-2 flex flex-none items-center justify-between gap-3 md:mb-3">
+    <GlassCard className="flex h-full min-h-0 flex-col p-2.5 md:p-3">
+      <div className="mb-1.5 flex flex-none items-center justify-between gap-3 md:mb-3">
         <div className="min-w-0">
           <p className="font-display text-[0.62rem] uppercase tracking-[0.22em] text-champagne/75">
             Command
@@ -321,15 +330,30 @@ function CommandCard({
         <FileText className="h-4 w-4 flex-none text-champagne/75" aria-hidden />
       </div>
 
-      <div className="grid flex-none grid-cols-4 gap-2 md:min-h-0 md:flex-1 md:grid-cols-2 md:auto-rows-fr">
-        {sections.map((section) => (
-          <SectionButton
-            key={section.id}
-            section={section}
-            active={selected === section.id}
-            onSelect={onSelect}
-          />
-        ))}
+      <div className="relative min-w-0 md:min-h-0 md:flex-1">
+        <div
+          ref={railRef}
+          role="tablist"
+          aria-label="CV sections"
+          aria-orientation="horizontal"
+          className="no-scrollbar flex snap-x snap-mandatory gap-2 overflow-x-auto overscroll-x-contain scroll-px-4 rounded-[1.1rem] px-3 py-1 [mask-image:linear-gradient(to_right,transparent,black_1rem,black_calc(100%_-_1rem),transparent)] [-webkit-mask-image:linear-gradient(to_right,transparent,black_1rem,black_calc(100%_-_1rem),transparent)] md:grid md:h-full md:grid-cols-2 md:auto-rows-fr md:overflow-visible md:overscroll-auto md:rounded-none md:px-0 md:py-0 md:[mask-image:none] md:[-webkit-mask-image:none]"
+        >
+          {sections.map((section) => (
+            <SectionButton
+              key={section.id}
+              section={section}
+              active={selected === section.id}
+              onSelect={onSelect}
+              onKeyDown={onKeyDown}
+              buttonRef={(node) => {
+                if (node) buttonRefs.current[section.id] = node;
+                else delete buttonRefs.current[section.id];
+              }}
+            />
+          ))}
+        </div>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-4 rounded-l-[1.1rem] bg-gradient-to-r from-ink/80 to-transparent md:hidden" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-4 rounded-r-[1.1rem] bg-gradient-to-l from-ink/80 to-transparent md:hidden" />
       </div>
     </GlassCard>
   );
@@ -337,7 +361,7 @@ function CommandCard({
 
 function DetailFrame({ selected }: { selected: CvSection }) {
   return (
-    <div className="flex flex-none items-center justify-between gap-3 border-b border-steel-400/18 px-3 py-3 sm:px-4">
+    <div className="flex flex-none items-center justify-between gap-3 border-b border-steel-400/18 px-3 py-2.5 sm:px-4 sm:py-3">
       <div className="flex min-w-0 items-center gap-3">
         <IconFrame icon={selected.icon} active />
         <div className="min-w-0">
@@ -359,16 +383,23 @@ function DetailFrame({ selected }: { selected: CvSection }) {
 function DetailCard({
   selected,
   section,
+  scrollRef,
 }: {
   selected: SectionId;
   section: CvSection;
+  scrollRef: Ref<HTMLDivElement>;
 }) {
   return (
     <GlassCard className="flex h-full min-h-0 flex-col">
       <DetailFrame selected={section} />
       <div
-        key={selected}
-        className="min-h-0 flex-1 overflow-y-auto overscroll-contain p-3 transition duration-200 sm:p-4"
+        ref={scrollRef}
+        id="cv-active-panel"
+        role="tabpanel"
+        aria-labelledby={`cv-tab-${selected}`}
+        tabIndex={0}
+        data-lenis-prevent
+        className="min-h-0 flex-1 overflow-y-auto overscroll-contain p-3 [padding-bottom:max(1rem,env(safe-area-inset-bottom))] [-webkit-overflow-scrolling:touch] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-champagne sm:p-4"
       >
         <DetailBody selected={selected} />
       </div>
@@ -380,7 +411,7 @@ function ProfileDetail() {
   return (
     <div className="grid gap-3">
       <div className="rounded-[1.1rem] border border-steel-400/18 bg-ink/38 p-4">
-        <p className="max-w-3xl text-sm leading-6 text-mist/86 sm:text-base sm:leading-7">
+        <p className="max-w-3xl text-[0.9375rem] leading-6 text-mist/86 sm:text-base sm:leading-7">
           {cvProfile.summary}
         </p>
       </div>
@@ -629,6 +660,21 @@ function ContactDetail() {
           </span>
         </a>
       ))}
+      <a
+        href={whatsappHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group flex min-w-0 flex-col justify-between rounded-[1.1rem] border border-steel-400/18 bg-ink/38 p-4 transition-colors duration-200 hover:border-champagne/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-champagne md:hidden"
+      >
+        <span className="flex items-center justify-between gap-3">
+          <IconFrame icon={MessageCircle} />
+          <ArrowUpRight
+            className="h-4 w-4 flex-none text-haze/60 transition-colors duration-200 group-hover:text-champagne"
+            aria-hidden
+          />
+        </span>
+        <span className="mt-5 text-sm font-semibold text-mist-300">WhatsApp</span>
+      </a>
       {cvProfile.addresses.map((address) => (
         <div
           key={address}
@@ -686,32 +732,81 @@ function DetailBody({ selected }: { selected: SectionId }) {
 
 export default function CvControlCenter() {
   const [selected, setSelected] = useState<SectionId>("profile");
+  const railRef = useRef<HTMLDivElement>(null);
+  const panelScrollRef = useRef<HTMLDivElement>(null);
+  const buttonRefs = useRef<Partial<Record<SectionId, HTMLButtonElement>>>({});
   const activeSection = sections.find((section) => section.id === selected) ?? sections[0];
 
-  useCvViewportLock();
+  useEffect(() => {
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const rail = railRef.current;
+    const activeButton = buttonRefs.current[selected];
+
+    panelScrollRef.current?.scrollTo({ top: 0, behavior: "auto" });
+
+    if (rail && activeButton && window.matchMedia("(max-width: 767.98px)").matches) {
+      const centeredLeft =
+        activeButton.offsetLeft - (rail.clientWidth - activeButton.offsetWidth) / 2;
+      const maxLeft = Math.max(0, rail.scrollWidth - rail.clientWidth);
+      rail.scrollTo({
+        left: Math.min(Math.max(0, centeredLeft), maxLeft),
+        behavior: reducedMotion ? "auto" : "smooth",
+      });
+    }
+  }, [selected]);
+
+  const handleTabKeyDown = (
+    event: ReactKeyboardEvent<HTMLButtonElement>,
+    currentId: SectionId
+  ) => {
+    const currentIndex = sections.findIndex((section) => section.id === currentId);
+    let nextIndex = currentIndex;
+
+    if (event.key === "ArrowRight") nextIndex = (currentIndex + 1) % sections.length;
+    else if (event.key === "ArrowLeft") {
+      nextIndex = (currentIndex - 1 + sections.length) % sections.length;
+    } else if (event.key === "Home") nextIndex = 0;
+    else if (event.key === "End") nextIndex = sections.length - 1;
+    else return;
+
+    event.preventDefault();
+    const nextId = sections[nextIndex].id;
+    setSelected(nextId);
+    buttonRefs.current[nextId]?.focus();
+  };
 
   return (
     <main
       id="cv-control-center"
-      className="relative h-[100svh] overflow-hidden bg-ink pt-20 text-mist-300 selection:bg-champagne selection:text-ink"
+      className="relative h-[100vh] h-[100dvh] overflow-hidden bg-ink pt-20 text-mist-300 selection:bg-champagne selection:text-ink md:h-[100svh]"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_8%,rgba(227,195,157,0.16),transparent_29%),radial-gradient(circle_at_86%_18%,rgba(152,170,194,0.10),transparent_27%),linear-gradient(135deg,#000419_0%,#071739_48%,#18283c_100%)]" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-navy-900/80 to-transparent" />
 
-      <div className="relative mx-auto grid h-[calc(100svh-5rem)] w-full max-w-[1600px] grid-rows-[auto_minmax(0,1fr)] gap-2 px-2 pb-2 sm:gap-3 sm:px-3 sm:pb-3 lg:px-4 lg:pb-4">
+      <div className="cv-shell relative mx-auto flex h-[calc(100vh-5rem)] h-[calc(100dvh-5rem)] min-h-0 w-full max-w-[1600px] flex-col gap-2 px-2 pb-2 sm:gap-3 sm:px-3 sm:pb-3 md:grid md:h-[calc(100svh-5rem)] md:grid-rows-[auto_minmax(0,1fr)] lg:px-4 lg:pb-4">
         <TopBar />
 
-        <div className="grid min-h-0 grid-rows-[auto_auto_minmax(0,1fr)] gap-2 sm:gap-3 md:grid-cols-[17rem_minmax(0,1fr)] md:grid-rows-[auto_minmax(0,1fr)] xl:grid-cols-12 xl:grid-rows-6">
-          <div className="min-h-0 md:col-start-1 md:row-start-1 xl:col-span-3 xl:row-span-4">
+        <div className="cv-dashboard grid min-h-0 min-w-0 flex-1 grid-rows-[auto_auto_minmax(0,1fr)] gap-2 sm:gap-3 md:grid-cols-[17rem_minmax(0,1fr)] md:grid-rows-[auto_minmax(0,1fr)] xl:grid-cols-12 xl:grid-rows-6">
+          <div className="min-h-0 min-w-0 md:col-start-1 md:row-start-1 xl:col-span-3 xl:row-span-4">
             <ProfileCard />
           </div>
 
-          <div className="min-h-0 md:col-start-1 md:row-start-2 xl:col-start-4 xl:row-start-1 xl:col-span-3 xl:row-span-6">
-            <CommandCard selected={selected} onSelect={setSelected} />
+          <div className="min-h-0 min-w-0 md:col-start-1 md:row-start-2 xl:col-start-4 xl:row-start-1 xl:col-span-3 xl:row-span-6">
+            <CommandCard
+              selected={selected}
+              onSelect={setSelected}
+              railRef={railRef}
+              buttonRefs={buttonRefs}
+              onKeyDown={handleTabKeyDown}
+            />
           </div>
 
-          <div className="min-h-0 md:col-start-2 md:row-span-2 md:row-start-1 xl:col-start-7 xl:row-start-1 xl:col-span-6 xl:row-span-6">
-            <DetailCard selected={selected} section={activeSection} />
+          <div className="min-h-0 min-w-0 md:col-start-2 md:row-span-2 md:row-start-1 xl:col-start-7 xl:row-start-1 xl:col-span-6 xl:row-span-6">
+            <DetailCard
+              selected={selected}
+              section={activeSection}
+              scrollRef={panelScrollRef}
+            />
           </div>
 
           <div className="hidden min-h-0 xl:col-span-3 xl:row-span-2 xl:row-start-5 xl:block">

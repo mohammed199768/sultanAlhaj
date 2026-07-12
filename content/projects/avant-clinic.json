@@ -16,18 +16,22 @@
   },
   "card": {
     "eyebrow": "Healthcare",
-    "imageAlt": "Avant Clinic project preview"
+    "imageAlt": "Avant Clinic project preview",
+    "image": null
   },
   "popup": {
     "ctaLabel": "Open full case study",
-    "previewLabel": "Case study coming soon"
+    "previewLabel": "Case study coming soon",
+    "image": null
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Avant Clinic project"
+    "imageAlt": "Avant Clinic project",
+    "image": null
   },
   "metadata": {
-    "description": "Aesthetic clinic campaigns spanning laser, dermatology and plastic surgery."
+    "description": "Aesthetic clinic campaigns spanning laser, dermatology and plastic surgery.",
+    "ogImage": null
   },
   "services": [
     "Campaigns",
@@ -37,5 +41,8 @@
   "tools": [],
   "metrics": [],
   "sections": [],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [],
+  "videos": [],
+  "documents": []
 }

@@ -8,6 +8,14 @@ import { validateProjects } from "./validate";
 
 const manifest = manifestJson as Manifest;
 let cache: Project[] | undefined;
+const mediaBySrc = new Map(
+  [
+    ...manifest.portfolio.flatMap((folder) => folder.media),
+    ...manifest.works,
+    ...manifest.reels,
+    ...manifest.clients,
+  ].map((item) => [item.src, item])
+);
 
 function readProjectContent(): ProjectContent[] {
   const directory = path.join(process.cwd(), "content", "projects");
@@ -17,17 +25,34 @@ function readProjectContent(): ProjectContent[] {
   return values;
 }
 
-function explicitMedia(src: string | undefined, title: string): MediaItem | null {
+function selectedMedia(src: string | null, title?: string): MediaItem | null {
   if (!src) return null;
-  return { kind: "image", src, title, fileName: src.split("/").pop() ?? title };
+  const item = mediaBySrc.get(src);
+  if (!item) throw new Error(`Selected media is missing from the generated manifest: ${src}`);
+  return title ? { ...item, title } : item;
+}
+
+function selectedKind(src: string, kind: MediaItem["kind"], title?: string): MediaItem {
+  const item = selectedMedia(src, title);
+  if (!item || item.kind !== kind) throw new Error(`Selected ${kind} has an incompatible media type: ${src}`);
+  return item;
 }
 
 export function getAllProjects(): Project[] {
   if (cache) return cache;
   cache = readProjectContent().map((content) => {
-    const folder = content.assetFolder ? manifest.portfolio.find((item) => item.key === content.assetFolder) : undefined;
-    const cover = explicitMedia(content.card.image, content.card.imageAlt) ?? folder?.cover ?? null;
-    const media = folder?.media ?? (cover ? [cover] : []);
+    const cover = selectedMedia(content.card.image, content.card.imageAlt);
+    const popupMedia = selectedMedia(content.popup.image, `${content.identity.title} popup`);
+    const heroMedia = selectedMedia(content.hero.image, content.hero.imageAlt);
+    const metadataMedia = selectedMedia(content.metadata.ogImage, `${content.identity.title} social preview`);
+    const gallery = content.gallery.map((src) => selectedKind(src, "image"));
+    const videos = content.videos.map(({ src, poster }) => ({
+      ...selectedKind(src, "video"),
+      poster,
+      unsupportedVideo: false,
+    }));
+    const documents = content.documents.map(({ src, title }) => selectedKind(src, "pdf", title));
+    const media = [...gallery, ...videos, ...documents];
     return {
       ...content,
       key: content.assetFolder ?? content.slug,
@@ -37,6 +62,9 @@ export function getAllProjects(): Project[] {
       summary: content.summary,
       tags: content.services,
       cover,
+      popupMedia,
+      heroMedia,
+      metadataMedia,
       media,
       counts: {
         images: media.filter((item) => item.kind === "image").length,
@@ -51,7 +79,7 @@ export function getAllProjects(): Project[] {
 export const getPublishedProjects = () => getAllProjects().filter((project) => project.status === "published");
 export const getVisibleProjects = () => getAllProjects().filter((project) => project.status !== "draft");
 export const getWorkProjects = () => getVisibleProjects().filter((project) => Boolean(project.assetFolder || project.featured));
-export const getWorkProjectViews = () => getWorkProjects().map(({ key, slug, status, client, identity, category, summary, cover, counts, featured, order, media, popup }) => ({ key, slug, status, client, identity, category, summary, cover, counts, featured, order, media, popup }));
+export const getWorkProjectViews = () => getWorkProjects().map(({ key, slug, status, client, identity, category, summary, cover, counts, featured, order, media, popup, popupMedia }) => ({ key, slug, status, client, identity, category, summary, cover, counts, featured, order, media, popup, popupMedia }));
 export const getFeaturedProjects = () => getVisibleProjects().filter((project) => project.featured);
 export const getProjectBySlug = (slug: string) => getAllProjects().find((project) => project.slug === slug);
 export const getProjectByKey = (key: string) => getAllProjects().find((project) => project.key === key);

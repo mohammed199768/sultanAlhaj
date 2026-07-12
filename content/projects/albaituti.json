@@ -16,17 +16,22 @@
   },
   "card": {
     "eyebrow": "Full Branding",
-    "imageAlt": "Albaituti project preview"
+    "imageAlt": "Albaituti project preview",
+    "image": null
   },
   "popup": {
     "ctaLabel": "Open full case study",
-    "previewLabel": "Case study coming soon"
+    "previewLabel": "Case study coming soon",
+    "image": null
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Albaituti project"
+    "imageAlt": "Albaituti project",
+    "image": null
   },
-  "metadata": {},
+  "metadata": {
+    "ogImage": null
+  },
   "services": [
     "Branding",
     "Social"
@@ -34,5 +39,8 @@
   "tools": [],
   "metrics": [],
   "sections": [],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [],
+  "videos": [],
+  "documents": []
 }

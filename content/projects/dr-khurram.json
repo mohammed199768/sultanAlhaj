@@ -16,18 +16,22 @@
   },
   "card": {
     "eyebrow": "Healthcare",
-    "imageAlt": "Dr. Khurram project preview"
+    "imageAlt": "Dr. Khurram project preview",
+    "image": null
   },
   "popup": {
     "ctaLabel": "Open full case study",
-    "previewLabel": "Case study coming soon"
+    "previewLabel": "Case study coming soon",
+    "image": null
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Dr. Khurram project"
+    "imageAlt": "Dr. Khurram project",
+    "image": null
   },
   "metadata": {
-    "description": "Patient education content and consultation funnels for a specialist."
+    "description": "Patient education content and consultation funnels for a specialist.",
+    "ogImage": null
   },
   "services": [
     "Personal Brand",
@@ -37,5 +41,8 @@
   "tools": [],
   "metrics": [],
   "sections": [],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [],
+  "videos": [],
+  "documents": []
 }

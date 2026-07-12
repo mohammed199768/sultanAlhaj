@@ -16,17 +16,21 @@
   },
   "card": {
     "eyebrow": "Full Marketing Campaigns",
-    "imageAlt": "Ibtsm campaign cover"
+    "imageAlt": "Ibtsm campaign cover",
+    "image": "/portfolio/ibtsm/social/5.png"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/ibtsm/social/8.png"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Ibtsm integrated campaign"
+    "imageAlt": "Ibtsm integrated campaign",
+    "image": "/portfolio/ibtsm/social/5.png"
   },
   "metadata": {
-    "description": "Creative content, short-form video and multi-platform campaign rollout."
+    "description": "Creative content, short-form video and multi-platform campaign rollout.",
+    "ogImage": "/portfolio/ibtsm/social/5.png"
   },
   "services": [
     "Campaigns",
@@ -50,5 +54,26 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/ibtsm/social/5.png",
+    "/portfolio/ibtsm/social/6.png",
+    "/portfolio/ibtsm/social/8.png",
+    "/portfolio/ibtsm/social/9.png",
+    "/portfolio/ibtsm/social/10.png",
+    "/portfolio/ibtsm/social/%D9%83%D9%81%D8%B1-1.png",
+    "/portfolio/ibtsm/social/%D9%83%D9%81%D8%B1-2.png",
+    "/portfolio/ibtsm/social/%D9%83%D9%81%D8%B1-3.png"
+  ],
+  "videos": [
+    {
+      "src": "/portfolio/ibtsm/vid/%D8%AA%D9%82%D9%88%D9%8A%D9%85%20%D8%A7%D9%84%D8%A7%D8%B3%D9%86%D8%A7%D9%86(2).mp4",
+      "poster": "/portfolio/ibtsm/vid/%D8%AA%D9%82%D9%88%D9%8A%D9%85%20%D8%A7%D9%84%D8%A7%D8%B3%D9%86%D8%A7%D9%86(2).poster.webp"
+    },
+    {
+      "src": "/portfolio/ibtsm/vid/%D9%85%D8%AC%D9%85%D8%B9%20%D8%AF%D9%83%D8%A7%D8%AA%D8%B1%D9%87%20%D8%A7%D8%A8%D8%AA%D8%B3%D9%85(2).mp4",
+      "poster": "/portfolio/ibtsm/vid/%D9%85%D8%AC%D9%85%D8%B9%20%D8%AF%D9%83%D8%A7%D8%AA%D8%B1%D9%87%20%D8%A7%D8%A8%D8%AA%D8%B3%D9%85(2).poster.webp"
+    }
+  ],
+  "documents": []
 }

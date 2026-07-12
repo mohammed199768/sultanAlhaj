@@ -1,0 +1,170 @@
+{
+    "generatedAt":  "2026-07-12T21:53:02.4747624Z",
+    "transformations":  [
+                            {
+                                "path":  "public/Sultan Shadi CV.pdf",
+                                "action":  "retained-required-download",
+                                "pageCount":  2,
+                                "beforeSizeBytes":  663243,
+                                "afterSizeBytes":  663243,
+                                "backupPath":  "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\Sultan Shadi CV.pdf",
+                                "backupSha256":  "8c346e90bdd9b3da93468014c3b26aae06f91b6b07550d4527c7a324b11d87b0"
+                            },
+                            {
+                                "path":  "public/portfolio/branding/Final.pdf",
+                                "action":  "replaced-by-selected-previews",
+                                "pageCount":  54,
+                                "selectedPages":  [
+                                                      2,
+                                                      9,
+                                                      12
+                                                  ],
+                                "previewPaths":  [
+                                                     "public/portfolio/branding/previews/anco-02.webp",
+                                                     "public/portfolio/branding/previews/anco-09.webp",
+                                                     "public/portfolio/branding/previews/anco-12.webp"
+                                                 ],
+                                "beforeSizeBytes":  129827791,
+                                "afterSizeBytes":  786372,
+                                "backupPath":  "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\branding\\Final.pdf",
+                                "backupSha256":  "cad71e4845052697ccb6f03536dcf4ba4a1c5837ae9687c4347791d68d043ee0"
+                            },
+                            {
+                                "path":  "public/portfolio/branding/arak Profile.pdf",
+                                "action":  "replaced-by-selected-previews",
+                                "pageCount":  54,
+                                "selectedPages":  [
+                                                      1,
+                                                      5,
+                                                      9,
+                                                      12
+                                                  ],
+                                "previewPaths":  [
+                                                     "public/portfolio/branding/previews/arak-01.webp",
+                                                     "public/portfolio/branding/previews/arak-05.webp",
+                                                     "public/portfolio/branding/previews/arak-09.webp",
+                                                     "public/portfolio/branding/previews/arak-12.webp"
+                                                 ],
+                                "beforeSizeBytes":  43710997,
+                                "afterSizeBytes":  213988,
+                                "backupPath":  "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\branding\\arak Profile.pdf",
+                                "backupSha256":  "592889eeffe953a1954947be1ff36ac91787f15ea441a08c63346c850aa8b9bc"
+                            },
+                            {
+                                "path":  "public/portfolio/branding/Final WTL.pdf",
+                                "action":  "replaced-by-selected-previews",
+                                "pageCount":  29,
+                                "selectedPages":  [
+                                                      1,
+                                                      4,
+                                                      23
+                                                  ],
+                                "previewPaths":  [
+                                                     "public/portfolio/branding/previews/wtl-tech-01.webp",
+                                                     "public/portfolio/branding/previews/wtl-tech-04.webp",
+                                                     "public/portfolio/branding/previews/wtl-tech-23.webp"
+                                                 ],
+                                "beforeSizeBytes":  21462005,
+                                "afterSizeBytes":  206918,
+                                "backupPath":  "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\branding\\Final WTL.pdf",
+                                "backupSha256":  "e56a3a0b105f4a9a5da8a7dd6e575515bbf8b2b121e5bfa5ecaf2df1cefb62bc"
+                            },
+                            {
+                                "path":  "public/portfolio/branding/cataloge.pdf",
+                                "action":  "replaced-by-selected-previews",
+                                "pageCount":  13,
+                                "selectedPages":  [
+                                                      1,
+                                                      5,
+                                                      10
+                                                  ],
+                                "previewPaths":  [
+                                                     "public/portfolio/branding/previews/catalogue-01.webp",
+                                                     "public/portfolio/branding/previews/catalogue-05.webp",
+                                                     "public/portfolio/branding/previews/catalogue-10.webp"
+                                                 ],
+                                "beforeSizeBytes":  25393073,
+                                "afterSizeBytes":  1308512,
+                                "backupPath":  "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\branding\\cataloge.pdf",
+                                "backupSha256":  "24c912ae813f70a45fee5265b2b72446e56c9ef480c6f42ed3960fe1da62650a"
+                            },
+                            {
+                                "path":  "public/portfolio/branding/X.pdf",
+                                "action":  "replaced-by-selected-previews",
+                                "pageCount":  3,
+                                "selectedPages":  [
+                                                      1,
+                                                      2,
+                                                      3
+                                                  ],
+                                "previewPaths":  [
+                                                     "public/portfolio/branding/previews/x-identity-01.webp",
+                                                     "public/portfolio/branding/previews/x-identity-02.webp",
+                                                     "public/portfolio/branding/previews/x-identity-03.webp"
+                                                 ],
+                                "beforeSizeBytes":  1674208,
+                                "afterSizeBytes":  145794,
+                                "backupPath":  "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\branding\\X.pdf",
+                                "backupSha256":  "20bfd79cc6f1cc0e68c6ac06e3a142c188f358f78cc2b23d3a9d2390c1a025d1"
+                            },
+                            {
+                                "path":  "public/portfolio/branding/القروييين.pdf",
+                                "action":  "replaced-by-selected-previews",
+                                "pageCount":  3,
+                                "selectedPages":  [
+                                                      1,
+                                                      2,
+                                                      3
+                                                  ],
+                                "previewPaths":  [
+                                                     "public/portfolio/branding/previews/alqrawiyeen-01.webp",
+                                                     "public/portfolio/branding/previews/alqrawiyeen-02.webp",
+                                                     "public/portfolio/branding/previews/alqrawiyeen-03.webp"
+                                                 ],
+                                "beforeSizeBytes":  10192083,
+                                "afterSizeBytes":  710512,
+                                "backupPath":  "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\branding\\القروييين.pdf",
+                                "backupSha256":  "da61459d1ff539ccd0f714138b692db9a9c3b242e82d439ba855feaa282b8468"
+                            },
+                            {
+                                "path":  "public/portfolio/branding/تساهيل الاعمال.pdf",
+                                "action":  "replaced-by-selected-previews",
+                                "pageCount":  3,
+                                "selectedPages":  [
+                                                      1,
+                                                      2,
+                                                      3
+                                                  ],
+                                "previewPaths":  [
+                                                     "public/portfolio/branding/previews/tasaheel-01.webp",
+                                                     "public/portfolio/branding/previews/tasaheel-02.webp",
+                                                     "public/portfolio/branding/previews/tasaheel-03.webp"
+                                                 ],
+                                "beforeSizeBytes":  10259171,
+                                "afterSizeBytes":  641984,
+                                "backupPath":  "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\branding\\تساهيل الاعمال.pdf",
+                                "backupSha256":  "dea290a8d42951e6cabb394991eb69e98322bb0968f963920f0c9cf51757f6d5"
+                            },
+                            {
+                                "path":  "public/portfolio/Padel Me Club/Static/Padel Me CC.pdf",
+                                "action":  "replaced-by-selected-previews",
+                                "pageCount":  8,
+                                "selectedPages":  [
+                                                      1,
+                                                      2,
+                                                      6,
+                                                      8
+                                                  ],
+                                "previewPaths":  [
+                                                     "public/portfolio/Padel Me Club/Static/previews/padel-content-01.webp",
+                                                     "public/portfolio/Padel Me Club/Static/previews/padel-content-02.webp",
+                                                     "public/portfolio/Padel Me Club/Static/previews/padel-content-06.webp",
+                                                     "public/portfolio/Padel Me Club/Static/previews/padel-content-08.webp"
+                                                 ],
+                                "beforeSizeBytes":  18960624,
+                                "afterSizeBytes":  522394,
+                                "backupPath":  "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Padel Me Club\\Static\\Padel Me CC.pdf",
+                                "backupSha256":  "8f77758bef99d37c9597e577a48c024dc7c9bba8d268e6479996ddde7c4796ea"
+                            }
+                        ]
+}

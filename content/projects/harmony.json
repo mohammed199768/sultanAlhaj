@@ -16,17 +16,21 @@
   },
   "card": {
     "eyebrow": "Full Branding",
-    "imageAlt": "Harmony branding cover"
+    "imageAlt": "Harmony branding cover",
+    "image": "/portfolio/Harmony/social/3.png"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/Harmony/social/13.png"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Harmony branding"
+    "imageAlt": "Harmony branding",
+    "image": "/portfolio/Harmony/social/3.png"
   },
   "metadata": {
-    "description": "Full brand identity, content templates and launch campaign."
+    "description": "Full brand identity, content templates and launch campaign.",
+    "ogImage": "/portfolio/Harmony/social/3.png"
   },
   "services": [
     "Branding",
@@ -49,5 +53,22 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/Harmony/social/2.png",
+    "/portfolio/Harmony/social/3.png",
+    "/portfolio/Harmony/social/4.png",
+    "/portfolio/Harmony/social/5.png",
+    "/portfolio/Harmony/social/7.png",
+    "/portfolio/Harmony/social/9.png",
+    "/portfolio/Harmony/social/13.png",
+    "/portfolio/Harmony/social/15.png"
+  ],
+  "videos": [
+    {
+      "src": "/portfolio/Harmony/vid/%D9%85%D9%86%20%D8%BA%D9%8A%D8%B1%20%D8%AF%D9%81%D8%B9%D8%A9%20%D8%A7%D9%88%D9%84%D9%89.mp4",
+      "poster": "/portfolio/Harmony/vid/%D9%85%D9%86%20%D8%BA%D9%8A%D8%B1%20%D8%AF%D9%81%D8%B9%D8%A9%20%D8%A7%D9%88%D9%84%D9%89.poster.webp"
+    }
+  ],
+  "documents": []
 }

@@ -16,17 +16,21 @@
   },
   "card": {
     "eyebrow": "Social Media",
-    "imageAlt": "Disasev social campaign cover"
+    "imageAlt": "Disasev social campaign cover",
+    "image": "/portfolio/disasev/1.png"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/disasev/3.png"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Disasev social campaign"
+    "imageAlt": "Disasev social campaign",
+    "image": "/portfolio/disasev/1.png"
   },
   "metadata": {
-    "description": "Social-first campaign creative and a cohesive grid system."
+    "description": "Social-first campaign creative and a cohesive grid system.",
+    "ogImage": "/portfolio/disasev/1.png"
   },
   "services": [
     "Social Media",
@@ -49,5 +53,16 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/disasev/1.png",
+    "/portfolio/disasev/2.png",
+    "/portfolio/disasev/3.png",
+    "/portfolio/disasev/5.png",
+    "/portfolio/disasev/7.png",
+    "/portfolio/disasev/9.png",
+    "/portfolio/disasev/11.png"
+  ],
+  "videos": [],
+  "documents": []
 }

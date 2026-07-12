@@ -20,17 +20,21 @@
   },
   "card": {
     "eyebrow": "Healthcare",
-    "imageAlt": "Dr. Mohannad personal medical brand cover"
+    "imageAlt": "Dr. Mohannad personal medical brand cover",
+    "image": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%201e27f592-050d-4048-bf59-651498203e54.jpg"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20269f563f-3501-453e-9097-e1635357c43a.jpg"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Dr. Mohannad personal medical brand"
+    "imageAlt": "Dr. Mohannad personal medical brand",
+    "image": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%201e27f592-050d-4048-bf59-651498203e54.jpg"
   },
   "metadata": {
-    "description": "High-volume social content and short-form video for a doctor personal brand."
+    "description": "High-volume social content and short-form video for a doctor personal brand.",
+    "ogImage": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%201e27f592-050d-4048-bf59-651498203e54.jpg"
   },
   "services": [
     "Personal Brand",
@@ -64,5 +68,22 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%201e27f592-050d-4048-bf59-651498203e54.jpg",
+    "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%204fd0cf23-0c2b-4a9b-af17-0391bdc628a3.jpg",
+    "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20269f563f-3501-453e-9097-e1635357c43a.jpg",
+    "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20328bf52c-b207-4a2c-ba56-2a1fcda14845.jpg",
+    "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%2033215391-aa03-432f-9442-0b3bbaa32269.jpg",
+    "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20a46c9299-f729-472a-b67f-47b715d9606e.jpg",
+    "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20b2344d86-6933-4ec3-b850-fb167617072e.jpg",
+    "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20e39998e4-a8b7-4ea5-9d5a-ec3ed07ebc49.jpg"
+  ],
+  "videos": [
+    {
+      "src": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20snab%207.mp4",
+      "poster": "/portfolio/Dr.%20Mohannad%20Alharbi/Copy%20of%20snab%207.poster.webp"
+    }
+  ],
+  "documents": []
 }

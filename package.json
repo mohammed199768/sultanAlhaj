@@ -5,8 +5,12 @@
   "scripts": {
     "validate:content": "tsx scripts/validate-content.ts",
     "generate:manifest": "tsx scripts/generate-manifest.ts",
+    "media:audit": "tsx scripts/audit-media.ts",
+    "media:optimize:dry": "tsx scripts/optimize-media.ts --dry-run",
+    "media:optimize": "tsx scripts/optimize-media.ts --apply",
+    "verify:no-lfs": "tsx scripts/assert-no-new-lfs.ts",
     "transcode": "tsx scripts/transcode-media.ts",
-    "prebuild": "npm run validate:content && npm run generate:manifest",
+    "prebuild": "npm run generate:manifest && npm run validate:content",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

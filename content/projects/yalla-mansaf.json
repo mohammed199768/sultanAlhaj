@@ -16,18 +16,22 @@
   },
   "card": {
     "eyebrow": "F&B",
-    "imageAlt": "Yalla Mansaf project preview"
+    "imageAlt": "Yalla Mansaf project preview",
+    "image": null
   },
   "popup": {
     "ctaLabel": "Open full case study",
-    "previewLabel": "Case study coming soon"
+    "previewLabel": "Case study coming soon",
+    "image": null
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Yalla Mansaf project"
+    "imageAlt": "Yalla Mansaf project",
+    "image": null
   },
   "metadata": {
-    "description": "Appetite-led food and beverage content and promotional campaigns."
+    "description": "Appetite-led food and beverage content and promotional campaigns.",
+    "ogImage": null
   },
   "services": [
     "F&B",
@@ -37,5 +41,8 @@
   "tools": [],
   "metrics": [],
   "sections": [],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [],
+  "videos": [],
+  "documents": []
 }

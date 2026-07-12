@@ -1,0 +1,989 @@
+{
+  "generatedAt": "2026-07-12T22:03:56.249Z",
+  "backupIndex": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\media-source-index.json",
+  "verified": true,
+  "count": 140,
+  "totalBytes": 861802582,
+  "removed": [
+    {
+      "path": "public/portfolio/branding/arak Profile.pdf",
+      "sizeBytes": 43710997,
+      "sha256": "592889eeffe953a1954947be1ff36ac91787f15ea441a08c63346c850aa8b9bc",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\branding\\arak Profile.pdf",
+      "classification": "visual-only PDF source"
+    },
+    {
+      "path": "public/portfolio/branding/cataloge.pdf",
+      "sizeBytes": 25393073,
+      "sha256": "24c912ae813f70a45fee5265b2b72446e56c9ef480c6f42ed3960fe1da62650a",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\branding\\cataloge.pdf",
+      "classification": "visual-only PDF source"
+    },
+    {
+      "path": "public/portfolio/branding/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\branding\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/branding/Final WTL.pdf",
+      "sizeBytes": 21462005,
+      "sha256": "e56a3a0b105f4a9a5da8a7dd6e575515bbf8b2b121e5bfa5ecaf2df1cefb62bc",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\branding\\Final WTL.pdf",
+      "classification": "visual-only PDF source"
+    },
+    {
+      "path": "public/portfolio/branding/Final.pdf",
+      "sizeBytes": 129827791,
+      "sha256": "cad71e4845052697ccb6f03536dcf4ba4a1c5837ae9687c4347791d68d043ee0",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\branding\\Final.pdf",
+      "classification": "visual-only PDF source"
+    },
+    {
+      "path": "public/portfolio/branding/X.pdf",
+      "sizeBytes": 1674208,
+      "sha256": "20bfd79cc6f1cc0e68c6ac06e3a142c188f358f78cc2b23d3a9d2390c1a025d1",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\branding\\X.pdf",
+      "classification": "visual-only PDF source"
+    },
+    {
+      "path": "public/portfolio/branding/القروييين.pdf",
+      "sizeBytes": 10192083,
+      "sha256": "da61459d1ff539ccd0f714138b692db9a9c3b242e82d439ba855feaa282b8468",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\branding\\القروييين.pdf",
+      "classification": "visual-only PDF source"
+    },
+    {
+      "path": "public/portfolio/branding/تساهيل الاعمال.pdf",
+      "sizeBytes": 10259171,
+      "sha256": "dea290a8d42951e6cabb394991eb69e98322bb0968f963920f0c9cf51757f6d5",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\branding\\تساهيل الاعمال.pdf",
+      "classification": "visual-only PDF source"
+    },
+    {
+      "path": "public/portfolio/Curevie/1.png",
+      "sizeBytes": 39562,
+      "sha256": "40b17993360d3aace3d193c5e298e6870227a65d2b6638d40fbe09a038a88ad8",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Curevie\\1.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Curevie/Curivie icon.png",
+      "sizeBytes": 38831,
+      "sha256": "76f3765d1133fa0ca1f5ed6f5ec8c016107a08a4e5bc3797ac8133dfd47960a4",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Curevie\\Curivie icon.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Curevie/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Curevie\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/digital/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\digital\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/digital/اخر مره فحصت اسنانك.mp4",
+      "sizeBytes": 25535345,
+      "sha256": "aca3ac4e90f8aff72059ff4fd347766ddfffeb49942c78b5bc09b8baba37d12b",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\digital\\اخر مره فحصت اسنانك.mp4",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/digital/التخطيط.mp4",
+      "sizeBytes": 27300398,
+      "sha256": "eeb594f77451c3abdd045b810864de08f56481d383d2b7de9a57082b0eba413c",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\digital\\التخطيط.mp4",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/digital/طارق نضال.mp4",
+      "sizeBytes": 18804743,
+      "sha256": "ac69efd1270c74d6331938a5e06d52ed4f54ace88b3d9cc3725c9646504003f9",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\digital\\طارق نضال.mp4",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/digital/ليه ديجيتال(1).mp4",
+      "sizeBytes": 18811696,
+      "sha256": "a79c26884cb6cbd29011e444b5e9da43b88ea72a43b624e293ed7068471565de",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\digital\\ليه ديجيتال(1).mp4",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/disasev/011.png",
+      "sizeBytes": 1293039,
+      "sha256": "869fc6b5eef068583a3d8654925406cffc4e1ae07d58b2854d2b7883e69f7124",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\disasev\\011.png",
+      "classification": "superseded version"
+    },
+    {
+      "path": "public/portfolio/disasev/10.png",
+      "sizeBytes": 1222517,
+      "sha256": "33aa9d0eac802100e4d76da6fc74a3d719ba885c13db104d4b103672c8c879fa",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\disasev\\10.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/disasev/4.png",
+      "sizeBytes": 1187459,
+      "sha256": "7722a1ae238c9cb000732b0b19b27ce1f72ae05ffad7f7b7764e34aaea03f1d7",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\disasev\\4.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/disasev/6.png",
+      "sizeBytes": 1028141,
+      "sha256": "697cf751ab410b7b9a174c0c587c21806bda26cb1948cff3f5159bc41a3eb0dd",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\disasev\\6.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/disasev/8.png",
+      "sizeBytes": 1526177,
+      "sha256": "758c85f5abcd981dc741e715e2954aef04dae2634b87be4bbd54c073ae54080f",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\disasev\\8.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/disasev/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\disasev\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/Dr. Ala'a Albuqaie/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Dr. Ala'a Albuqaie\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/Dr. Mohannad Alharbi/Copy of 103460a8-caa1-417d-ab89-519aa11864c6.jpg",
+      "sizeBytes": 150862,
+      "sha256": "3cb2fb0113bc0871c77e22c823912a9c2fa097c4ba258dc3cbca1b9da1dfc7ea",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Dr. Mohannad Alharbi\\Copy of 103460a8-caa1-417d-ab89-519aa11864c6.jpg",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Dr. Mohannad Alharbi/Copy of 27adc65f-8999-4e76-be3c-6b22c247c4aa.jpg",
+      "sizeBytes": 120278,
+      "sha256": "7846707adff13b7eb228e841fe55bed1d739f2b2e9067ff7ff5585876a9d0fd1",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Dr. Mohannad Alharbi\\Copy of 27adc65f-8999-4e76-be3c-6b22c247c4aa.jpg",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Dr. Mohannad Alharbi/Copy of 628912dc-95b3-42a0-8d55-5b187d851004.jpg",
+      "sizeBytes": 99698,
+      "sha256": "44e0eea559172f9fac0905f03086b626558301229a5c39b21a361d30d3389565",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Dr. Mohannad Alharbi\\Copy of 628912dc-95b3-42a0-8d55-5b187d851004.jpg",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Dr. Mohannad Alharbi/Copy of 803df500-f556-4155-b1a0-f16dc0a7b33c.jpg",
+      "sizeBytes": 147706,
+      "sha256": "22e2f1f6dc493a02fcfb6c9573e8ea5785b5a7775d6c6aa098b0f4df2a5985ce",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Dr. Mohannad Alharbi\\Copy of 803df500-f556-4155-b1a0-f16dc0a7b33c.jpg",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Dr. Mohannad Alharbi/Copy of a3288427-3fb7-403c-9f92-bb6ef988d889.jpg",
+      "sizeBytes": 179176,
+      "sha256": "92e6ab59d88ebcaa80d9d4292bd33f9598c1ecf4a75e69977824e2e9c459356d",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Dr. Mohannad Alharbi\\Copy of a3288427-3fb7-403c-9f92-bb6ef988d889.jpg",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Dr. Mohannad Alharbi/Copy of b1015982-05bc-496e-9796-b97298f357fd.jpg",
+      "sizeBytes": 106824,
+      "sha256": "a64ef2256e0df260c72828f7314dc00e684d44efaae3655cdbcda72c9957ed1b",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Dr. Mohannad Alharbi\\Copy of b1015982-05bc-496e-9796-b97298f357fd.jpg",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Dr. Mohannad Alharbi/Copy of b4600bfb-630a-455c-a963-af3f8d9c7452.jpg",
+      "sizeBytes": 157040,
+      "sha256": "dadc6060135a5d9f47bbc92e685701a5ac6aeaa4cec6931cb29faf6fd1290c20",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Dr. Mohannad Alharbi\\Copy of b4600bfb-630a-455c-a963-af3f8d9c7452.jpg",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Dr. Mohannad Alharbi/Copy of df398825-6a26-407e-aff5-8b4ab1ed962e.jpg",
+      "sizeBytes": 109321,
+      "sha256": "dd69c3513090e069f129959d832f32da856befcbea82ca1c5e9480ee6dbf1e57",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Dr. Mohannad Alharbi\\Copy of df398825-6a26-407e-aff5-8b4ab1ed962e.jpg",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Dr. Mohannad Alharbi/Copy of ed214cd0-a341-4542-891a-b937706427fb.jpg",
+      "sizeBytes": 148536,
+      "sha256": "0da44ff91225badf71d96d6dea14665512fc7ac295f5b0e6f0c719b8d4ac0815",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Dr. Mohannad Alharbi\\Copy of ed214cd0-a341-4542-891a-b937706427fb.jpg",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Dr. Mohannad Alharbi/Copy of fdb8176d-6f02-499b-ac4e-34732f2539ae.jpg",
+      "sizeBytes": 120496,
+      "sha256": "f8b3ab6ee5cb833d15447a2b8fa4175c7f4e0ecf2c64786addfa476163221a11",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Dr. Mohannad Alharbi\\Copy of fdb8176d-6f02-499b-ac4e-34732f2539ae.jpg",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Dr. Mohannad Alharbi/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Dr. Mohannad Alharbi\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/HAMC/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\HAMC\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/HAMC/logo.webp",
+      "sizeBytes": 19754,
+      "sha256": "2b99b1b2af47a415ad14b3a7f57c5f4cb080a19c589467e6dade13322f75fa64",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\HAMC\\logo.webp",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Harmony/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Harmony\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/Harmony/social/1.png",
+      "sizeBytes": 1592011,
+      "sha256": "d59b203e73ee6dbe5a43bca33ea958559615ce1f340d7c36fdb3349bfea63ed1",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Harmony\\social\\1.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Harmony/social/12.png",
+      "sizeBytes": 929604,
+      "sha256": "afae5fbb08b5de46769cf513ad31cab4e1037e79f1b5d0d0e31ebc11167cb9fd",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Harmony\\social\\12.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Harmony/social/14.png",
+      "sizeBytes": 1086589,
+      "sha256": "5d0c99159c4d0283647825262195eb1ad0fcf0e2a3da6b626408e47acd05f653",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Harmony\\social\\14.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Harmony/social/4 (1).png",
+      "sizeBytes": 533860,
+      "sha256": "aec958e0627e757c2da437375af77ec41b6c6b665224982153f82bc9867d0adc",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Harmony\\social\\4 (1).png",
+      "classification": "superseded version"
+    },
+    {
+      "path": "public/portfolio/Harmony/social/5 (1).png",
+      "sizeBytes": 1062338,
+      "sha256": "b0a53b7ef219cb2127196c14dc0095bb31a2b18b407493539621b09ffea4a854",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Harmony\\social\\5 (1).png",
+      "classification": "superseded version"
+    },
+    {
+      "path": "public/portfolio/Harmony/social/6.png",
+      "sizeBytes": 2388171,
+      "sha256": "ddeb6dd88e929f49feed39bf863803e11c845e02514dc55be8303543de349f56",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Harmony\\social\\6.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Harmony/social/8.png",
+      "sizeBytes": 1213492,
+      "sha256": "33e551be3d8e924889809c0c8a27a0585d78d10eab984c10e2cae930996d0354",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Harmony\\social\\8.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Harmony/social/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Harmony\\social\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/Harmony/vid/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Harmony\\vid\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/Horvath/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Horvath\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/ibtsm/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 1/1.png",
+      "sizeBytes": 355934,
+      "sha256": "54eeb9168f9e7c51d6e89c83f809e580615fab7787e30d337580b5731915d341",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 1\\1.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 1/2.png",
+      "sizeBytes": 159616,
+      "sha256": "585b2c7910f2dffe900cf517f509e0a7402485dfdcc4db9fdf6ec07d996f61ad",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 1\\2.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 1/3.png",
+      "sizeBytes": 181455,
+      "sha256": "301422c63a92e85cb135b937d09f1fa86e0c83931ce380b51539c39c85fe2acc",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 1\\3.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 1/4.png",
+      "sizeBytes": 290196,
+      "sha256": "288ade65502a16b4d2efe744f7a4ec3c34acec6b13df65b779a2dd3aab4a013b",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 1\\4.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 1/5.png",
+      "sizeBytes": 71628,
+      "sha256": "dab1966fbbaf76f42e2533090cfebf065f231f7cc0b6b656f0538aef476d61c2",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 1\\5.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 1/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 1\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 2/1.png",
+      "sizeBytes": 891175,
+      "sha256": "e02cdc03acd7341e6badb866b09a0883c6f232f15b2d9d7e0a90f1f8f80e2749",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 2\\1.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 2/2.png",
+      "sizeBytes": 169126,
+      "sha256": "aa117b8fb4fbd153f6eb57525052ddae214528bba69bd159b7114315123a9184",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 2\\2.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 2/3.png",
+      "sizeBytes": 253140,
+      "sha256": "2194c0542d093e1b44f2528097da42e803aa3e6741f067bfffb2e21ae93abfa4",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 2\\3.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 2/4.png",
+      "sizeBytes": 391951,
+      "sha256": "9ac696a04a561346a9e19fc5935d17deb0200efc21150b807825ef1ef373b51d",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 2\\4.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 2/5.png",
+      "sizeBytes": 95791,
+      "sha256": "6329af949cb823b520049f0273f2221356559c1aa70c3ba805ba3ed074233627",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 2\\5.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 2/6.png",
+      "sizeBytes": 72581,
+      "sha256": "3e788f6f3e0b4a53641da7c6f0e422a7e36b66584fd8153e971d596e7828389e",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 2\\6.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 2/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 2\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 3/1.png",
+      "sizeBytes": 504558,
+      "sha256": "360c4a04580232fc2d5b9742d99d36dbeb13ecb4852b8e367317c69fa287f257",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 3\\1.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 3/2.png",
+      "sizeBytes": 223369,
+      "sha256": "28af76face63fd753d77fca69309c5dcd20122f5716786f024f9cf6f8b2ce578",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 3\\2.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 3/3.png",
+      "sizeBytes": 342984,
+      "sha256": "aa5163a212344fe69babd616fe26d64ab19445cdd897d74f20c2a94b5c54c48d",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 3\\3.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 3/4.png",
+      "sizeBytes": 123265,
+      "sha256": "1c12e2190a5932df9f754c4283aa711ec60db7a9df10a242038e5987fa6b5951",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 3\\4.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 3/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 3\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 4/1.png",
+      "sizeBytes": 331371,
+      "sha256": "38d656e175a07db94f83426258d3cece3372db45c2235c30839635085b9f0d3a",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 4\\1.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 4/2.png",
+      "sizeBytes": 167178,
+      "sha256": "7124e4846a57f2386a835a09fdfd8d5b2d957d2c677fe684b0c42efbb8fcef40",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 4\\2.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 4/3.png",
+      "sizeBytes": 124627,
+      "sha256": "5d7f55b1410c61624a1a6c8919a74ed2766de6117b4fbd1532c24023829bebf4",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 4\\3.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 4/4.png",
+      "sizeBytes": 151043,
+      "sha256": "1ca5317afc3616d1b731db82507db1c041d128c2a19e0635a8e99217a1099882",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 4\\4.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 4/5.png",
+      "sizeBytes": 83610,
+      "sha256": "8ced16cf7ab3f956cf9634619bb4d5d3705cd1b13662fb572ce14be639af2678",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 4\\5.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/car 4/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\car 4\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/كفر-4.png",
+      "sizeBytes": 1340556,
+      "sha256": "2d504475fd5d1215be799b625cb13c327e1daf52c6766ffc27b0cb9496c83d68",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\كفر-4.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/كفر-5.png",
+      "sizeBytes": 1442545,
+      "sha256": "5f0a3f6852bd4838bfab755ba6f7dd224d4be719693af96d5f6f09e2f31ff5bc",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\كفر-5.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/مجمع.png",
+      "sizeBytes": 14744524,
+      "sha256": "ec47b1e6d40256636e3d25844a65be9c559b70c02dedb01ad741b15cc672494e",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\social\\مجمع.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/vid/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\vid\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/ibtsm/vid/العيد قرب.mp4",
+      "sizeBytes": 25589475,
+      "sha256": "96e5eee0f8468170785339df0623f427ebf9188dc49a42018a9ab01d1c2c0dcd",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\vid\\العيد قرب.mp4",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/vid/اي عمر للتقويم.mp4",
+      "sizeBytes": 12238705,
+      "sha256": "b66a10e4c82c89195ac73c2fc2beb152559222a083dea829e5f9b0f27b625085",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\vid\\اي عمر للتقويم.mp4",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ibtsm/vid/تدرون ليش.mp4",
+      "sizeBytes": 24856365,
+      "sha256": "f6920cc9ed0fef4ae7aeed02a3b15667e9ccc8cc0a06c174cf5cb54581d29cca",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ibtsm\\vid\\تدرون ليش.mp4",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/JGC Contracting/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\JGC Contracting\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/kulib/5.png",
+      "sizeBytes": 960930,
+      "sha256": "464e2a7d2eb84a34c201cfd93f0a5025fb9952299d712fa11f805f6ca7d96c53",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\kulib\\5.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/kulib/6.png",
+      "sizeBytes": 1237811,
+      "sha256": "6022189c0f6922b5595e9f82a2e613dd6acfdc6e851571a7dd97ce4ab0f4a254",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\kulib\\6.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/kulib/9.png",
+      "sizeBytes": 1256446,
+      "sha256": "9390ac22506d0b112116e6feb24a2f0182210b5000b81e998d66c49ffe66ae19",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\kulib\\9.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/kulib/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\kulib\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/mada/10.png",
+      "sizeBytes": 355174,
+      "sha256": "d61440185996206144162efa43a66ddb21406be3f651dc3e16dcb577bbe211f4",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\mada\\10.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/mada/12.png",
+      "sizeBytes": 371211,
+      "sha256": "65de557553d61776340a17998320a006afdaf28bc4a9c37dddae5121f8b87a58",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\mada\\12.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/mada/13.png",
+      "sizeBytes": 520858,
+      "sha256": "3c3e01a2c487f02d5121db6efb456f565ebdb0e6e9d7f976958c1a8b8c371e7a",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\mada\\13.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/mada/15.png",
+      "sizeBytes": 344502,
+      "sha256": "91c3efb7da0f0f08f96359a3897994948aa6c0843f2578b21331759d89f8ff80",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\mada\\15.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/mada/3.png",
+      "sizeBytes": 244962,
+      "sha256": "5b73d3a4aa9c01b53936dbb5d5256c1802f8b13da2c56432cc9f6d54e883e1c0",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\mada\\3.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/mada/6.png",
+      "sizeBytes": 458616,
+      "sha256": "bc8e3a503a054036adc2b5227b96abdfebea806bd8b483a3aeb4662e2d405f46",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\mada\\6.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/mada/9.png",
+      "sizeBytes": 408070,
+      "sha256": "d34b7361366d751901a668b08375a5833d09634cbbb6c119658e454df7bb962d",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\mada\\9.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/mada/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\mada\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/mada/Untitled-1.png",
+      "sizeBytes": 8068607,
+      "sha256": "e9e13390c7d99fa9404d8001e563e500630a3936b0d149c29fb8b219d7f619e2",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\mada\\Untitled-1.png",
+      "classification": "superseded version"
+    },
+    {
+      "path": "public/portfolio/Manal Alhihi/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Manal Alhihi\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/Manal Alhihi/Manal_Alhihi_Logo_enhanced_cropped.png",
+      "sizeBytes": 340384,
+      "sha256": "7313251cd56d478dee4d4ddb27719c920e9f8dbcbaf4a92964736f832fa30696",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Manal Alhihi\\Manal_Alhihi_Logo_enhanced_cropped.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Manal Alhihi/website/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Manal Alhihi\\website\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/Manal Alhihi/website/t (2).png",
+      "sizeBytes": 84484,
+      "sha256": "f7a7b4029bd0f406e7f82d3432bf3e1d34710625f3b707551ca8cb002bdf9001",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Manal Alhihi\\website\\t (2).png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Manal Alhihi/website/t (3).png",
+      "sizeBytes": 182322,
+      "sha256": "b015ca05845a0e884473f6397f0c9756893432b4fc9c2e388ce9fcdc83980291",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Manal Alhihi\\website\\t (3).png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/nemo/11.png",
+      "sizeBytes": 1367815,
+      "sha256": "c9a62bcda43536effc9b65dd7439d83365f9fb9c6ccd91fe094f81866d8588b7",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\nemo\\11.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/nemo/13.png",
+      "sizeBytes": 1361803,
+      "sha256": "e39cfa9f854b292752f8367400e36a570d5ae757ab3aa7509cc846db222bddef",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\nemo\\13.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/nemo/2.png",
+      "sizeBytes": 1843158,
+      "sha256": "eadc61744f48f840e5899ca84379224da4da6ae05fa3136c7cc06e7db9d014a2",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\nemo\\2.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/nemo/3.png",
+      "sizeBytes": 2001035,
+      "sha256": "a80d22241a955b6cf43d8e1ec464bb6153f4fadd876e7943ee5c8c2b5f19e2c2",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\nemo\\3.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/nemo/6.png",
+      "sizeBytes": 1238879,
+      "sha256": "5a8112202869113e05061ef89c5842a4ccf05aa47f7caf3d5d424a7ed2955e6c",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\nemo\\6.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/nemo/8.png",
+      "sizeBytes": 1690358,
+      "sha256": "8bd983c3cc4e2174ce4eac8acd140a9efaa360b632d1c0157e09e2e1ee2530cd",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\nemo\\8.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/nemo/9.png",
+      "sizeBytes": 1657152,
+      "sha256": "936840ba6907967352ced1da02710d0c8d9fffbaa2cb4646d9bbf568400d07b0",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\nemo\\9.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/nemo/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\nemo\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/Padel Me Club/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Padel Me Club\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/Padel Me Club/Inkspire clients logo (3).webp",
+      "sizeBytes": 27356,
+      "sha256": "c75088f9a46c9e6d66e0270e7f0213d80d64846ab330764385f29907cfbd95ed",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Padel Me Club\\Inkspire clients logo (3).webp",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/Padel Me Club/Reel/Copy of 3FF13573-5AA7-4A74-A2AE-F803372B1F6A.mov",
+      "sizeBytes": 33541913,
+      "sha256": "bcdfdab8586505eef4d70134eab558ebc31d651fb81b7243119b41d053481ee6",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Padel Me Club\\Reel\\Copy of 3FF13573-5AA7-4A74-A2AE-F803372B1F6A.mov",
+      "classification": "converted original"
+    },
+    {
+      "path": "public/portfolio/Padel Me Club/Reel/Copy of 3FF13573-5AA7-4A74-A2AE-F803372B1F6A.mp4",
+      "sizeBytes": 18236118,
+      "sha256": "8629c50ed721b77f4a73f35018675edbcea168fa683afbab4ef40159a7ab14b6",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Padel Me Club\\Reel\\Copy of 3FF13573-5AA7-4A74-A2AE-F803372B1F6A.mp4",
+      "classification": "redundant take"
+    },
+    {
+      "path": "public/portfolio/Padel Me Club/Reel/Copy of copy_782345FE-9417-49AE-9EA1-AB5201D27643.MOV",
+      "sizeBytes": 30947176,
+      "sha256": "499e6200187018cace8f5db28c9732e1369099dcce9a19dd7aa183bdc29850c6",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Padel Me Club\\Reel\\Copy of copy_782345FE-9417-49AE-9EA1-AB5201D27643.MOV",
+      "classification": "converted original"
+    },
+    {
+      "path": "public/portfolio/Padel Me Club/Reel/Copy of copy_E375AA6A-C91B-4272-B7A7-F4A7D62DDFA0.MOV",
+      "sizeBytes": 16851599,
+      "sha256": "ddf27265b213846b6311bad99ca026db2c6c1df699be3358af384360cfa59063",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Padel Me Club\\Reel\\Copy of copy_E375AA6A-C91B-4272-B7A7-F4A7D62DDFA0.MOV",
+      "classification": "converted original"
+    },
+    {
+      "path": "public/portfolio/Padel Me Club/Reel/Copy of copy_E375AA6A-C91B-4272-B7A7-F4A7D62DDFA0.mp4",
+      "sizeBytes": 9124538,
+      "sha256": "df8f261f33a878d056bd1f0af0790d948b1582c61a94154cd715a85003de6c71",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Padel Me Club\\Reel\\Copy of copy_E375AA6A-C91B-4272-B7A7-F4A7D62DDFA0.mp4",
+      "classification": "redundant take"
+    },
+    {
+      "path": "public/portfolio/Padel Me Club/Reel/Copy of IMG_6750.mov",
+      "sizeBytes": 37074937,
+      "sha256": "af2b204d22996b100a69cbc0ef7961f9a8208a15a6a6d4cb99c95e74ec2a99cd",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Padel Me Club\\Reel\\Copy of IMG_6750.mov",
+      "classification": "converted original"
+    },
+    {
+      "path": "public/portfolio/Padel Me Club/Reel/Copy of IMG_6750.mp4",
+      "sizeBytes": 8457103,
+      "sha256": "b3bb8357b80724f374b5e50695a2c279efbec908826ba2c94d9bd3dd659844d5",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Padel Me Club\\Reel\\Copy of IMG_6750.mp4",
+      "classification": "redundant take"
+    },
+    {
+      "path": "public/portfolio/Padel Me Club/Reel/Copy of IMG_7151.MOV",
+      "sizeBytes": 113573942,
+      "sha256": "33ec1c549fd7848adab200e9a3740f57bc90b21be05b04ef44e0989f84c83065",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Padel Me Club\\Reel\\Copy of IMG_7151.MOV",
+      "classification": "converted original"
+    },
+    {
+      "path": "public/portfolio/Padel Me Club/Reel/Copy of IMG_7151.mp4",
+      "sizeBytes": 4269500,
+      "sha256": "90db3c312b4b3805bcd82d8440ef033981ea171120da0f8c9633c7798199a955",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Padel Me Club\\Reel\\Copy of IMG_7151.mp4",
+      "classification": "redundant take"
+    },
+    {
+      "path": "public/portfolio/Padel Me Club/Reel/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Padel Me Club\\Reel\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/Padel Me Club/Static/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Padel Me Club\\Static\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/Padel Me Club/Static/Padel Me CC.pdf",
+      "sizeBytes": 18960624,
+      "sha256": "8f77758bef99d37c9597e577a48c024dc7c9bba8d268e6479996ddde7c4796ea",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\Padel Me Club\\Static\\Padel Me CC.pdf",
+      "classification": "visual-only PDF source"
+    },
+    {
+      "path": "public/portfolio/SKN Clinics/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\SKN Clinics\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/SKN Clinics/Skn2-مورفيس.jpg",
+      "sizeBytes": 71338,
+      "sha256": "77b6f977e7f76fd3fefc3ca6522dc8517287763a342f12792e76abec9a42fa1f",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\SKN Clinics\\Skn2-مورفيس.jpg",
+      "classification": "converted original"
+    },
+    {
+      "path": "public/portfolio/SKN Clinics/Skn2-مورفيس.mov",
+      "sizeBytes": 22978970,
+      "sha256": "164cb82137b9df8743e9736e3dd74be1d258fb62aa1776e4103adf7b8e1ba50a",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\SKN Clinics\\Skn2-مورفيس.mov",
+      "classification": "converted original"
+    },
+    {
+      "path": "public/portfolio/SKN Clinics/Skn3.jpg",
+      "sizeBytes": 47657,
+      "sha256": "da037d87da7599397644c0b743aab81f3ec6a428d59f831756d957ff8316db16",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\SKN Clinics\\Skn3.jpg",
+      "classification": "converted original"
+    },
+    {
+      "path": "public/portfolio/SKN Clinics/Skn3.mov",
+      "sizeBytes": 13118497,
+      "sha256": "02659693552c9d4eab9df859e8a995fa9438b8373f0f75d6910342b65092600c",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\SKN Clinics\\Skn3.mov",
+      "classification": "converted original"
+    },
+    {
+      "path": "public/portfolio/SKN Clinics/Skn3.mp4",
+      "sizeBytes": 4802878,
+      "sha256": "60146b84391661fb71509479f4b08964ed36381f21e4d31766a6523836940b6c",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\SKN Clinics\\Skn3.mp4",
+      "classification": "redundant take"
+    },
+    {
+      "path": "public/portfolio/SKN Clinics/SKN7.jpg",
+      "sizeBytes": 25890,
+      "sha256": "3484fed8d86b984921baa28e899170a72997fe63ad97eee1498523eb45b150a2",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\SKN Clinics\\SKN7.jpg",
+      "classification": "converted original"
+    },
+    {
+      "path": "public/portfolio/SKN Clinics/SKN7.mov",
+      "sizeBytes": 22447726,
+      "sha256": "5c68c3465a220c69c70b42c0a93c4996691fc3d492796df2ffb6cf1c285164da",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\SKN Clinics\\SKN7.mov",
+      "classification": "converted original"
+    },
+    {
+      "path": "public/portfolio/SKN Clinics/SKN7.mp4",
+      "sizeBytes": 4169367,
+      "sha256": "d91753363c5e2f75f5b8b5d511ed41508ffe89a17354604712de3b54eb89c23e",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\SKN Clinics\\SKN7.mp4",
+      "classification": "redundant take"
+    },
+    {
+      "path": "public/portfolio/SKN Clinics/عيادة 1skn - عام .jpg",
+      "sizeBytes": 51218,
+      "sha256": "61f972a1a24f8305501fbbe6d9626afb71cd95a58d377cd1ff6831970966f9e4",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\SKN Clinics\\عيادة 1skn - عام .jpg",
+      "classification": "converted original"
+    },
+    {
+      "path": "public/portfolio/SKN Clinics/عيادة 1skn - عام .mov",
+      "sizeBytes": 23772523,
+      "sha256": "ebe368f061d87869fe1557593862a8ad06516f4d49a1e50f24bde698c80384a8",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\SKN Clinics\\عيادة 1skn - عام .mov",
+      "classification": "converted original"
+    },
+    {
+      "path": "public/portfolio/yula/6.png",
+      "sizeBytes": 824659,
+      "sha256": "7c2224ea9e80dbcb11294e22ad79cc70011e9c23065fdb9617818b32b74b9a19",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\yula\\6.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/yula/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\yula\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/ziena/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ziena\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/ziena/spcial/10.png",
+      "sizeBytes": 1062047,
+      "sha256": "43be305e4aa40691ded745ef5baed4532a3d8d85108fbb072af32f2b6b99f790",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ziena\\spcial\\10.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ziena/spcial/2.png",
+      "sizeBytes": 841903,
+      "sha256": "d1b2f9a62a4edf44b8d696fe68f571f68175849014c6b614708d338d74f7ecd7",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ziena\\spcial\\2.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ziena/spcial/6.png",
+      "sizeBytes": 853202,
+      "sha256": "79e051bbc9b3300c723b3e582a240c5e166d73ede3da4c62eb401df859983f29",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ziena\\spcial\\6.png",
+      "classification": "low editorial value"
+    },
+    {
+      "path": "public/portfolio/ziena/spcial/desktop.ini",
+      "sizeBytes": 246,
+      "sha256": "7e7d0a39cc5072eee77fad659f564ea9c2f82764f9098408169a0c75b7d61a60",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ziena\\spcial\\desktop.ini",
+      "classification": "raw source"
+    },
+    {
+      "path": "public/portfolio/ziena/spcial/مجمع.png",
+      "sizeBytes": 14997938,
+      "sha256": "af3ec0329e3ba47ecfea7e7df702607bcfd0e607c457720024ee1b70b096e140",
+      "backupPath": "C:\\Users\\domim\\Desktop\\sultanshadi-media-source-backup\\20260713-003648\\public\\portfolio\\ziena\\spcial\\مجمع.png",
+      "classification": "low editorial value"
+    }
+  ]
+}

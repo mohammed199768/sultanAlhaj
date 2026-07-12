@@ -16,17 +16,21 @@
   },
   "card": {
     "eyebrow": "Motion & Video",
-    "imageAlt": "Motion reel portfolio cover"
+    "imageAlt": "Motion reel portfolio cover",
+    "image": "/portfolio/digital/%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%A7%D9%84%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9.poster.webp"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/digital/%D8%B9%D9%84%D8%A7%D8%AC%20%D8%A7%D9%84%D8%B9%D8%B5%D8%A8.poster.webp"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Motion graphics and video reel"
+    "imageAlt": "Motion graphics and video reel",
+    "image": "/portfolio/digital/%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%A7%D9%84%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9.poster.webp"
   },
   "metadata": {
-    "description": "Motion graphics and short-form video edits produced across client campaigns."
+    "description": "Motion graphics and short-form video edits produced across client campaigns.",
+    "ogImage": "/portfolio/digital/%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%A7%D9%84%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9.poster.webp"
   },
   "services": [
     "Motion Graphics",
@@ -49,5 +53,17 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [],
+  "videos": [
+    {
+      "src": "/portfolio/digital/%D8%B9%D9%84%D8%A7%D8%AC%20%D8%A7%D9%84%D8%B9%D8%B5%D8%A8.mp4",
+      "poster": "/portfolio/digital/%D8%B9%D9%84%D8%A7%D8%AC%20%D8%A7%D9%84%D8%B9%D8%B5%D8%A8.poster.webp"
+    },
+    {
+      "src": "/portfolio/digital/%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%A7%D9%84%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9.mp4",
+      "poster": "/portfolio/digital/%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%A7%D9%84%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9.poster.webp"
+    }
+  ],
+  "documents": []
 }

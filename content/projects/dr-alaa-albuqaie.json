@@ -20,17 +20,21 @@
   },
   "card": {
     "eyebrow": "Healthcare",
-    "imageAlt": "Dr. Alaa personal medical brand cover"
+    "imageAlt": "Dr. Alaa personal medical brand cover",
+    "image": "/portfolio/Dr.%20Ala'a%20Albuqaie/0a42348b-d15e-4e39-80e3-3ec7e2631202.webp"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/Dr.%20Ala'a%20Albuqaie/alaa.webp"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Dr. Alaa personal medical brand"
+    "imageAlt": "Dr. Alaa personal medical brand",
+    "image": "/portfolio/Dr.%20Ala'a%20Albuqaie/0a42348b-d15e-4e39-80e3-3ec7e2631202.webp"
   },
   "metadata": {
-    "description": "Personal medical brand content and consultation funnels."
+    "description": "Personal medical brand content and consultation funnels.",
+    "ogImage": "/portfolio/Dr.%20Ala'a%20Albuqaie/0a42348b-d15e-4e39-80e3-3ec7e2631202.webp"
   },
   "services": [
     "Personal Brand",
@@ -53,5 +57,11 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/Dr.%20Ala'a%20Albuqaie/0a42348b-d15e-4e39-80e3-3ec7e2631202.webp",
+    "/portfolio/Dr.%20Ala'a%20Albuqaie/alaa.webp"
+  ],
+  "videos": [],
+  "documents": []
 }

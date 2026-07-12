@@ -16,17 +16,21 @@
   },
   "card": {
     "eyebrow": "Healthcare",
-    "imageAlt": "Curevie healthcare campaign cover"
+    "imageAlt": "Curevie healthcare campaign cover",
+    "image": "/portfolio/Curevie/curevie4.jpeg"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/Curevie/curevie3.jpeg"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Curevie healthcare campaign"
+    "imageAlt": "Curevie healthcare campaign",
+    "image": "/portfolio/Curevie/curevie4.jpeg"
   },
   "metadata": {
-    "description": "Healthcare brand social presence and campaign creative."
+    "description": "Healthcare brand social presence and campaign creative.",
+    "ogImage": "/portfolio/Curevie/curevie4.jpeg"
   },
   "services": [
     "Healthcare",
@@ -49,5 +53,15 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/Curevie/curevie.jpeg",
+    "/portfolio/Curevie/curevie1.jpeg",
+    "/portfolio/Curevie/curevie2.jpeg",
+    "/portfolio/Curevie/curevie3.jpeg",
+    "/portfolio/Curevie/curevie4.jpeg",
+    "/portfolio/Curevie/curevie5.jpeg"
+  ],
+  "videos": [],
+  "documents": []
 }

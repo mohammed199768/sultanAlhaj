@@ -16,17 +16,21 @@
   },
   "card": {
     "eyebrow": "Healthcare",
-    "imageAlt": "HAMC medical marketing cover"
+    "imageAlt": "HAMC medical marketing cover",
+    "image": "/portfolio/HAMC/0bdfa648-ea0e-41bc-b422-d05cf2c4a3d8.webp"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/HAMC/ed712c11-9fac-4b44-ace1-1aaf220cdaa0.webp"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "HAMC medical marketing"
+    "imageAlt": "HAMC medical marketing",
+    "image": "/portfolio/HAMC/0bdfa648-ea0e-41bc-b422-d05cf2c4a3d8.webp"
   },
   "metadata": {
-    "description": "Medical complex campaigns, promotional films and social management."
+    "description": "Medical complex campaigns, promotional films and social management.",
+    "ogImage": "/portfolio/HAMC/0bdfa648-ea0e-41bc-b422-d05cf2c4a3d8.webp"
   },
   "services": [
     "Healthcare",
@@ -50,5 +54,17 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/HAMC/0bdfa648-ea0e-41bc-b422-d05cf2c4a3d8.webp",
+    "/portfolio/HAMC/6b05b24e-ca31-497f-a6bd-606b0f558266.webp",
+    "/portfolio/HAMC/ed712c11-9fac-4b44-ace1-1aaf220cdaa0.webp"
+  ],
+  "videos": [
+    {
+      "src": "/portfolio/HAMC/%D9%85%D8%AC%D9%85%D8%B9%20%D8%A7%D8%AE%D9%8A%D8%B1.mp4",
+      "poster": "/portfolio/HAMC/%D9%85%D8%AC%D9%85%D8%B9%20%D8%A7%D8%AE%D9%8A%D8%B1.poster.webp"
+    }
+  ],
+  "documents": []
 }

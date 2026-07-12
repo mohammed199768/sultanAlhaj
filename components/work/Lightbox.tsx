@@ -156,6 +156,16 @@ export default function Lightbox({
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: reduceMotion ? 0 : 0.34, duration: 0.62, ease: [0.16, 1, 0.3, 1] }}
               >
+                {project.popupMedia?.kind === "image" && (
+                  <div className="overflow-hidden rounded-xl border border-champagne/35">
+                    <ImageAsset
+                      item={project.popupMedia}
+                      fill={false}
+                      sizes="(max-width: 640px) 100vw, 33vw"
+                      className="h-auto w-full"
+                    />
+                  </div>
+                )}
                 {project.media.map((item) => {
                   if (item.kind === "image") {
                     return (

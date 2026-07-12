@@ -16,17 +16,21 @@
   },
   "card": {
     "eyebrow": "Social Media",
-    "imageAlt": "Nemo social campaign cover"
+    "imageAlt": "Nemo social campaign cover",
+    "image": "/portfolio/nemo/1.png"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/nemo/5.png"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Nemo social campaign"
+    "imageAlt": "Nemo social campaign",
+    "image": "/portfolio/nemo/1.png"
   },
   "metadata": {
-    "description": "Playful social campaign creative and editorial content calendar."
+    "description": "Playful social campaign creative and editorial content calendar.",
+    "ogImage": "/portfolio/nemo/1.png"
   },
   "services": [
     "Social Media",
@@ -49,5 +53,17 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/nemo/1.png",
+    "/portfolio/nemo/4.png",
+    "/portfolio/nemo/5.png",
+    "/portfolio/nemo/7.png",
+    "/portfolio/nemo/10.png",
+    "/portfolio/nemo/12.png",
+    "/portfolio/nemo/14.png",
+    "/portfolio/nemo/15.png"
+  ],
+  "videos": [],
+  "documents": []
 }

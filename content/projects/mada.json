@@ -16,17 +16,21 @@
   },
   "card": {
     "eyebrow": "Full Marketing Campaigns",
-    "imageAlt": "Mada campaign cover"
+    "imageAlt": "Mada campaign cover",
+    "image": "/portfolio/mada/4.png"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/mada/7.png"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Mada campaign"
+    "imageAlt": "Mada campaign",
+    "image": "/portfolio/mada/4.png"
   },
   "metadata": {
-    "description": "Campaign concepts and a consistent multi-post rollout."
+    "description": "Campaign concepts and a consistent multi-post rollout.",
+    "ogImage": "/portfolio/mada/4.png"
   },
   "services": [
     "Campaigns",
@@ -49,5 +53,17 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/mada/1.png",
+    "/portfolio/mada/2.png",
+    "/portfolio/mada/4.png",
+    "/portfolio/mada/5.png",
+    "/portfolio/mada/7.png",
+    "/portfolio/mada/8.png",
+    "/portfolio/mada/11.png",
+    "/portfolio/mada/14.png"
+  ],
+  "videos": [],
+  "documents": []
 }

@@ -16,17 +16,21 @@
   },
   "card": {
     "eyebrow": "Social Media",
-    "imageAlt": "Manal Alhihi personal brand cover"
+    "imageAlt": "Manal Alhihi personal brand cover",
+    "image": "/portfolio/Manal%20Alhihi/website/Garden%20Art%20Rebranding%20(1).png"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/Manal%20Alhihi/website/t%20(5).png"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Manal Alhihi personal brand"
+    "imageAlt": "Manal Alhihi personal brand",
+    "image": "/portfolio/Manal%20Alhihi/website/Garden%20Art%20Rebranding%20(1).png"
   },
   "metadata": {
-    "description": "Personal brand content strategy, carousels and audience-building creative."
+    "description": "Personal brand content strategy, carousels and audience-building creative.",
+    "ogImage": "/portfolio/Manal%20Alhihi/website/Garden%20Art%20Rebranding%20(1).png"
   },
   "services": [
     "Personal Brand",
@@ -49,5 +53,16 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/Manal%20Alhihi/website/Garden%20Art%20Rebranding%20(1).png",
+    "/portfolio/Manal%20Alhihi/website/Garden%20Art%20Rebranding.png",
+    "/portfolio/Manal%20Alhihi/website/Screen%20Shot%202026-05-10%20at%209.37.53%20PM.png",
+    "/portfolio/Manal%20Alhihi/website/t%20(1).png",
+    "/portfolio/Manal%20Alhihi/website/t%20(4).png",
+    "/portfolio/Manal%20Alhihi/website/t%20(5).png",
+    "/portfolio/Manal%20Alhihi/website/t.png"
+  ],
+  "videos": [],
+  "documents": []
 }

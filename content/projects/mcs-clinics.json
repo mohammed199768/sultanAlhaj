@@ -16,18 +16,22 @@
   },
   "card": {
     "eyebrow": "Healthcare",
-    "imageAlt": "MCS Clinics project preview"
+    "imageAlt": "MCS Clinics project preview",
+    "image": null
   },
   "popup": {
     "ctaLabel": "Open full case study",
-    "previewLabel": "Case study coming soon"
+    "previewLabel": "Case study coming soon",
+    "image": null
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "MCS Clinics project"
+    "imageAlt": "MCS Clinics project",
+    "image": null
   },
   "metadata": {
-    "description": "Service-line campaigns and social management for a medical complex."
+    "description": "Service-line campaigns and social management for a medical complex.",
+    "ogImage": null
   },
   "services": [
     "Strategy",
@@ -37,5 +41,8 @@
   "tools": [],
   "metrics": [],
   "sections": [],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [],
+  "videos": [],
+  "documents": []
 }

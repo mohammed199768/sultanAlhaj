@@ -16,17 +16,21 @@
   },
   "card": {
     "eyebrow": "Full Branding",
-    "imageAlt": "Horvath brand identity cover"
+    "imageAlt": "Horvath brand identity cover",
+    "image": "/portfolio/Horvath/horvath.jpeg"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/Horvath/horvath1.jpeg"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Horvath brand identity"
+    "imageAlt": "Horvath brand identity",
+    "image": "/portfolio/Horvath/horvath.jpeg"
   },
   "metadata": {
-    "description": "Brand identity, content direction and editorial social feed."
+    "description": "Brand identity, content direction and editorial social feed.",
+    "ogImage": "/portfolio/Horvath/horvath.jpeg"
   },
   "services": [
     "Branding",
@@ -49,5 +53,13 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/Horvath/horvath.jpeg",
+    "/portfolio/Horvath/horvath1.jpeg",
+    "/portfolio/Horvath/horvath2.jpeg",
+    "/portfolio/Horvath/horvath3.jpeg"
+  ],
+  "videos": [],
+  "documents": []
 }

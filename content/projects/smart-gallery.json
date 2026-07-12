@@ -16,18 +16,22 @@
   },
   "card": {
     "eyebrow": "Full Branding",
-    "imageAlt": "Smart Gallery project preview"
+    "imageAlt": "Smart Gallery project preview",
+    "image": null
   },
   "popup": {
     "ctaLabel": "Open full case study",
-    "previewLabel": "Case study coming soon"
+    "previewLabel": "Case study coming soon",
+    "image": null
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Smart Gallery project"
+    "imageAlt": "Smart Gallery project",
+    "image": null
   },
   "metadata": {
-    "description": "Retail brand identity and content direction."
+    "description": "Retail brand identity and content direction.",
+    "ogImage": null
   },
   "services": [
     "Branding",
@@ -36,5 +40,8 @@
   "tools": [],
   "metrics": [],
   "sections": [],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [],
+  "videos": [],
+  "documents": []
 }

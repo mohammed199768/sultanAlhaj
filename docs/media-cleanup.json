@@ -1,0 +1,17 @@
+{
+  "baselineRef": "backup-before-media-reduction-a3b51cc",
+  "removed": [
+    {
+      "path": "public/portfolio/Dr. Mohannad Alharbi/Copy of snab 7 (1).mp4",
+      "bytes": 34000558,
+      "reason": "Exact SHA-256 duplicate of Copy of snab 7.mp4 in the same generated gallery; canonical file retained.",
+      "tracked": true
+    },
+    {
+      "path": "public/clients/__MACOSX",
+      "bytes": 14965,
+      "reason": "Contained 22 AppleDouble metadata files only; manifest and transcode walkers explicitly skip this directory and ._* entries.",
+      "tracked": false
+    }
+  ]
+}

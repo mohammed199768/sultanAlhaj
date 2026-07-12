@@ -3,6 +3,9 @@ import path from "node:path";
 import type { ProjectContent } from "./types";
 import { validateProjects } from "./validate";
 
+const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".avif", ".gif"]);
+const VIDEO_EXTENSIONS = new Set([".mp4", ".webm"]);
+
 function readJson(file: string): unknown {
   try { return JSON.parse(readFileSync(file, "utf8")); }
   catch (error) { throw new Error(`${path.relative(process.cwd(), file)}: invalid JSON\n${error instanceof Error ? error.message : String(error)}`); }
@@ -13,12 +16,46 @@ export function readProjectFiles(): ProjectContent[] {
   return readdirSync(directory).filter((file) => file.endsWith(".json")).sort().map((file) => readJson(path.join(directory, file))) as ProjectContent[];
 }
 
+function walkFiles(directory: string): string[] {
+  if (!existsSync(directory)) return [];
+  return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    const absolute = path.join(directory, entry.name);
+    return entry.isDirectory() ? walkFiles(absolute) : [absolute];
+  });
+}
+
+function resolveExactPublicReference(publicRoot: string, value: string): { absolute?: string; error?: string } {
+  if (!value.startsWith("/")) return { error: `media path must start with "/": ${value}` };
+  let decoded: string;
+  try { decoded = decodeURIComponent(value); }
+  catch { return { error: `media path is not valid URL encoding: ${value}` }; }
+  const segments = decoded.replace(/^\/+/, "").split("/");
+  if (!segments.length || segments.some((segment) => !segment || segment === "." || segment === "..")) {
+    return { error: `media path contains an invalid segment: ${value}` };
+  }
+  let current = publicRoot;
+  for (const segment of segments) {
+    if (!existsSync(current)) return { error: `unknown media path: ${value}` };
+    const entries = readdirSync(current, { withFileTypes: true });
+    const exact = entries.find((entry) => entry.name === segment);
+    if (!exact) {
+      const differentCase = entries.find((entry) => entry.name.toLocaleLowerCase("en") === segment.toLocaleLowerCase("en"));
+      if (differentCase) return { error: `invalid casing in media path: ${value}; expected segment "${differentCase.name}"` };
+      return { error: `unknown media path: ${value}` };
+    }
+    current = path.join(current, exact.name);
+  }
+  if (!existsSync(current)) return { error: `unknown media path: ${value}` };
+  return { absolute: current };
+}
+
 export function validateContentFiles(assetFolders?: Set<string>): ProjectContent[] {
   const root = process.cwd();
   const projects = readProjectFiles();
   const folders = assetFolders ?? new Set(readdirSync(path.join(root, "public", "portfolio"), { withFileTypes: true }).filter((entry) => entry.isDirectory()).map((entry) => entry.name));
   validateProjects(projects, folders);
   const errors: string[] = [];
+  const publicRoot = path.join(root, "public");
   const bySlug = new Map(projects.map((project) => [project.slug, project]));
   const mappedFolders = new Map<string, string>();
   for (const project of projects) {
@@ -27,11 +64,55 @@ export function validateContentFiles(assetFolders?: Set<string>): ProjectContent
       if (previous) errors.push(`Project "${project.slug}": assetFolder "${project.assetFolder}" is already mapped by "${previous}"`);
       mappedFolders.set(project.assetFolder, project.slug);
     }
-    for (const value of [project.card.image, project.popup.image, project.hero.image, project.metadata.ogImage].filter(Boolean) as string[]) {
-      if (value.startsWith("/") && !existsSync(path.join(root, "public", decodeURIComponent(value)))) errors.push(`Project "${project.slug}": referenced asset does not exist: ${value}`);
+    const validateReference = (label: string, value: string | null, expected: "image" | "video" | "pdf") => {
+      if (!value) return;
+      const resolved = resolveExactPublicReference(publicRoot, value);
+      if (resolved.error) {
+        const pdfLabel = expected === "pdf" ? "excluded or missing PDF reference" : resolved.error;
+        errors.push(`Project "${project.slug}": ${label}: ${pdfLabel}: ${value}`);
+        return;
+      }
+      const extension = path.extname(decodeURIComponent(value)).toLowerCase();
+      if (extension === ".mov" || extension === ".m4v") errors.push(`Project "${project.slug}": ${label}: raw MOV reference is forbidden: ${value}`);
+      if (expected === "image" && !IMAGE_EXTENSIONS.has(extension)) errors.push(`Project "${project.slug}": ${label}: expected an image path: ${value}`);
+      if (expected === "video" && !VIDEO_EXTENSIONS.has(extension)) errors.push(`Project "${project.slug}": ${label}: expected a browser-safe MP4/WebM path: ${value}`);
+      if (expected === "pdf" && extension !== ".pdf") errors.push(`Project "${project.slug}": ${label}: expected a PDF path: ${value}`);
+    };
+
+    validateReference("card.image", project.card.image, "image");
+    validateReference("popup.image", project.popup.image, "image");
+    validateReference("hero.image", project.hero.image, "image");
+    validateReference("metadata.ogImage", project.metadata.ogImage, "image");
+
+    const editorialSelections: { label: string; value: string }[] = [];
+    (project.gallery ?? []).forEach((value, index) => {
+      validateReference(`gallery[${index}]`, value, "image");
+      editorialSelections.push({ label: `gallery[${index}]`, value });
+    });
+    (project.videos ?? []).forEach((item, index) => {
+      validateReference(`videos[${index}].src`, item.src, "video");
+      if (!item.poster) errors.push(`Project "${project.slug}": videos[${index}].poster: missing poster`);
+      else validateReference(`videos[${index}].poster`, item.poster, "image");
+      editorialSelections.push({ label: `videos[${index}].src`, value: item.src });
+    });
+    (project.documents ?? []).forEach((item, index) => {
+      validateReference(`documents[${index}].src`, item.src, "pdf");
+      if (!item.title?.trim()) errors.push(`Project "${project.slug}": documents[${index}].title: document title is required`);
+      editorialSelections.push({ label: `documents[${index}].src`, value: item.src });
+    });
+    const firstSelection = new Map<string, string>();
+    for (const selection of editorialSelections) {
+      const prior = firstSelection.get(selection.value);
+      if (prior) errors.push(`Project "${project.slug}": duplicate media selection: ${selection.label} repeats ${prior}: ${selection.value}`);
+      else firstSelection.set(selection.value, selection.label);
     }
   }
   for (const folder of folders) if (!mappedFolders.has(folder)) errors.push(`Portfolio asset folder "${folder}" has no canonical project JSON`);
+  for (const file of walkFiles(path.join(publicRoot, "portfolio"))) {
+    if ([".mov", ".m4v"].includes(path.extname(file).toLowerCase())) {
+      errors.push(`Raw MOV remains under public: ${path.relative(root, file).split(path.sep).join("/")}`);
+    }
+  }
 
   const home = readJson(path.join(root, "content", "home.json")) as { caseStudies?: { projectSlugs?: string[] } };
   for (const slug of home.caseStudies?.projectSlugs ?? []) if (!bySlug.has(slug)) errors.push(`content/home.json: unknown case-study slug "${slug}"`);

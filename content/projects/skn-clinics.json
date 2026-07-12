@@ -17,17 +17,21 @@
   },
   "card": {
     "eyebrow": "Healthcare",
-    "imageAlt": "SKN Clinics marketing cover"
+    "imageAlt": "SKN Clinics marketing cover",
+    "image": "/portfolio/SKN%20Clinics/5d478de9-69f7-4662-a7b1-6564f21fb436.jpg"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/SKN%20Clinics/14bde98f-8ae5-4a92-ab49-31f08a3dc4c5.jpg"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "SKN Clinics campaign"
+    "imageAlt": "SKN Clinics campaign",
+    "image": "/portfolio/SKN%20Clinics/5d478de9-69f7-4662-a7b1-6564f21fb436.jpg"
   },
   "metadata": {
-    "description": "Always-on social and paid campaigns for an aesthetics clinic."
+    "description": "Always-on social and paid campaigns for an aesthetics clinic.",
+    "ogImage": "/portfolio/SKN%20Clinics/5d478de9-69f7-4662-a7b1-6564f21fb436.jpg"
   },
   "services": [
     "Paid Ads",
@@ -62,5 +66,25 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/SKN%20Clinics/5d478de9-69f7-4662-a7b1-6564f21fb436.jpg",
+    "/portfolio/SKN%20Clinics/14bde98f-8ae5-4a92-ab49-31f08a3dc4c5.jpg",
+    "/portfolio/SKN%20Clinics/8.webp"
+  ],
+  "videos": [
+    {
+      "src": "/portfolio/SKN%20Clinics/Skn2-%D9%85%D9%88%D8%B1%D9%81%D9%8A%D8%B3.mp4",
+      "poster": "/portfolio/SKN%20Clinics/Skn2-%D9%85%D9%88%D8%B1%D9%81%D9%8A%D8%B3.poster.webp"
+    },
+    {
+      "src": "/portfolio/SKN%20Clinics/%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9%201skn%20-%20%D8%B9%D8%A7%D9%85%20.mp4",
+      "poster": "/portfolio/SKN%20Clinics/%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9%201skn%20-%20%D8%B9%D8%A7%D9%85%20.poster.webp"
+    },
+    {
+      "src": "/portfolio/SKN%20Clinics/%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%A8%D8%B1%D9%88%D9%85%D9%88%20%D9%84%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%AE%D8%A7%D9%86%20%D9%88%D9%86%D8%B3%D9%85%D8%A9.mp4",
+      "poster": "/portfolio/SKN%20Clinics/%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%A8%D8%B1%D9%88%D9%85%D9%88%20%D9%84%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%AE%D8%A7%D9%86%20%D9%88%D9%86%D8%B3%D9%85%D8%A9.poster.webp"
+    }
+  ],
+  "documents": []
 }

@@ -16,17 +16,22 @@
   },
   "card": {
     "eyebrow": "Full Marketing Campaigns",
-    "imageAlt": "Tawaq project preview"
+    "imageAlt": "Tawaq project preview",
+    "image": null
   },
   "popup": {
     "ctaLabel": "Open full case study",
-    "previewLabel": "Case study coming soon"
+    "previewLabel": "Case study coming soon",
+    "image": null
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Tawaq project"
+    "imageAlt": "Tawaq project",
+    "image": null
   },
-  "metadata": {},
+  "metadata": {
+    "ogImage": null
+  },
   "services": [
     "Campaigns",
     "Social",
@@ -35,5 +40,8 @@
   "tools": [],
   "metrics": [],
   "sections": [],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [],
+  "videos": [],
+  "documents": []
 }

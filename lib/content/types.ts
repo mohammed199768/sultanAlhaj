@@ -18,6 +18,16 @@ export interface ProjectSection {
   items?: ProjectMetric[];
 }
 
+export interface ProjectVideoSelection {
+  src: string;
+  poster: string;
+}
+
+export interface ProjectDocumentSelection {
+  src: string;
+  title: string;
+}
+
 export interface ProjectContent {
   schemaVersion: 1;
   slug: string;
@@ -40,20 +50,23 @@ export interface ProjectContent {
   };
   card: {
     eyebrow: string;
-    image?: string;
+    image: string | null;
     imageAlt: string;
   };
   popup: {
-    image?: string;
+    image: string | null;
     ctaLabel: string;
     previewLabel?: string;
   };
   hero: {
     eyebrow: string;
-    image?: string;
+    image: string | null;
     imageAlt: string;
   };
-  metadata: { title?: string; description?: string; ogImage?: string };
+  metadata: { title?: string; description?: string; ogImage: string | null };
+  gallery: string[];
+  videos: ProjectVideoSelection[];
+  documents: ProjectDocumentSelection[];
   services: string[];
   tools: string[];
   metrics: ProjectMetric[];
@@ -69,10 +82,13 @@ export interface Project extends ProjectContent {
   summary: string;
   tags: string[];
   cover: MediaItem | null;
+  popupMedia: MediaItem | null;
+  heroMedia: MediaItem | null;
+  metadataMedia: MediaItem | null;
   media: MediaItem[];
   counts: { images: number; videos: number; pdfs: number };
 }
 
 export type ProjectCardData = Pick<Project, "key" | "slug" | "status" | "client" | "identity" | "category" | "summary" | "cover" | "counts" | "featured" | "order">;
-export type ProjectPopupData = ProjectCardData & Pick<Project, "media" | "popup">;
+export type ProjectPopupData = ProjectCardData & Pick<Project, "media" | "popup" | "popupMedia">;
 export type ProjectDetailData = Project;

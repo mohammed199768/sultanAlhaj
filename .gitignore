@@ -37,13 +37,8 @@ cv.txt
 brand kit.jpeg
 clients-orbit-desktop.png
 
-# heavy portfolio media; keep locally or upload to external storage
-public/portfolio/**/*.mp4
-public/portfolio/**/*.MP4
-public/portfolio/**/*.mov
-public/portfolio/**/*.MOV
-public/portfolio/**/*.pdf
-public/portfolio/**/*.PDF
+# Heavy portfolio media is tracked through Git LFS so build-time manifest
+# generation sees the same inputs locally and in Vercel's Git checkout.
 
 # one-off local backups/history
 package-lock.broken.json

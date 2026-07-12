@@ -17,7 +17,6 @@ export interface PortfolioFolder {
   images: number;
   videos: number;
   pdfs: number;
-  cover: MediaItem | null;
   media: MediaItem[];
 }
 

@@ -16,17 +16,21 @@
   },
   "card": {
     "eyebrow": "F&B",
-    "imageAlt": "Kulib food and beverage campaign cover"
+    "imageAlt": "Kulib food and beverage campaign cover",
+    "image": "/portfolio/kulib/2.png"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/kulib/7.png"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Kulib food and beverage campaign"
+    "imageAlt": "Kulib food and beverage campaign",
+    "image": "/portfolio/kulib/2.png"
   },
   "metadata": {
-    "description": "Food and beverage photography direction and promotional creative."
+    "description": "Food and beverage photography direction and promotional creative.",
+    "ogImage": "/portfolio/kulib/2.png"
   },
   "services": [
     "F&B",
@@ -49,5 +53,15 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/kulib/1.png",
+    "/portfolio/kulib/2.png",
+    "/portfolio/kulib/3.png",
+    "/portfolio/kulib/4.png",
+    "/portfolio/kulib/7.png",
+    "/portfolio/kulib/8.png"
+  ],
+  "videos": [],
+  "documents": []
 }

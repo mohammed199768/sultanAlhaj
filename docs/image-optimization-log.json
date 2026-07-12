@@ -1,0 +1,103 @@
+{
+  "generatedAt": "2026-07-12T22:12:14.255Z",
+  "transformations": [
+    {
+      "path": "public/portfolio/branding/previews/alqrawiyeen-02.webp",
+      "beforeSizeBytes": 293428,
+      "afterSizeBytes": 223334,
+      "maximumEdge": 1800,
+      "quality": 82
+    },
+    {
+      "path": "public/portfolio/branding/previews/catalogue-01.webp",
+      "beforeSizeBytes": 406324,
+      "afterSizeBytes": 304746,
+      "maximumEdge": 1800,
+      "quality": 82
+    },
+    {
+      "path": "public/portfolio/branding/previews/catalogue-05.webp",
+      "beforeSizeBytes": 380944,
+      "afterSizeBytes": 294968,
+      "maximumEdge": 1800,
+      "quality": 82
+    },
+    {
+      "path": "public/portfolio/branding/previews/catalogue-10.webp",
+      "beforeSizeBytes": 521244,
+      "afterSizeBytes": 379512,
+      "maximumEdge": 1800,
+      "quality": 82
+    },
+    {
+      "path": "public/portfolio/Harmony/social/4.png",
+      "beforeSizeBytes": 2917517,
+      "afterSizeBytes": 1355100,
+      "maximumEdge": 1800,
+      "quality": 82
+    },
+    {
+      "path": "public/portfolio/Harmony/social/7.png",
+      "beforeSizeBytes": 4830443,
+      "afterSizeBytes": 1464765,
+      "maximumEdge": 1800,
+      "quality": 82
+    },
+    {
+      "path": "public/portfolio/Harmony/social/9.png",
+      "beforeSizeBytes": 3652160,
+      "afterSizeBytes": 3182468,
+      "maximumEdge": 1800,
+      "quality": 82
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/كفر-1.png",
+      "beforeSizeBytes": 1628660,
+      "afterSizeBytes": 1495861,
+      "maximumEdge": 1800,
+      "quality": 82
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/كفر-2.png",
+      "beforeSizeBytes": 1406479,
+      "afterSizeBytes": 1303474,
+      "maximumEdge": 1800,
+      "quality": 82
+    },
+    {
+      "path": "public/portfolio/ibtsm/social/كفر-3.png",
+      "beforeSizeBytes": 1413223,
+      "afterSizeBytes": 1304770,
+      "maximumEdge": 1800,
+      "quality": 82
+    },
+    {
+      "path": "public/portfolio/JGC Contracting/6366203d-f991-444d-84d5-d5a791c3774e.jpg",
+      "beforeSizeBytes": 266837,
+      "afterSizeBytes": 144112,
+      "maximumEdge": 1800,
+      "quality": 82
+    },
+    {
+      "path": "public/portfolio/Manal Alhihi/website/Garden Art Rebranding.png",
+      "beforeSizeBytes": 1017014,
+      "afterSizeBytes": 919933,
+      "maximumEdge": 1800,
+      "quality": 82
+    },
+    {
+      "path": "public/works/16.webp",
+      "beforeSizeBytes": 344862,
+      "afterSizeBytes": 90940,
+      "maximumEdge": 1400,
+      "quality": 82
+    },
+    {
+      "path": "public/works/17.webp",
+      "beforeSizeBytes": 312858,
+      "afterSizeBytes": 108344,
+      "maximumEdge": 1400,
+      "quality": 82
+    }
+  ]
+}

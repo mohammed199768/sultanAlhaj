@@ -16,17 +16,21 @@
   },
   "card": {
     "eyebrow": "Full Branding",
-    "imageAlt": "Ziena brand identity cover"
+    "imageAlt": "Ziena brand identity cover",
+    "image": "/portfolio/ziena/spcial/1.png"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/ziena/spcial/4.png"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Ziena brand identity"
+    "imageAlt": "Ziena brand identity",
+    "image": "/portfolio/ziena/spcial/1.png"
   },
   "metadata": {
-    "description": "Brand identity and a considered visual world across social."
+    "description": "Brand identity and a considered visual world across social.",
+    "ogImage": "/portfolio/ziena/spcial/1.png"
   },
   "services": [
     "Branding",
@@ -49,5 +53,18 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/ziena/spcial/1.png",
+    "/portfolio/ziena/spcial/3.png",
+    "/portfolio/ziena/spcial/4.png",
+    "/portfolio/ziena/spcial/5.png",
+    "/portfolio/ziena/spcial/7.png",
+    "/portfolio/ziena/spcial/8.png",
+    "/portfolio/ziena/spcial/9.png",
+    "/portfolio/ziena/spcial/11.png",
+    "/portfolio/ziena/spcial/12.png"
+  ],
+  "videos": [],
+  "documents": []
 }

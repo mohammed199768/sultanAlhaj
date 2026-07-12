@@ -17,17 +17,21 @@
   },
   "card": {
     "eyebrow": "Sports",
-    "imageAlt": "Padel Me Club tournament cover"
+    "imageAlt": "Padel Me Club tournament cover",
+    "image": "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%20IMG_7151.jpg"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%20IMG_6750.jpg"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Padel Me Club marketing campaign"
+    "imageAlt": "Padel Me Club marketing campaign",
+    "image": "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%203FF13573-5AA7-4A74-A2AE-F803372B1F6A.jpg"
   },
   "metadata": {
-    "description": "Tournaments, influencer partnerships, membership promotions and event recap films."
+    "description": "Tournaments, influencer partnerships, membership promotions and event recap films.",
+    "ogImage": "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%203FF13573-5AA7-4A74-A2AE-F803372B1F6A.jpg"
   },
   "services": [
     "Tournaments",
@@ -62,5 +66,31 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%203FF13573-5AA7-4A74-A2AE-F803372B1F6A.jpg",
+    "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%20copy_782345FE-9417-49AE-9EA1-AB5201D27643.jpg",
+    "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%20copy_E375AA6A-C91B-4272-B7A7-F4A7D62DDFA0.jpg",
+    "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%20IMG_6750.jpg",
+    "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%20IMG_7151.jpg",
+    "/portfolio/Padel%20Me%20Club/Static/previews/padel-content-01.webp",
+    "/portfolio/Padel%20Me%20Club/Static/previews/padel-content-02.webp",
+    "/portfolio/Padel%20Me%20Club/Static/previews/padel-content-06.webp",
+    "/portfolio/Padel%20Me%20Club/Static/previews/padel-content-08.webp"
+  ],
+  "videos": [
+    {
+      "src": "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%20Coach_Manoo_V02.mp4",
+      "poster": "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%20Coach_Manoo_V02.poster.webp"
+    },
+    {
+      "src": "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%20copy_782345FE-9417-49AE-9EA1-AB5201D27643.mp4",
+      "poster": "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%20copy_782345FE-9417-49AE-9EA1-AB5201D27643.poster.webp"
+    },
+    {
+      "src": "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%20PadelMe-DAY1.mp4",
+      "poster": "/portfolio/Padel%20Me%20Club/Reel/Copy%20of%20PadelMe-DAY1.poster.webp"
+    }
+  ],
+  "documents": []
 }

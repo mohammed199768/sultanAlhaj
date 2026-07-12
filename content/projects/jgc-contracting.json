@@ -17,17 +17,21 @@
   },
   "card": {
     "eyebrow": "Real Estate",
-    "imageAlt": "JGC Contracting project cover"
+    "imageAlt": "JGC Contracting project cover",
+    "image": "/portfolio/JGC%20Contracting/6366203d-f991-444d-84d5-d5a791c3774e.jpg"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/JGC%20Contracting/CF315A7C-E047-4853-BC87-F2FC3EA0CF9F.jpg"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "JGC Contracting branding and projects"
+    "imageAlt": "JGC Contracting branding and projects",
+    "image": "/portfolio/JGC%20Contracting/6366203d-f991-444d-84d5-d5a791c3774e.jpg"
   },
   "metadata": {
-    "description": "Corporate branding and project showcases for a contracting and real-estate developer."
+    "description": "Corporate branding and project showcases for a contracting and real-estate developer.",
+    "ogImage": "/portfolio/JGC%20Contracting/6366203d-f991-444d-84d5-d5a791c3774e.jpg"
   },
   "services": [
     "Corporate Branding",
@@ -51,5 +55,13 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/JGC%20Contracting/6366203d-f991-444d-84d5-d5a791c3774e.jpg",
+    "/portfolio/JGC%20Contracting/9EF8784F-D764-4668-9B47-6751C7CDD2A4.jpg",
+    "/portfolio/JGC%20Contracting/CF315A7C-E047-4853-BC87-F2FC3EA0CF9F.jpg",
+    "/portfolio/JGC%20Contracting/Logo.webp"
+  ],
+  "videos": [],
+  "documents": []
 }

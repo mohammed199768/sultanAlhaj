@@ -32,9 +32,20 @@ export function validateProjects(projects: unknown[], assetFolders?: Set<string>
     if (!project.description?.trim()) fail("description", "Description is required");
     if (!project.card?.imageAlt?.trim()) fail("card.imageAlt", "Alt text is required");
     if (!project.hero) fail("hero", "Hero data is required");
-    if (project.featured && !project.assetFolder && !project.card?.image) fail("card.image", "Featured projects require an explicit card image or an asset folder");
+    if (!Array.isArray(project.gallery)) fail("gallery", "Expected an explicit gallery array");
+    if (!Array.isArray(project.videos)) fail("videos", "Expected an explicit videos array");
+    if (!Array.isArray(project.documents)) fail("documents", "Expected an explicit documents array");
+    if (project.featured && !project.card?.image) fail("card.image", "Featured projects require an explicit card image");
     if (project.assetFolder && assetFolders && !assetFolders.has(project.assetFolder)) fail("assetFolder", `Folder "${project.assetFolder}" was not found in the generated manifest`);
-    if (project.status === "published" && !project.assetFolder && !(project.sections ?? []).some((s) => (s.body?.length ?? 0) > 0)) fail("sections", "Published case studies require meaningful detail content or an asset folder");
+    if (project.status === "published") {
+      if (!project.card?.image) fail("card.image", "Published projects require explicit card media");
+      if (!project.popup?.image) fail("popup.image", "Published projects require explicit popup media");
+      if (!project.hero?.image) fail("hero.image", "Published projects require explicit hero media");
+      if (!project.metadata?.ogImage) fail("metadata.ogImage", "Published projects require explicit metadata/OG media");
+      const selectedCount = (project.gallery?.length ?? 0) + (project.videos?.length ?? 0) + (project.documents?.length ?? 0);
+      if (selectedCount < 1) fail("gallery/videos/documents", "Published projects require meaningful explicitly selected production media");
+    }
+    if (project.status === "preview" && !project.popup?.previewLabel?.trim()) fail("popup.previewLabel", "Preview projects require a preview label so the UI cannot expose a broken full-route CTA");
 
     const ids = new Set<string>();
     (project.sections ?? []).forEach((section, sectionIndex) => {

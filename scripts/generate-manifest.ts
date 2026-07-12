@@ -25,6 +25,14 @@ const PDF_EXT = new Set([".pdf"]);
 const BROWSER_VIDEO = new Set([".mp4", ".webm"]);
 
 const JUNK = new Set([".DS_Store", "desktop.ini", "Thumbs.db"]);
+const LFS_POINTER_PREFIX = "version https://git-lfs.github.com/spec/v1";
+const FILE_NAME_COLLATOR = new Intl.Collator("en", {
+  sensitivity: "variant",
+});
+const FLAT_FILE_NAME_COLLATOR = new Intl.Collator("en", {
+  numeric: true,
+  sensitivity: "variant",
+});
 
 type MediaKind = "image" | "video" | "pdf";
 
@@ -45,7 +53,6 @@ interface PortfolioFolder {
   images: number;
   videos: number;
   pdfs: number;
-  cover: MediaItem | null;
   media: MediaItem[];
 }
 
@@ -146,6 +153,20 @@ async function buildMediaItem(
   const ext = path.extname(absFile).toLowerCase();
   const kind = classify(ext);
   if (!kind) return null;
+
+  const handle = await fs.open(absFile, "r");
+  try {
+    const prefix = Buffer.alloc(LFS_POINTER_PREFIX.length);
+    const { bytesRead } = await handle.read(prefix, 0, prefix.length, 0);
+    if (prefix.subarray(0, bytesRead).toString("utf8") === LFS_POINTER_PREFIX) {
+      throw new Error(
+        `Git LFS object was not fetched: ${path.relative(ROOT, absFile)}`
+      );
+    }
+  } finally {
+    await handle.close();
+  }
+
   const fileName = path.basename(absFile);
   const noExt = path.basename(absFile, path.extname(absFile));
   const title = toTitle(noExt, fallbackTitle);
@@ -180,15 +201,6 @@ async function buildMediaItem(
   return item;
 }
 
-function pickCover(media: MediaItem[]): MediaItem | null {
-  return (
-    media.find((m) => m.kind === "image") ||
-    media.find((m) => m.kind === "video" && !m.unsupportedVideo) ||
-    media[0] ||
-    null
-  );
-}
-
 async function scanFolderGroup(baseDir: string): Promise<PortfolioFolder[]> {
   const folders: PortfolioFolder[] = [];
   let entries: import("node:fs").Dirent[] = [];
@@ -212,7 +224,9 @@ async function scanFolderGroup(baseDir: string): Promise<PortfolioFolder[]> {
     // Sort: images first, then videos, then pdfs; stable by filename.
     const order: Record<MediaKind, number> = { image: 0, video: 1, pdf: 2 };
     media.sort(
-      (a, b) => order[a.kind] - order[b.kind] || a.fileName.localeCompare(b.fileName)
+      (a, b) =>
+        order[a.kind] - order[b.kind] ||
+        FILE_NAME_COLLATOR.compare(a.fileName, b.fileName)
     );
     folders.push({
       key: e.name,
@@ -220,11 +234,10 @@ async function scanFolderGroup(baseDir: string): Promise<PortfolioFolder[]> {
       images: media.filter((m) => m.kind === "image").length,
       videos: media.filter((m) => m.kind === "video").length,
       pdfs: media.filter((m) => m.kind === "pdf").length,
-      cover: pickCover(media),
       media,
     });
   }
-  folders.sort((a, b) => a.key.localeCompare(b.key));
+  folders.sort((a, b) => FILE_NAME_COLLATOR.compare(a.key, b.key));
   return folders;
 }
 
@@ -236,9 +249,7 @@ async function scanFlat(baseDir: string, fallback: string): Promise<MediaItem[]>
     const item = await buildMediaItem(f, fallback, siblingNames);
     if (item) items.push(item);
   }
-  items.sort((a, b) =>
-    a.fileName.localeCompare(b.fileName, undefined, { numeric: true })
-  );
+  items.sort((a, b) => FLAT_FILE_NAME_COLLATOR.compare(a.fileName, b.fileName));
   return items;
 }
 

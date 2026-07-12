@@ -4,7 +4,7 @@
   "status": "published",
   "featured": true,
   "order": 1,
-  "assetFolder": "Branding",
+  "assetFolder": "branding",
   "layout": "gallery",
   "summary": "Company profiles, catalogues and brand collateral designed as print-ready PDF systems.",
   "description": "Company profiles, catalogues and brand collateral designed as print-ready PDF systems.",
@@ -16,16 +16,21 @@
   },
   "card": {
     "eyebrow": "Full Branding",
-    "imageAlt": "Brand profiles and catalogues portfolio cover"
+    "imageAlt": "Brand profiles and catalogues portfolio cover",
+    "image": "/portfolio/branding/previews/catalogue-01.webp"
   },
   "popup": {
-    "ctaLabel": "Open full case study"
+    "ctaLabel": "Open full case study",
+    "image": "/portfolio/branding/previews/x-identity-03.webp"
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Brand profiles and catalogues portfolio"
+    "imageAlt": "Brand profiles and catalogues portfolio",
+    "image": "/portfolio/branding/previews/anco-02.webp"
   },
-  "metadata": {},
+  "metadata": {
+    "ogImage": "/portfolio/branding/previews/catalogue-01.webp"
+  },
   "services": [
     "Branding",
     "Print",
@@ -49,5 +54,31 @@
       "title": "Selected work"
     }
   ],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [
+    "/portfolio/branding/previews/anco-02.webp",
+    "/portfolio/branding/previews/anco-09.webp",
+    "/portfolio/branding/previews/anco-12.webp",
+    "/portfolio/branding/previews/arak-01.webp",
+    "/portfolio/branding/previews/arak-05.webp",
+    "/portfolio/branding/previews/arak-09.webp",
+    "/portfolio/branding/previews/arak-12.webp",
+    "/portfolio/branding/previews/wtl-tech-01.webp",
+    "/portfolio/branding/previews/wtl-tech-04.webp",
+    "/portfolio/branding/previews/wtl-tech-23.webp",
+    "/portfolio/branding/previews/catalogue-01.webp",
+    "/portfolio/branding/previews/catalogue-05.webp",
+    "/portfolio/branding/previews/catalogue-10.webp",
+    "/portfolio/branding/previews/x-identity-01.webp",
+    "/portfolio/branding/previews/x-identity-02.webp",
+    "/portfolio/branding/previews/x-identity-03.webp",
+    "/portfolio/branding/previews/alqrawiyeen-01.webp",
+    "/portfolio/branding/previews/alqrawiyeen-02.webp",
+    "/portfolio/branding/previews/alqrawiyeen-03.webp",
+    "/portfolio/branding/previews/tasaheel-01.webp",
+    "/portfolio/branding/previews/tasaheel-02.webp",
+    "/portfolio/branding/previews/tasaheel-03.webp"
+  ],
+  "videos": [],
+  "documents": []
 }

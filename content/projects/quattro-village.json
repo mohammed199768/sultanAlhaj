@@ -16,18 +16,22 @@
   },
   "card": {
     "eyebrow": "Events & Activations",
-    "imageAlt": "Quattro Village project preview"
+    "imageAlt": "Quattro Village project preview",
+    "image": null
   },
   "popup": {
     "ctaLabel": "Open full case study",
-    "previewLabel": "Case study coming soon"
+    "previewLabel": "Case study coming soon",
+    "image": null
   },
   "hero": {
     "eyebrow": "Case Study",
-    "imageAlt": "Quattro Village project"
+    "imageAlt": "Quattro Village project",
+    "image": null
   },
   "metadata": {
-    "description": "Marketing and branding for a sports-and-lifestyle village."
+    "description": "Marketing and branding for a sports-and-lifestyle village.",
+    "ogImage": null
   },
   "services": [
     "Brand Operations",
@@ -47,5 +51,8 @@
     }
   ],
   "sections": [],
-  "relatedProjects": []
+  "relatedProjects": [],
+  "gallery": [],
+  "videos": [],
+  "documents": []
 }

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "brand:generate": "tsx scripts/generate-brand-assets.tsx",
     "validate:content": "tsx scripts/validate-content.ts",
     "generate:manifest": "tsx scripts/generate-manifest.ts",
     "media:audit": "tsx scripts/audit-media.ts",

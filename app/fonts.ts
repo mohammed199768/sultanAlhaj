@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { Parisienne } from "next/font/google";
 
 /**
  * Unbounded — display face for headings, hero, nav, numbers, labels.
@@ -28,5 +29,13 @@ export const tinos = localFont({
     { path: "../fonts/Tinos-Bold.ttf", weight: "700", style: "normal" },
   ],
   variable: "--font-tinos",
+  display: "swap",
+});
+
+/** Parisienne — restrained signature face used only for the Navbar brand turn. */
+export const parisienne = Parisienne({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-parisienne",
   display: "swap",
 });

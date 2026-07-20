@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { unbounded, tinos } from "./fonts";
+import { parisienne, unbounded, tinos } from "./fonts";
 import SmoothScrollProvider from "@/components/layout/SmoothScrollProvider";
 import Chrome from "@/components/layout/Chrome";
 import Footer from "@/components/layout/Footer";
@@ -29,13 +29,11 @@ export const metadata: Metadata = {
     description,
     url: siteUrl,
     siteName: site.brandDisplayName,
-    images: [{ url: site.socialImage, width: 1200, height: 630, alt: site.socialImageAlt }],
   },
   twitter: {
     card: "summary_large_image",
     title: site.defaultSeoTitle,
     description,
-    images: [site.socialImage],
   },
   robots: { index: true, follow: true },
 };
@@ -62,7 +60,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${unbounded.variable} ${tinos.variable}`}>
+    <html
+      lang="en"
+      className={`${unbounded.variable} ${tinos.variable} ${parisienne.variable}`}
+    >
       <body className="grain">
         <script
           type="application/ld+json"

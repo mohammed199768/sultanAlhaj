@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils/cn";
-import { profile } from "@/lib/data/profile";
 import TransitionLink from "@/components/transitions/TransitionLink";
+import AnimatedBrandMark from "@/components/brand/AnimatedBrandMark";
 import site from "@/content/site.json";
 
 export default function Header({
@@ -32,15 +32,10 @@ export default function Header({
       <div className="shell flex h-20 items-center justify-between">
         <TransitionLink
           href="/"
-          className="group flex items-center gap-3"
-          aria-label={`${profile.name} home`}
+          className="group flex h-11 items-center rounded-sm outline-none focus-visible:ring-2 focus-visible:ring-champagne/70 focus-visible:ring-offset-4 focus-visible:ring-offset-ink"
+          aria-label="Sultan Shadi — Home"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-champagne/40 font-display text-sm font-bold text-champagne">
-            S
-          </span>
-          <span className="hidden font-display text-sm font-semibold uppercase tracking-[0.2em] text-mist-300 sm:block">
-            {profile.name}
-          </span>
+          <AnimatedBrandMark />
         </TransitionLink>
 
         <div className="flex items-center gap-6">

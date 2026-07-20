@@ -21,7 +21,8 @@
  * untouched initial reveal simply plays out underneath it.
  */
 import { useEffect, useRef, useState } from "react";
-import { profile } from "@/lib/data/profile";
+import SultanShadiMark from "@/components/brand/SultanShadiMark";
+import styles from "./SiteBootLoader.module.css";
 
 const MIN_VISIBLE = 600;
 const MAX_WAIT = 3000;
@@ -32,7 +33,7 @@ type Stage = "loading" | "leaving" | "done";
 export default function SiteBootLoader() {
   const [stage, setStage] = useState<Stage>("loading");
   const [reducedMotion, setReducedMotion] = useState(false);
-  const barRef = useRef<HTMLDivElement>(null);
+  const progressRef = useRef<SVGCircleElement>(null);
   const reducedRef = useRef(false);
 
   // Mount-once readiness race.
@@ -47,10 +48,12 @@ export default function SiteBootLoader() {
     document.documentElement.style.overflow = "hidden";
 
     const setProgress = (p: number) => {
-      if (barRef.current) barRef.current.style.transform = `scaleX(${p})`;
+      if (progressRef.current) {
+        progressRef.current.style.strokeDashoffset = String(100 - p * 100);
+      }
     };
-    if (reduced && barRef.current) {
-      barRef.current.style.transition = "none";
+    if (reduced && progressRef.current) {
+      progressRef.current.style.transition = "none";
     }
 
     let gatesDone = 0;
@@ -127,40 +130,47 @@ export default function SiteBootLoader() {
         pointerEvents: stage === "leaving" ? "none" : "auto",
       }}
     >
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_80%_at_50%_0%,rgba(152,170,194,0.16),transparent_48%),linear-gradient(180deg,rgba(0,4,25,0.92),#071739)]"
-      />
-      <div className="relative z-10 w-full max-w-sm border-y border-steel-400/20 py-9 text-center">
-        <p className="font-display text-[0.58rem] uppercase tracking-[0.34em] text-champagne/75">
-          Portfolio System
-        </p>
-        <p className="mt-4 font-display text-[clamp(2rem,10vw,2.85rem)] font-extrabold uppercase leading-none tracking-normal text-mist-300">
-          Sultan<span className="text-champagne"> Shadi</span>
-        </p>
-        <p className="mx-auto mt-4 max-w-[18rem] font-display text-[0.62rem] uppercase leading-relaxed tracking-[0.16em] text-haze/70">
-          {profile.primaryTitle}
-        </p>
-        <div className="mx-auto mt-8 w-full max-w-[17rem]">
-          <div className="mb-3 flex items-center justify-between font-display text-[0.56rem] uppercase tracking-[0.2em] text-haze/45">
-            <span>Preparing</span>
-            <span>Portfolio</span>
-          </div>
-          <div className="h-px overflow-hidden bg-mist/10">
-            <div
-              ref={barRef}
-              className="h-full w-full origin-left bg-champagne-600"
-              style={{
-                transform: "scaleX(0)",
-                transition: reducedMotion
-                  ? "none"
-                  : "transform 600ms cubic-bezier(0.16, 1, 0.3, 1)",
-              }}
+      <div className={styles.content}>
+        <div className={styles.stage} aria-hidden="true">
+          <svg className={styles.rings} viewBox="0 0 100 100">
+            <circle className={styles.staticRing} cx="50" cy="50" r="47" />
+            <circle
+              className={styles.outerArc}
+              cx="50"
+              cy="50"
+              r="47"
+              pathLength="100"
             />
-          </div>
+            <circle className={styles.progressTrack} cx="50" cy="50" r="40" />
+            <circle
+              ref={progressRef}
+              className={styles.progressCircle}
+              cx="50"
+              cy="50"
+              r="40"
+              pathLength="100"
+            />
+            <circle
+              className={styles.innerArc}
+              cx="50"
+              cy="50"
+              r="35.5"
+              pathLength="100"
+            />
+            <path className={styles.alignmentMark} d="M50 0L51.6 2.6L50 5.2L48.4 2.6Z" />
+            <path className={styles.alignmentMark} d="M50 94.8L51.6 97.4L50 100L48.4 97.4Z" />
+          </svg>
+          <SultanShadiMark
+            variant="full"
+            size="68%"
+            decorative
+            className={styles.mark}
+          />
         </div>
+        <p className={styles.label} aria-hidden="true">
+          Preparing portfolio
+        </p>
       </div>
-      <span className="sr-only">Loading site</span>
     </div>
   );
 }

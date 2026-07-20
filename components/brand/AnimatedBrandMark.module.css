@@ -1,0 +1,85 @@
+.root {
+  --brand-mark-width: 2.1rem;
+  display: block;
+  width: 8.5rem;
+  height: 2.75rem;
+  perspective: 720px;
+}
+
+.stage {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: brand-turn 7s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+.face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.logoFace {
+  color: var(--champagne);
+  transform: rotateY(0deg) translateZ(1px);
+}
+
+.signatureFace {
+  color: var(--champagne-300);
+  font-family: var(--font-parisienne), cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  white-space: nowrap;
+  transform: rotateY(180deg) translateZ(1px);
+}
+
+.root:hover .stage,
+:global(a:focus-visible) .stage {
+  animation-play-state: paused;
+}
+
+@keyframes brand-turn {
+  0%,
+  53% {
+    transform: rotateY(0deg);
+  }
+  64%,
+  88% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@media (max-width: 639.98px) {
+  .root {
+    --brand-mark-width: 1.9rem;
+    width: 7rem;
+    height: 2.5rem;
+  }
+
+  .signatureFace {
+    font-size: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stage {
+    animation: none;
+    transform: none;
+  }
+
+  .signatureFace {
+    display: none;
+  }
+}

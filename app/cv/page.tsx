@@ -2,7 +2,21 @@ import type { Metadata } from "next";
 import CvControlCenter from "./CvControlCenter";
 import cv from "@/content/cv.json";
 
-export const metadata: Metadata = cv.metadata;
+export const metadata: Metadata = {
+  ...cv.metadata,
+  title: { absolute: cv.metadata.title },
+  alternates: { canonical: "/cv" },
+  openGraph: {
+    title: cv.metadata.title,
+    description: cv.metadata.description,
+    url: "/cv",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: cv.metadata.title,
+    description: cv.metadata.description,
+  },
+};
 
 export default function CvPage() {
   return (

@@ -19,7 +19,9 @@ import {
   Download,
   FileText,
   GraduationCap,
+  Globe2,
   Languages,
+  Linkedin,
   Mail,
   MapPin,
   MessageCircle,
@@ -44,7 +46,6 @@ import {
 import {
   cvDownloadFileName,
   cvDownloadHref,
-  whatsappHref,
 } from "@/lib/data/profile";
 
 type SectionId =
@@ -83,14 +84,40 @@ const contacts = [
   {
     label: "Email",
     value: cvProfile.email,
-    href: `mailto:${cvProfile.email}`,
+    href: cvProfile.links.email,
     icon: Mail,
+    ariaLabel: "Email Sultan Alhaj Ahmad",
   },
   {
     label: "Phone",
     value: cvProfile.phone,
-    href: `tel:${cvProfile.phone}`,
+    href: cvProfile.links.phone,
     icon: Phone,
+    ariaLabel: "Call Sultan Alhaj Ahmad",
+  },
+  {
+    label: "LinkedIn",
+    value: "LinkedIn",
+    href: cvProfile.links.linkedin,
+    icon: Linkedin,
+    external: true,
+    ariaLabel: "Open Sultan Alhaj Ahmad’s LinkedIn profile",
+  },
+  {
+    label: "Portfolio",
+    value: "Sultan Shadi",
+    href: cvProfile.links.portfolio,
+    icon: Globe2,
+    external: true,
+    ariaLabel: "Open Sultan Shadi’s portfolio",
+  },
+  {
+    label: "WhatsApp",
+    value: "WhatsApp",
+    href: cvProfile.links.whatsapp,
+    icon: MessageCircle,
+    external: true,
+    ariaLabel: "Open WhatsApp chat with Sultan Alhaj Ahmad",
   },
 ];
 
@@ -205,7 +232,7 @@ function ProfileCard() {
       </div>
 
       <div className="min-w-0 flex-1 pr-12 md:flex-none md:pr-0">
-        <p className="font-display text-[0.9rem] font-semibold uppercase leading-snug text-mist-300 md:truncate md:text-xl md:leading-tight xl:text-2xl">
+        <p className="font-display text-[0.9rem] font-semibold uppercase leading-snug text-mist-300 md:text-lg md:leading-snug xl:text-xl">
           {cvProfile.formalName}
         </p>
         <p className="mt-1 line-clamp-2 text-xs leading-[1.15rem] text-haze/76 md:text-sm md:leading-5">
@@ -290,7 +317,7 @@ function SectionButton({
       <div className="flex min-w-0 flex-col items-center justify-center gap-1 text-center md:flex-row md:justify-start md:gap-3 md:text-left">
         <IconFrame icon={section.icon} active={active} />
         <span className="min-w-0">
-          <span className="block truncate font-display text-[0.64rem] uppercase tracking-[0.14em] text-mist-300 md:text-[0.7rem]">
+          <span className="block font-display text-[0.64rem] uppercase tracking-[0.14em] text-mist-300 md:break-words md:text-[0.62rem] md:tracking-[0.08em] xl:text-[0.68rem]">
             <span className="md:hidden">{section.shortLabel}</span>
             <span className="hidden md:inline">{section.label}</span>
           </span>
@@ -338,6 +365,11 @@ function CommandCard({
           aria-orientation="horizontal"
           className="no-scrollbar flex snap-x snap-mandatory gap-2 overflow-x-auto overscroll-x-contain scroll-px-4 rounded-[1.1rem] px-3 py-1 [mask-image:linear-gradient(to_right,transparent,black_1rem,black_calc(100%_-_1rem),transparent)] [-webkit-mask-image:linear-gradient(to_right,transparent,black_1rem,black_calc(100%_-_1rem),transparent)] md:grid md:h-full md:grid-cols-2 md:auto-rows-fr md:overflow-visible md:overscroll-auto md:rounded-none md:px-0 md:py-0 md:[mask-image:none] md:[-webkit-mask-image:none]"
         >
+          <span
+            aria-hidden
+            className="flex-none md:hidden"
+            style={{ width: "calc(50% - clamp(2.25rem, 11.5vw, 2.625rem))" }}
+          />
           {sections.map((section) => (
             <SectionButton
               key={section.id}
@@ -351,6 +383,11 @@ function CommandCard({
               }}
             />
           ))}
+          <span
+            aria-hidden
+            className="flex-none md:hidden"
+            style={{ width: "calc(50% - clamp(2.25rem, 11.5vw, 2.625rem))" }}
+          />
         </div>
         <div className="pointer-events-none absolute inset-y-0 left-0 w-4 rounded-l-[1.1rem] bg-gradient-to-r from-ink/80 to-transparent md:hidden" />
         <div className="pointer-events-none absolute inset-y-0 right-0 w-4 rounded-r-[1.1rem] bg-gradient-to-l from-ink/80 to-transparent md:hidden" />
@@ -600,9 +637,10 @@ function EducationDetail() {
         <h3 className="mt-2 text-2xl font-semibold text-mist-300 sm:text-3xl">
           {cvEducation.degree}
         </h3>
-        <div className="mt-5 grid gap-2 sm:grid-cols-2">
+        <div className="mt-5 grid gap-2 sm:grid-cols-3">
           <InfoTile icon={CalendarDays} label="Dates" value={cvEducation.dates} />
-          <InfoTile icon={BadgeCheck} label="Result" value={cvEducation.result} />
+          <InfoTile icon={MapPin} label="Location" value={cvEducation.location} />
+          <InfoTile icon={BadgeCheck} label="Achievement" value={cvEducation.achievement} />
         </div>
       </div>
       <div className="rounded-[1.1rem] border border-champagne/25 bg-champagne/12 p-4">
@@ -636,11 +674,14 @@ function LanguagesDetail() {
 
 function ContactDetail() {
   return (
-    <div className="grid gap-2 md:grid-cols-3">
+    <div className="grid gap-2 sm:grid-cols-2 md:grid-cols-3">
       {contacts.map((contact) => (
         <a
-          key={contact.value}
+          key={contact.label}
           href={contact.href}
+          target={contact.external ? "_blank" : undefined}
+          rel={contact.external ? "noopener noreferrer" : undefined}
+          aria-label={contact.ariaLabel}
           className="group flex min-w-0 flex-col justify-between rounded-[1.1rem] border border-steel-400/18 bg-ink/38 p-4 transition-colors duration-200 hover:border-champagne/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-champagne"
         >
           <span className="flex items-center justify-between gap-3">
@@ -660,21 +701,6 @@ function ContactDetail() {
           </span>
         </a>
       ))}
-      <a
-        href={whatsappHref}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group flex min-w-0 flex-col justify-between rounded-[1.1rem] border border-steel-400/18 bg-ink/38 p-4 transition-colors duration-200 hover:border-champagne/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-champagne md:hidden"
-      >
-        <span className="flex items-center justify-between gap-3">
-          <IconFrame icon={MessageCircle} />
-          <ArrowUpRight
-            className="h-4 w-4 flex-none text-haze/60 transition-colors duration-200 group-hover:text-champagne"
-            aria-hidden
-          />
-        </span>
-        <span className="mt-5 text-sm font-semibold text-mist-300">WhatsApp</span>
-      </a>
       {cvProfile.addresses.map((address) => (
         <div
           key={address}
@@ -700,7 +726,7 @@ function InfoTile({
     <div className="flex min-w-0 items-center gap-3 rounded-[1rem] border border-steel-400/18 bg-mist-300/[0.055] p-3">
       <IconFrame icon={icon} />
       <div className="min-w-0">
-        <p className="text-[0.62rem] uppercase tracking-[0.15em] text-haze/58">
+        <p className="break-words text-[0.62rem] uppercase tracking-[0.15em] text-haze/58">
           {label}
         </p>
         <p className="mt-1 break-words text-sm font-semibold text-mist-300">

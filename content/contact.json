@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "metadata": { "title": "Contact Sultan Shadi", "description": "Contact Sultan Shadi, Sales & Marketing Manager in Riyadh, for marketing strategy, brand positioning, campaigns, and business development support." },
-  "hero": { "kicker": "Contact Sultan", "titleLines": ["Let’s build", "the next", "campaign"], "lede": "Reach Sultan directly for brand positioning, marketing strategy, campaign management, and sales and business development support.", "roleLine": "Sales & Marketing Manager · Garden Art – Landscape & Irrigation · Riyadh", "sendLabel": "Send a message", "emailLabel": "Email Sultan" },
+  "hero": { "kicker": "Contact Sultan", "titleLines": ["Let’s build", "the next", "campaign"], "lede": "Reach Sultan directly for brand positioning, marketing strategy, campaign management, and sales and business development support.", "sendLabel": "Send a message", "emailLabel": "Email Sultan" },
   "labels": { "email": "Email", "phone": "Phone", "whatsapp": "WhatsApp", "linkedin": "LinkedIn", "message": "Message", "location": "Location", "send": "Send brief" },
   "form": {
     "steps": [{ "label": "Person name", "shortLabel": "Name", "visual": "name" }, { "label": "Company name", "shortLabel": "Company", "visual": "company" }, { "label": "Message", "shortLabel": "Message", "visual": "message" }],

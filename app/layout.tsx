@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { parisienne, unbounded, tinos } from "./fonts";
+import { unbounded, tinos } from "./fonts";
 import SmoothScrollProvider from "@/components/layout/SmoothScrollProvider";
 import Chrome from "@/components/layout/Chrome";
 import Footer from "@/components/layout/Footer";
@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     template: site.titleTemplate,
   },
   description,
+  manifest: "/manifest.webmanifest",
   keywords: site.keywords,
   authors: [{ name: profile.formalName }],
   openGraph: {
@@ -45,8 +46,10 @@ const jsonLd = {
   alternateName: profile.name,
   jobTitle: profile.currentRole,
   description: profile.positioning,
-  email: profile.email,
-  telephone: profile.phone,
+  email: profile.contact.email,
+  telephone: profile.contact.phoneE164,
+  url: profile.links.portfolio,
+  sameAs: [profile.links.linkedin, profile.links.portfolio],
   address: [
     { "@type": "PostalAddress", addressLocality: "Riyadh", addressCountry: "SA" },
     { "@type": "PostalAddress", addressLocality: "Amman", addressCountry: "JO" },
@@ -60,10 +63,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${unbounded.variable} ${tinos.variable} ${parisienne.variable}`}
-    >
+    <html lang="en" className={`${unbounded.variable} ${tinos.variable}`}>
       <body className="grain">
         <script
           type="application/ld+json"

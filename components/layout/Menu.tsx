@@ -92,7 +92,7 @@ export default function Menu({
               className="mt-14 flex flex-wrap gap-x-10 gap-y-3 font-display text-[0.65rem] uppercase tracking-[0.25em] text-haze/70"
             >
               <a href={emailHref} className="hover:text-champagne">
-                {profile.email}
+                {profile.contact.email}
               </a>
               <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="hover:text-champagne">
                 WhatsApp

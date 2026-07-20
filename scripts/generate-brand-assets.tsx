@@ -9,9 +9,11 @@ import SultanShadiMark, {
 
 const ROOT = process.cwd();
 const APP_DIR = path.join(ROOT, "app");
+const PUBLIC_DIR = path.join(ROOT, "public");
 const BRAND_DIR = path.join(ROOT, "public", "brand");
 const NAVY = { r: 7, g: 23, b: 57, alpha: 1 };
 const TRANSPARENT = { r: 0, g: 0, b: 0, alpha: 0 };
+const FAVICON_SIZES = [16, 32, 48] as const;
 
 mkdirSync(BRAND_DIR, { recursive: true });
 
@@ -122,15 +124,15 @@ async function main() {
     .toFile(path.join(BRAND_DIR, "sultan-shadi-monogram-transparent.webp"));
 
   const icon = await pngBuffer("monogram", 512, 512, 0.12, NAVY, -6);
-  writeFileSync(path.join(APP_DIR, "icon.png"), icon);
+  writeFileSync(path.join(PUBLIC_DIR, "icon.png"), icon);
 
   const appleIcon = await pngBuffer("monogram", 180, 180, 0.12, NAVY, -2);
   writeFileSync(path.join(APP_DIR, "apple-icon.png"), appleIcon);
 
   const faviconImages = await Promise.all(
-    [16, 32, 48].map(async (size) => ({
+    FAVICON_SIZES.map(async (size) => ({
       size,
-      png: await pngBuffer("monogram", size, size, 0.11, NAVY),
+      png: await pngBuffer("monogram", size, size, 0.11, TRANSPARENT),
     }))
   );
   writeFileSync(path.join(APP_DIR, "favicon.ico"), icoBuffer(faviconImages));

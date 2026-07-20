@@ -27,6 +27,8 @@ import {
 import { cn } from "@/lib/utils/cn";
 import {
   emailHref,
+  linkedinHref,
+  phoneHref,
   formspreeEndpoint,
   profile,
   whatsappHref,
@@ -683,7 +685,7 @@ function MobileContactCore() {
       </h2>
       <p className="mt-3 inline-flex items-center gap-2 text-sm text-haze/72">
         <MapPin className="h-3.5 w-3.5 text-champagne" aria-hidden />
-        Riyadh, Saudi Arabia
+        {profile.location}
       </p>
     </div>
   );
@@ -691,8 +693,6 @@ function MobileContactCore() {
 
 export default function ContactCommandCenter() {
   const [formOpen, setFormOpen] = useState(false);
-  const linkedInHref = profile.linkedin;
-
   const openForm = useCallback(() => setFormOpen(true), []);
 
   const mobileActions = useMemo<ContactActionItem[]>(() => {
@@ -714,7 +714,7 @@ export default function ContactCommandCenter() {
         id: "phone",
         label: contactContent.labels.phone,
         icon: Phone,
-        href: `tel:${profile.phone}`,
+        href: phoneHref,
       },
       {
         id: "send",
@@ -725,18 +725,18 @@ export default function ContactCommandCenter() {
       },
     ];
 
-    if (linkedInHref) {
+    if (linkedinHref) {
       actions.push({
         id: "linkedin",
         label: contactContent.labels.linkedin,
         icon: Linkedin,
-        href: linkedInHref,
+        href: linkedinHref,
         external: true,
       });
     }
 
     return actions;
-  }, [linkedInHref, openForm]);
+  }, [openForm]);
 
   const orbitActions = useMemo<OrbitActionItem[]>(() => {
     const outer = "clamp(11rem,16vw,15.25rem)";
@@ -765,19 +765,19 @@ export default function ContactCommandCenter() {
         id: "phone",
         label: contactContent.labels.phone,
         icon: Phone,
-        href: `tel:${profile.phone}`,
+        href: phoneHref,
         angle: 145,
         radius: inner,
         duration: "52s",
       },
     ];
 
-    if (linkedInHref) {
+    if (linkedinHref) {
       actions.push({
         id: "linkedin",
         label: contactContent.labels.linkedin,
         icon: Linkedin,
-        href: linkedInHref,
+        href: linkedinHref,
         external: true,
         angle: 270,
         radius: inner,
@@ -797,7 +797,7 @@ export default function ContactCommandCenter() {
     });
 
     return actions;
-  }, [linkedInHref, openForm]);
+  }, [openForm]);
 
   return (
     <main className="relative min-h-dvh overflow-x-hidden bg-ink pt-24 text-mist-300 md:pt-28">
@@ -817,7 +817,7 @@ export default function ContactCommandCenter() {
               {contactContent.hero.lede}
             </p>
             <p className="contact-meta mt-4 font-display text-[0.62rem] uppercase tracking-[0.18em] text-haze/65">
-              {contactContent.hero.roleLine}
+              {profile.currentRole} · {profile.currentCompany} · {profile.location}
             </p>
 
             <div className="contact-actions mt-9 flex flex-wrap gap-3">

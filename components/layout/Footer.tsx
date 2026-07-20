@@ -1,4 +1,10 @@
-import { profile, emailHref, whatsappHref } from "@/lib/data/profile";
+import {
+  emailHref,
+  linkedinHref,
+  phoneHref,
+  profile,
+  whatsappHref,
+} from "@/lib/data/profile";
 import site from "@/content/site.json";
 
 export default function Footer() {
@@ -21,11 +27,11 @@ export default function Footer() {
           <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="hover:text-champagne">
             WhatsApp
           </a>
-          <a href={`tel:${profile.phone}`} className="hover:text-champagne">
+          <a href={phoneHref} className="hover:text-champagne">
             {profile.phone}
           </a>
-          {profile.linkedin ? (
-            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-champagne">
+          {linkedinHref ? (
+            <a href={linkedinHref} target="_blank" rel="noopener noreferrer" className="hover:text-champagne">
               LinkedIn
             </a>
           ) : null}

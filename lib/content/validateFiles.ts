@@ -116,10 +116,25 @@ export function validateContentFiles(assetFolders?: Set<string>): ProjectContent
 
   const home = readJson(path.join(root, "content", "home.json")) as { caseStudies?: { projectSlugs?: string[] } };
   for (const slug of home.caseStudies?.projectSlugs ?? []) if (!bySlug.has(slug)) errors.push(`content/home.json: unknown case-study slug "${slug}"`);
-  const profile = readJson(path.join(root, "content", "profile.json")) as { email?: string; formEndpoint?: string };
-  if (!profile.email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(profile.email)) errors.push("content/profile.json: invalid email");
+  const profile = readJson(path.join(root, "content", "profile.json")) as {
+    contact?: { email?: string; phoneE164?: string };
+    links?: Record<"email" | "phone" | "whatsapp" | "linkedin" | "portfolio", string>;
+    formEndpoint?: string;
+  };
+  if (!profile.contact?.email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(profile.contact.email)) errors.push("content/profile.json: invalid contact.email");
+  if (!profile.contact?.phoneE164 || !/^\+[1-9]\d{7,14}$/.test(profile.contact.phoneE164)) errors.push("content/profile.json: invalid contact.phoneE164");
+  for (const key of ["email", "phone", "whatsapp", "linkedin", "portfolio"] as const) {
+    const value = profile.links?.[key];
+    if (!value) errors.push(`content/profile.json: missing links.${key}`);
+    else try { new URL(value); } catch { errors.push(`content/profile.json: invalid links.${key}`); }
+  }
+  if (profile.contact?.email && profile.links?.email !== `mailto:${profile.contact.email}`) errors.push("content/profile.json: links.email does not match contact.email");
+  if (profile.contact?.phoneE164 && profile.links?.phone !== `tel:${profile.contact.phoneE164}`) errors.push("content/profile.json: links.phone does not match contact.phoneE164");
+  if (profile.contact?.phoneE164 && profile.links?.whatsapp !== `https://wa.me/${profile.contact.phoneE164.slice(1)}`) errors.push("content/profile.json: links.whatsapp does not match contact.phoneE164");
   if (profile.formEndpoint) { try { new URL(profile.formEndpoint); } catch { errors.push("content/profile.json: invalid formEndpoint URL"); } }
-  for (const file of ["site.json", "navigation.json", "contact.json", "cv.json"]) readJson(path.join(root, "content", file));
+  const site = readJson(path.join(root, "content", "site.json")) as { siteUrl?: string };
+  if (site.siteUrl !== profile.links?.portfolio) errors.push("content/site.json: siteUrl does not match content/profile.json links.portfolio");
+  for (const file of ["navigation.json", "contact.json", "cv.json"]) readJson(path.join(root, "content", file));
   if (errors.length) throw new Error(`Content validation failed with ${errors.length} error(s):\n\n${errors.join("\n")}`);
   return projects;
 }

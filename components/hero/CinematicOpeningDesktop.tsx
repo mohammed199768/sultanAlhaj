@@ -61,7 +61,7 @@ function BeatContent({ beat }: { beat: Beat }) {
   const Heading = beat.hero ? "h1" : "h2";
   return (
     <>
-      <p className="co-fade eyebrow mb-5">{beat.eyebrow}</p>
+      {!beat.hero && <p className="co-fade eyebrow mb-5">{beat.eyebrow}</p>}
       <Heading
         className={`co-fade mx-auto ${beat.hero ? "max-w-4xl display-hero" : "co-secondary-beat"}`}
       >

@@ -2,21 +2,41 @@
   "schemaVersion": 1,
   "name": "Sultan Shadi",
   "formalName": "Sultan Alhaj Ahmad",
-  "primaryTitle": "Marketing Manager | Brand Positioning Strategist",
+  "primaryTitle": "Marketing Manager",
   "extendedTitle": "Marketing Manager | Brand Positioning Strategist",
-  "positioning": "Strategic and creative Marketing Manager with over 5 years of experience developing and executing integrated marketing campaigns across medical, retail, F&B, sports, and real estate sectors.",
+  "positioning": "Strategic and creative Marketing Manager with over five years of experience developing and executing integrated marketing campaigns across the medical, retail, food and beverage, sports, and real estate sectors.",
   "currentRole": "Sales & Marketing Manager",
   "currentCompany": "Garden Art – Landscape & Irrigation",
   "currentRoleDates": "February 2026 – Present",
   "location": "Riyadh, Saudi Arabia",
-  "addresses": ["Saudi Arabia – Riyadh", "The Hashemite Kingdom of Jordan – Amman"],
-  "about": "Strategic and creative Marketing Manager with over 5 years of experience developing and executing integrated marketing campaigns across medical, retail, F&B, sports, and real estate sectors. Specialized in social media strategy, content development, brand building, and performance optimization. Known for launching successful community activations, managing high-ROI campaigns, and creating culturally engaging Arabic content tailored for both Jordanian and Saudi markets. Proficient in using data insights to drive results across platforms like Meta, Google, and Snapchat.",
-  "email": "sultan.shadi.ss@gmail.com",
-  "phone": "+966553478763",
-  "whatsapp": "+966553478763",
-  "linkedin": "",
-  "education": { "field": "Marketing", "school": "Applied Science Private University", "period": "2018 – 2021", "note": "Good / Honors List" },
-  "languages": [{ "name": "Arabic", "level": "Native" }, { "name": "English", "level": "Fluent" }],
-  "downloads": { "cvHref": "/Sultan%20Shadi%20CV.pdf", "cvFileName": "Sultan Shadi CV.pdf" },
+  "addresses": ["Riyadh, Saudi Arabia", "Amman, Jordan"],
+  "about": "Strategic and creative Marketing Manager with over five years of experience developing and executing integrated marketing campaigns across the medical, retail, food and beverage, sports, and real estate sectors. Specialized in social media strategy, content development, brand building, and performance optimization. Known for launching successful community activations, managing high-ROI campaigns, and creating culturally engaging Arabic content tailored to Jordanian and Saudi markets. Proficient in using performance data and audience insights to drive measurable results across platforms including Meta, Google, and Snapchat.",
+  "contact": {
+    "email": "sultan.shadi.ss@gmail.com",
+    "phoneDisplay": "(+966) 553478763",
+    "phoneE164": "+966553478763"
+  },
+  "links": {
+    "email": "mailto:sultan.shadi.ss@gmail.com",
+    "phone": "tel:+966553478763",
+    "whatsapp": "https://wa.me/966553478763",
+    "linkedin": "https://www.linkedin.com/in/sultan-alhaj-ahmad-167949215/",
+    "portfolio": "https://sultanshadi.art"
+  },
+  "education": {
+    "degree": "Bachelor’s Degree in Marketing",
+    "school": "Applied Science Private University",
+    "location": "Amman, Jordan",
+    "period": "2018 – 2021",
+    "achievement": "Honors List"
+  },
+  "languages": [
+    { "name": "Arabic", "level": "Native" },
+    { "name": "English", "level": "Fluent" }
+  ],
+  "downloads": {
+    "cvHref": "/Sultan%20Shadi%20CV.pdf",
+    "cvFileName": "Sultan Shadi CV.pdf"
+  },
   "formEndpoint": "https://formspree.io/f/mgojglel"
 }

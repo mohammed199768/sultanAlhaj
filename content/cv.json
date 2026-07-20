@@ -1,18 +1,109 @@
 {
   "schemaVersion": 1,
-  "metadata": { "title": "Sultan Shadi CV", "description": "Professional CV of Sultan Alhaj Ahmad — Marketing Manager and Brand Positioning Strategist." },
-  "personal": { "nationality": "Jordanian", "dateOfBirth": "20/05/1998" },
-  "sectors": ["Medical", "Retail", "F&B", "Sports", "Real Estate"],
+  "metadata": {
+    "title": "Sultan Alhaj Ahmad | Marketing Manager CV",
+    "description": "Marketing Manager with over five years of experience across healthcare, retail, food and beverage, sports, real estate, brand strategy, content, and performance marketing in Saudi Arabia and Jordan."
+  },
+  "personal": {
+    "nationality": "Jordanian",
+    "dateOfBirth": "20/05/1998"
+  },
+  "sectors": ["Healthcare", "Retail", "Food & Beverage", "Sports", "Real Estate"],
   "specializations": ["Social media strategy", "Content development", "Brand building", "Performance optimization"],
-  "highlights": ["Launching successful community activations", "Managing high-ROI campaigns", "Creating culturally engaging Arabic content tailored for Jordanian and Saudi markets", "Using data insights across Meta, Google, and Snapchat"],
+  "highlights": ["Launching successful community activations", "Managing high-ROI campaigns", "Creating culturally engaging Arabic content tailored to Jordanian and Saudi markets", "Using performance data and audience insights across Meta, Google, and Snapchat"],
   "experience": [
-    { "role": "Sales & Marketing Manager", "company": "Garden Art – Landscape & Irrigation", "location": "Riyadh, Saudi Arabia", "dates": "February 2026 – Present", "current": true, "points": ["Developed and managed Garden Art's brand identity.", "Led marketing strategy, content planning, and digital presence across Instagram, LinkedIn, Google Business Profile, website content, and corporate outreach channels.", "Created Arabic and English marketing content tailored for the Saudi market, including social media posts, captions, campaigns, brochures, and company presentations.", "Supported sales activities through client outreach, lead generation, prospect research, email marketing campaigns, WhatsApp campaigns, follow-ups, and proposal preparation.", "Managed email marketing campaigns and built updated prospect databases for new business opportunities.", "Coordinated with management on business development activities, client communication, project submissions, and corporate presentations.", "Prepared professional sales and marketing materials for tenders, client meetings, company introductions, and partnership opportunities.", "Improved Garden Art's corporate image through consistent branding, premium visual direction, and professional marketing documentation.", "Supported client acquisition across sectors including villas, residential compounds, corporate buildings, healthcare, hospitality, government-related facilities, contractors, and developers.", "Worked closely with internal teams to align marketing materials with sales objectives, company positioning, and client requirements."] },
-    { "role": "Digital Marketing Manager", "company": "Digital Dragon Marketing Agency", "location": "Riyadh, Saudi Arabia", "dates": "May 2023 – June 2026", "points": ["Specialized in managing healthcare marketing accounts, including Care Clinic, SKN Clinic, HAMC, U Medical Complex, Avant Clinics, and multiple doctors.", "Built digital strategies across SEO, Google Maps optimization, paid advertising, and social media for services such as laser, plastic surgery, dermatology, and internal medicine.", "Created Arabic and English campaigns promoting medical procedures and devices.", "Directed creative production for offer posts, influencer videos, highlights, and online consultations.", "Managed coordination between designers, media buyers, web developers, and content creators."] },
-    { "role": "Marketing Manager", "company": "Quattro Village & Padel Me Club", "location": "Amman, Jordan", "dates": "February 2025 – December 2025", "points": ["Led marketing and branding operations for Quattro Village.", "Developed and executed campaigns with Reflect, Ittihad Bank, and Red Bull, including cashback activations, field events, branding materials, and tournaments.", "Built and managed monthly social media calendars, carousels, and Friday activations.", "Managed Padel Me Club tournament planning, influencer partnerships, and gear shop promotions.", "Created video content strategies and event recap Reels, and directed production and brand identity work.", "Oversaw booking campaigns and membership promotions.", "Collaborated with management on sponsorship proposals, pricing models, and performance reviews.", "Created a tournament collaboration involving Ahli Bank, Zain, Careem, and more than 11 sponsors."] },
-    { "role": "Digital Marketing Executive", "company": "Khotwa Medical Co. / Step Drug Store / Al Farabi L.C.C", "location": "Jordan & KSA", "dates": "November 2022 – June 2023", "points": ["Developed and managed cross-platform advertising campaigns for pharmaceutical and medical import businesses.", "Managed SEO websites and Amazon/Noon product listings.", "Produced email newsletters and e-commerce content for B2B and B2C audiences.", "Managed social media strategy against estimated KPIs."] }
+    {
+      "role": "Sales & Marketing Manager",
+      "company": "Garden Art – Landscape & Irrigation",
+      "location": "Riyadh, Saudi Arabia",
+      "dates": "February 2026 – Present",
+      "current": true,
+      "points": [
+        "Developed and managed Garden Art’s brand identity and market positioning.",
+        "Led marketing strategy, content planning, and the company’s digital presence across Instagram, LinkedIn, Google Business Profile, website content, and corporate outreach channels.",
+        "Created Arabic and English marketing content tailored to the Saudi market, including social media posts, captions, campaigns, brochures, company profiles, and corporate presentations.",
+        "Supported sales activities through client outreach, lead generation, prospect research, email marketing, WhatsApp campaigns, follow-ups, and proposal preparation.",
+        "Managed email campaigns and maintained updated prospect databases to support new business opportunities.",
+        "Coordinated with management on business-development activities, client communication, project submissions, and corporate presentations.",
+        "Prepared professional sales and marketing materials for tenders, client meetings, company introductions, and partnership opportunities.",
+        "Strengthened Garden Art’s corporate image through consistent branding, premium visual direction, and professional marketing documentation.",
+        "Supported client acquisition across villas, residential compounds, corporate buildings, healthcare facilities, hospitality businesses, government-related facilities, contractors, and developers.",
+        "Worked closely with internal teams to align marketing materials with sales objectives, company positioning, and client requirements."
+      ]
+    },
+    {
+      "role": "Marketing Manager",
+      "company": "Digital Dragon Marketing Agency",
+      "location": "Riyadh, Saudi Arabia",
+      "dates": "May 2023 – June 2026",
+      "points": [
+        "Managed healthcare marketing accounts including Care Clinic, SKN Clinic, HAMC, U Medical Complex, Avant Clinics, and physician accounts.",
+        "Developed digital strategies across SEO, Google Maps optimization, paid advertising, and social media for services including laser treatments, plastic surgery, dermatology, and internal medicine.",
+        "Created Arabic and English campaigns promoting medical procedures, services, consultations, and devices.",
+        "Directed creative production for promotional posts, influencer videos, social media highlights, and online consultation campaigns.",
+        "Coordinated designers, media buyers, web developers, content creators, and other production stakeholders."
+      ]
+    },
+    {
+      "role": "Marketing Manager",
+      "company": "Quattro Village & Padel Me Club",
+      "location": "Amman, Jordan",
+      "dates": "February 2025 – December 2025",
+      "points": [
+        "Led marketing and branding operations for Quattro Village.",
+        "Developed and executed campaigns in collaboration with Reflect, Ittihad Bank, and Red Bull, including cashback activations, on-ground events, branding materials, and tournaments.",
+        "Built and managed monthly social media content calendars, carousel campaigns, and Friday activations designed to increase awareness and footfall.",
+        "Managed Padel Me Club’s marketing activities, including tournament planning, influencer partnerships, gear-shop promotions, booking campaigns, and membership promotions.",
+        "Developed video-content strategies and event-recap Reels, and directed photography, videography, and brand-identity production.",
+        "Managed campaigns targeting off-peak booking hours, families, and membership acquisition.",
+        "Collaborated with management on sponsorship proposals, pricing models, and performance reviews.",
+        "Helped deliver a major padel tournament in collaboration with Ahli Bank, Zain, Careem, and more than 11 sponsors, contributing to its position as one of Jordan’s largest padel tournaments."
+      ]
+    },
+    {
+      "role": "Digital Marketing Executive",
+      "company": "Khotwa Medical Co.",
+      "location": "Jordan & KSA",
+      "dates": "November 2022 – June 2023",
+      "points": [
+        "Developed and managed cross-platform advertising campaigns for pharmaceutical and medical-import businesses.",
+        "Managed SEO-focused websites and Amazon and Noon product listings.",
+        "Produced email newsletters and e-commerce content tailored to B2B and B2C audiences.",
+        "Managed social media strategy and aligned campaigns with defined performance indicators and estimated KPIs."
+      ]
+    }
   ],
-  "skillGroups": [{"label":"Strategy","items":["Full-Funnel Marketing Strategy","Branding & Identity Creation"]},{"label":"Paid Media","items":["Meta, Snapchat, Google & TikTok Ads","Performance Reports & Analytics"]},{"label":"Content & Social","items":["Bilingual Content Creation: Jordanian Arabic, Saudi Arabic, and English","Social Media Management: Instagram, Snapchat, and Facebook","SEO & Web Content Writing"]},{"label":"Brand & Events","items":["Influencer Marketing & Sponsorship Management","Event Planning & On-Ground Activations"]},{"label":"Management","items":["Client & Team Management"]}],
-  "tools": ["Meta Business Suite", "Snapchat Ads", "TikTok Ads", "Google Ads", "WordPress", "Google My Business", "Amazon Seller Central", "Canva", "CapCut", "Photoshop — Basic", "Google Analytics GA4", "WhatsApp Business"],
+  "skillGroups": [
+    { "label": "Strategy", "items": ["Full-Funnel Marketing Strategy", "Branding and Identity Creation"] },
+    { "label": "Paid Media", "items": ["Meta, Snapchat, Google, and TikTok Advertising", "Performance Reporting and Analytics"] },
+    { "label": "Content & Social", "items": ["Bilingual Content Creation — Jordanian Arabic, Saudi Arabic, and English", "Social Media Management — Instagram, Snapchat, and Facebook", "SEO and Web Content Writing"] },
+    { "label": "Brand & Events", "items": ["Influencer Marketing and Sponsorship Management", "Event Planning and On-Ground Activations"] },
+    { "label": "Management", "items": ["Client and Team Management"] }
+  ],
+  "tools": [
+    "Meta Business Suite",
+    "Snapchat Ads",
+    "TikTok Ads",
+    "Google Ads",
+    "Google Analytics 4 (GA4)",
+    "WordPress",
+    "Google Business Profile",
+    "Amazon Seller Central",
+    "Noon",
+    "Canva",
+    "CapCut",
+    "Adobe Photoshop — Basic",
+    "WhatsApp Business",
+    "AI-Assisted Content Creation — Text, Visuals, and Motion"
+  ],
   "selectedValue": ["Brand Strategy and Brand Development", "Marketing Strategy and Campaign Management", "Content Strategy and Copywriting", "Creative and Visual Direction", "Digital Marketing and Social Media Management", "Sales and Business Development Support", "B2B Marketing", "Project and Vendor Coordination"],
-  "sectionLabels": [{"id":"profile","label":"Profile","shortLabel":"Profile","hint":"Positioning"},{"id":"experience","label":"Experience","shortLabel":"Work","hint":"Career record"},{"id":"skills","label":"Skills","shortLabel":"Skills","hint":"Skill set"},{"id":"tools","label":"Tools","shortLabel":"Tools","hint":"Platforms"},{"id":"education","label":"Education","shortLabel":"Edu","hint":"University"},{"id":"languages","label":"Languages","shortLabel":"Lang","hint":"Arabic / English"},{"id":"contact","label":"Contact","shortLabel":"Contact","hint":"Direct channels"}]
+  "sectionLabels": [
+    { "id": "profile", "label": "Summary", "shortLabel": "Summary", "hint": "Professional profile" },
+    { "id": "experience", "label": "Experience", "shortLabel": "Work", "hint": "Career record" },
+    { "id": "skills", "label": "Skills", "shortLabel": "Skills", "hint": "Core competencies" },
+    { "id": "tools", "label": "Tools", "shortLabel": "Tools", "hint": "Platforms" },
+    { "id": "education", "label": "Education", "shortLabel": "Edu", "hint": "University" },
+    { "id": "languages", "label": "Languages", "shortLabel": "Lang", "hint": "Arabic / English" },
+    { "id": "contact", "label": "Contact", "shortLabel": "Contact", "hint": "Direct channels" }
+  ]
 }

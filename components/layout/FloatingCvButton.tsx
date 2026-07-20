@@ -11,11 +11,11 @@ import {
 
 export default function FloatingCvButton() {
   const pathname = usePathname();
-  const isMobileCv = pathname === "/cv";
+  const isCv = pathname === "/cv";
 
   return (
     <div
-      className={`${isMobileCv ? "hidden md:flex" : "flex"} fixed bottom-[calc(6rem+env(safe-area-inset-bottom))] left-4 z-[50] flex-col gap-2 md:bottom-auto md:left-5 md:top-1/2 md:-translate-y-1/2`}
+      className={`${isCv ? "hidden" : "flex"} fixed bottom-[calc(6rem+env(safe-area-inset-bottom))] left-4 z-[50] flex-col gap-2 md:bottom-auto md:left-5 md:top-1/2 md:-translate-y-1/2`}
     >
       <a
         href={cvDownloadHref}

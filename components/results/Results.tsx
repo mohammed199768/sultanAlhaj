@@ -24,6 +24,7 @@ function useCountUp(target: string, start: boolean) {
     const suffix = match[3];
     const end = parseFloat(numStr);
     const hasDecimal = numStr.includes(".");
+    const decimalPlaces = hasDecimal ? numStr.split(".")[1]?.length ?? 0 : 0;
     const duration = 1400;
     const t0 = performance.now();
     let raf = 0;
@@ -33,7 +34,7 @@ function useCountUp(target: string, start: boolean) {
       const eased = 1 - Math.pow(1 - p, 3);
       const current = end * eased;
       const formatted = hasDecimal
-        ? current.toFixed(2)
+        ? current.toFixed(decimalPlaces)
         : Math.round(current).toLocaleString("en-US");
       setDisplay(`${prefix}${formatted}${suffix}`);
       if (p < 1) raf = requestAnimationFrame(tick);

@@ -89,6 +89,12 @@
     font-size: clamp(2rem, 6vw, 5rem);
   }
 
+  .co-secondary-beat {
+    @apply max-w-[min(80rem,calc(100vw-(var(--shell-x)*2)))] font-display font-bold uppercase tracking-tighter text-mist-300;
+    font-size: clamp(2rem, 3.8vw, 3.2rem);
+    line-height: 1;
+  }
+
   .lede {
     @apply font-serif text-mist/85;
     font-size: clamp(1.05rem, 1.6vw, 1.4rem);

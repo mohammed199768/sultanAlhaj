@@ -1611,14 +1611,6 @@
     },
     {
       "kind": "image",
-      "src": "/clients/Inkspire%20clients%20logo/4%20(1).jpg",
-      "title": "4 (1)",
-      "fileName": "4 (1).jpg",
-      "width": 1080,
-      "height": 1080
-    },
-    {
-      "kind": "image",
       "src": "/clients/Inkspire%20clients%20logo/4.webp",
       "title": "Client",
       "fileName": "4.webp",
@@ -1744,6 +1736,14 @@
       "fileName": "19 (2).webp",
       "width": 500,
       "height": 500
+    },
+    {
+      "kind": "image",
+      "src": "/clients/Inkspire%20clients%20logo/Dr%20Khurram%20Javed%20Logo.webp",
+      "title": "Dr Khurram Javed Logo",
+      "fileName": "Dr Khurram Javed Logo.webp",
+      "width": 764,
+      "height": 239
     }
   ],
   "stats": {

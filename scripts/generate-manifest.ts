@@ -25,6 +25,7 @@ const PDF_EXT = new Set([".pdf"]);
 const BROWSER_VIDEO = new Set([".mp4", ".webm"]);
 
 const JUNK = new Set([".DS_Store", "desktop.ini", "Thumbs.db"]);
+const CLIENT_SOURCE_ONLY = new Set(["4 (1).jpg"]);
 const LFS_POINTER_PREFIX = "version https://git-lfs.github.com/spec/v1";
 const FILE_NAME_COLLATOR = new Intl.Collator("en", {
   sensitivity: "variant",
@@ -246,6 +247,12 @@ async function scanFlat(baseDir: string, fallback: string): Promise<MediaItem[]>
   const siblingNames = new Set(files.map((f) => path.basename(f).toLowerCase()));
   const items: MediaItem[] = [];
   for (const f of files) {
+    if (
+      path.basename(baseDir) === "Inkspire clients logo" &&
+      CLIENT_SOURCE_ONLY.has(path.basename(f))
+    ) {
+      continue;
+    }
     const item = await buildMediaItem(f, fallback, siblingNames);
     if (item) items.push(item);
   }

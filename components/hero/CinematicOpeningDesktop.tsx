@@ -63,7 +63,7 @@ function BeatContent({ beat }: { beat: Beat }) {
     <>
       <p className="co-fade eyebrow mb-5">{beat.eyebrow}</p>
       <Heading
-        className={`co-fade mx-auto max-w-4xl ${beat.hero ? "display-hero" : "display-2"}`}
+        className={`co-fade mx-auto ${beat.hero ? "max-w-4xl display-hero" : "co-secondary-beat"}`}
       >
         {beat.accent && beat.headline.endsWith(beat.accent) ? beat.headline.slice(0, -beat.accent.length) : beat.headline}
         {beat.accent && <span className="text-champagne">{beat.accent}</span>}
